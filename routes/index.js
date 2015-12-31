@@ -37,7 +37,6 @@ router.get('/', function(req, res, next) {
 	Promise.all(getPromises()).then(function(results) {
 		res.render('index', parseAPICalls(results));
 	}).catch(function(err) { //try refreshing the fitbit token to see if that helps...
-		console.log(err);
 		console.log('Refreshing fitbit token...');
 		fitbit_access_token.refresh().then(function saveToken(newToken) {
 			fitbit_access_token = newToken;
@@ -64,6 +63,10 @@ router.get('/cv', function(req, res, next) {
 
 router.get('/publications', function(req, res, next) {
 	res.render('publications', {});
+});
+
+router.get('/projects', function(req, res, next) {
+	res.render('projects', {});
 });
 
 module.exports = router;

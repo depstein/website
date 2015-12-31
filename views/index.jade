@@ -1,7 +1,24 @@
 extends layout
 
 block content
-  h1= title
-  p Reading: #{kindle}
-  p Tweeting: #{twitter}
-  p Walking: #{fitbit}
+	.col-sm-3.col-md-2.hidden-xs
+		img(src='images/profile.jpg' width='150px' alt='photo taken by Sean Munson').img-rounded.profile
+		h2 Contact
+		p Paul Allen Center, Room 605
+		p depstein at cs dot washington dot edu
+		h2 I am...	
+		p Reading: #{kindle}
+		p Tweeting: #{twitter}
+		p Walking: #{fitbit}
+	.col-sm-9.col-md-10.col-xs-12
+		p 
+			| Hi! I'm a fourth year Ph.D student in 
+			a(href="//cs.washington.edu") Computer Science & Engineering 
+			|  at the University of Washington. I'm coadvised by 
+			a(href="//homes.cs.washington.edu/~jfogarty/index.html") James Fogarty
+			|  and 
+			a(href="//www.smunson.com/") Sean Munson.
+		p
+			| I study the design of 
+			a(href="//www.personalinformatics.org/") personal informatics
+			|  tools to integrate into people's everyday lives.

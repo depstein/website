@@ -1,8 +1,19 @@
 doctype html
 html
-  head
-    title= 'Daniel Epstein'
-    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		title= 'Daniel Epstein'
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		.container
+			.row
+				.col-xs-12
+					.col-xs-6
+						h1 Daniel Epstein
+					.col-xs-6.navlinks
+						a(href='/') Home
+						a(href='/publications') Publications
+						a(href='/projects') Projects
+						a(href='/cv') CV
+			.row
+				block content
