@@ -28,8 +28,8 @@ function formatBib(f, bib) {
 }
 
 function compareBib(a, b) {
-	var ma = moment(a.date, "YYYY MM").valueOf();
-	var mb = moment(b.date, "YYYY MM").valueOf();
+	var ma = moment(a.date, "MMM YYYY").valueOf();
+	var mb = moment(b.date, "MMM YYYY").valueOf();
 	if(ma > mb) { //inverse year sort
 		return -1;
 	} else if(ma < mb) {
