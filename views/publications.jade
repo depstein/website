@@ -2,3 +2,6 @@ extends layout
 
 block content
 	h1 Publications
+	ul
+		each pub in bib
+			li= pub.BOOKTITLE

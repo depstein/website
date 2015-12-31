@@ -2,19 +2,41 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');
 var util = require('util');
+var extend = require('node.extend');
 var moment = require('moment');
 var request = require('request-promise');
 var xpath = require('xpath');
 var dom = require('xmldom-silent').DOMParser;
 var twitter = require('twitter');
 var Promise = require('promise');
+var bibtex = require('bibtex-parser');
 
-twitter_credentials = JSON.parse(fs.readFileSync('data/twitter_credentials.json', 'utf8'));
-fitbit_credentials = JSON.parse(fs.readFileSync('data/fitbit_credentials.json', 'utf8'));
-
+var twitter_credentials = JSON.parse(fs.readFileSync('data/twitter_credentials.json', 'utf8'));
+var fitbit_credentials = JSON.parse(fs.readFileSync('data/fitbit_credentials.json', 'utf8'));
 var fitbit = require('simple-oauth2')({site: 'https://api.fitbit.com', tokenPath: '/oauth2/token', clientID:fitbit_credentials.clientID, clientSecret:fitbit_credentials.clientSecret});
 var fitbit_access_token = fitbit.accessToken.create({access_token: fitbit_credentials.access_token, refresh_token: fitbit_credentials.refresh_token, expires_in:3600});
 var twitter_client = new twitter(twitter_credentials);
+
+var publications = JSON.parse(fs.readFileSync('data/publications.json', 'utf8'));
+var BIB_FILES = 'public/bibtex';
+var bib_data = fs.readdirSync(BIB_FILES).map(function(f) { return formatBib(f, bibtex(fs.readFileSync(BIB_FILES + '/' + f, 'utf-8'))); });
+bib_data.sort(compareBib);
+
+function formatBib(f, bib) {
+	var name = Object.keys(bib)[0];
+	return extend(extend(bib[name], publications[name]), {'bib':BIB_FILES + '/' + f});
+}
+
+function compareBib(a, b) {
+	var ma = moment(a.date, "YYYY MM").valueOf();
+	var mb = moment(b.date, "YYYY MM").valueOf();
+	if(ma > mb) { //inverse year sort
+		return -1;
+	} else if(ma < mb) {
+		return 1;
+	}
+	return 0; //TODO: more detailed sorting when pubs were published at the same time
+}
 
 function getPromises() {
 	return [request({uri: "http://kindle.amazon.com/profile/Daniel/4607804/reading"}),
@@ -53,8 +75,8 @@ router.get('/', function(req, res, next) {
 	});
 });
 
-router.get('/cv', function(req, res, next) {
-	var cv = "docs/cv.pdf";
+router.get('/cv*', function(req, res, next) {
+	var cv = "public/docs/cv.pdf";
 	fs.readFile(cv, function (err,data) {
     	res.contentType("application/pdf");
     	res.send(data);
@@ -62,7 +84,7 @@ router.get('/cv', function(req, res, next) {
 })
 
 router.get('/publications', function(req, res, next) {
-	res.render('publications', {});
+	res.render('publications', {'bib': bib_data});
 });
 
 router.get('/projects', function(req, res, next) {
