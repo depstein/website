@@ -22,7 +22,9 @@ var BIB_FILES = 'public/bibtex';
 var bib_data = fs.readdirSync(BIB_FILES).map(function(f) { return formatBib(f, bibtex(fs.readFileSync(BIB_FILES + '/' + f, 'utf-8'))); });
 bib_data.sort(compareBib);
 
-console.log(bib_data);
+var recentPublications = bib_data.filter(function(f) { return moment(f.date, "MMM YYYY").add(13, 'month').valueOf() >= moment().valueOf() && f.local && (f.type == 'paper' || f.type == 'note');});
+
+//console.log(bib_data);
 
 function formatBib(f, bib) {
 	var name = Object.keys(bib)[0];
@@ -67,7 +69,7 @@ function parseAPICalls(results) {
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	Promise.all(getPromises()).then(function(results) {
-		res.render('index', extend(parseAPICalls(results), {'bib':bib_data.slice(1, 5)}));
+		res.render('index', extend(parseAPICalls(results), {'bib':recentPublications}));
 	}).catch(function(err) { //try refreshing the fitbit token to see if that helps...
 		console.log('Refreshing fitbit token...');
 		fitbit_access_token.refresh().then(function saveToken(newToken) {
@@ -77,9 +79,9 @@ router.get('/', function(req, res, next) {
 			fitbit_credentials.refresh_token = newToken.token.refresh_token;
 			fs.writeFileSync('data/fitbit_credentials.json', JSON.stringify(fitbit_credentials));
 			Promise.all(getPromises()).then(function(results) { //try again
-				res.render('index', extend(parseAPICalls(results), {'bib':bib_data.slice(1, 5)}));
+				res.render('index', extend(parseAPICalls(results), {'bib':recentPublications}));
 			}).catch(function(err) {
-				res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':bib_data.slice(1, 5)});
+				res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':recentPublications});
 			})
 		});
 	});

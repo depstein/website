@@ -31,7 +31,6 @@ block content
 				var years = jQuery.unique(bib.map(function(b) { return b.YEAR; }));
 				var yearsFiltered = jQuery.unique(bib.filter(function(b) { return allChecked.indexOf(b.type) != -1;}).map(function(b) { return b.YEAR; }));
 				years.forEach(function(y) {
-					console.log(yearsFiltered.indexOf(y));
 					if(animate) {
 						yearsFiltered.indexOf(y) != -1?$('h2.' + y).slideDown('fast'):$('h2.' + y).slideUp('fast');
 					} else {

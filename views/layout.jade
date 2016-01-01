@@ -6,6 +6,7 @@ html
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		script(src="javascripts/jquery-2.1.4.min.js")
 		script(src="javascripts/bootstrap.min.js")
+		script(src="javascripts/moment.min.js")
 	body
 		.container
 			.row
@@ -19,3 +20,8 @@ html
 						a(href='/cv') CV
 			.row
 				block content
+			.row
+				.col-xs-12
+					footer
+					script.
+						$('footer').html("Copyright © " + moment().format("YYYY") + " by Daniel Epstein.");
