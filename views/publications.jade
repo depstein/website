@@ -2,6 +2,23 @@ extends layout
 
 block content
 	h1 Publications
+	- var years = []
 	ul
 		each pub in bib
-			li= pub.BOOKTITLE
+			if years.indexOf(pub.YEAR) == -1
+				h2= pub.YEAR
+				- years.push(pub.YEAR)
+			article
+				= pub.TITLE
+				| . 
+				each author, i in pub.AUTHOR
+					if author == 'Daniel A. Epstein'
+						em= author
+					else
+						= author
+					if i < pub.AUTHOR.length -1
+						| , 
+					else
+						| . 
+				= pub.SERIES
+				| .

@@ -22,9 +22,15 @@ var BIB_FILES = 'public/bibtex';
 var bib_data = fs.readdirSync(BIB_FILES).map(function(f) { return formatBib(f, bibtex(fs.readFileSync(BIB_FILES + '/' + f, 'utf-8'))); });
 bib_data.sort(compareBib);
 
+console.log(bib_data);
+
 function formatBib(f, bib) {
 	var name = Object.keys(bib)[0];
-	return extend(extend(bib[name], publications[name]), {'bib':BIB_FILES + '/' + f});
+	bib = extend(extend(bib[name], publications[name]), {'bib':BIB_FILES + '/' + f});
+	bib.AUTHOR = bib.AUTHOR.split(" and ").map(function(n) {return n.split(",").reverse().join(' ').trim()}); //reverse hack will work in all trivial cases, e.g. Epstein, Daniel A.
+	bib.BOOKTITLE = bib.BOOKTITLE.replace(/\\/g, "").replace(/#38;/g, "");
+	bib.SERIES = bib.SERIES.replace(/'/g, 20);
+	return bib;
 }
 
 function compareBib(a, b) {
