@@ -1,8 +1,73 @@
+/* Palette URL: http://paletton.com/#uid=12K0u0kllllaFw0g0qFqFg0w0aF */
+
+/*
+
+.color-primary-0 { color: #448F30 }	// Main Primary color
+.color-primary-1 { color: #9ED78F }
+.color-primary-2 { color: #6CB359 }
+.color-primary-3 { color: #256B12 }
+.color-primary-4 { color: #0F4700 }
+
+.color-secondary-1-0 { color: #246C60 }	// Main Secondary color (1)
+.color-secondary-1-1 { color: #6CA299 }
+.color-secondary-1-2 { color: #43877B }
+.color-secondary-1-3 { color: #0D5146 }
+.color-secondary-1-4 { color: #00362D }
+
+.color-secondary-2-0 { color: #AA6639 }	// Main Secondary color (2)
+.color-secondary-2-1 { color: #FFCCAA }
+.color-secondary-2-2 { color: #D4956A }
+.color-secondary-2-3 { color: #804015 }
+.color-secondary-2-4 { color: #552200 }
+
+.color-complement-0 { color: #A33643 }	// Main Complement color
+.color-complement-1 { color: #F5A3AD }
+.color-complement-2 { color: #CC6672 }
+.color-complement-3 { color: #7A1420 }
+.color-complement-4 { color: #51000A }
+*/
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 50px;
+	font-family: 'Droid Serif', serif;
+	font-size: 150%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+}
+
+cite {
+	font-style: normal;
+	padding: 10px;
+	display: block;
+}
+
+cite > .series {
+	font-family: 'Lato', sans-serif;
+}
+
+cite > a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+cite > .authors {
+	font-family: 'Droid Serif', serif;
+}
+
+cite > .title {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+cite > .notes {
+	font-family: 'Lato', sans-serif;
+	color: #A33643;
+	font-weight: 300;
+	font-size: 0.8em;
 }
 
 a {
-  color: #00B7FF;
+	color: #448F30;
 }

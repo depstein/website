@@ -4,10 +4,12 @@ include mixins/display_publications
 block content
 	.col-xs-12
 		h1 Publications
-		input(type='checkbox' name='conference' onclick='showPubs(true);' checked)
-		| Conference papers
-		input(type='checkbox' name='workshop' onclick='showPubs(true);')
-		| Lightly reviewed papers (workshop papers, posters)
+		label(for='conference')
+			input(type='checkbox' id='conference' name='conference' onclick='showPubs(true);' checked)
+			| Conference papers
+		label(for='workshop')
+			input(type='checkbox' id='workshop' name='workshop' onclick='showPubs(true);')
+			| Lightly reviewed papers (workshop papers, posters)
 		mixin display_publications(bib, true)
 		script.
 			var mapping = {'conference':['paper', 'note'], 'workshop':['wip', 'workshop', 'poster']};
@@ -17,9 +19,9 @@ block content
 					var checked = this.checked;
 					mapping[$(this).attr('name')].forEach(function(n) {
 						if(animate) {
-							checked?$('article.' + n).slideDown('fast'):$('article.' + n).slideUp('fast');
+							checked?$('cite.' + n).slideDown('fast'):$('cite.' + n).slideUp('fast').css('display', 'block');
 						} else {
-							checked?$('article.' + n).show():$('article.' + n).hide();
+							checked?$('cite.' + n).show().css('display', 'block'):$('cite.' + n).hide();
 						}
 						if(checked) {
 							allChecked.push(n);
