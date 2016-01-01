@@ -4,4 +4,40 @@ include mixins/display_publications
 block content
 	.col-xs-12
 		h1 Publications
+		input(type='checkbox' name='conference' onclick='showPubs(true);' checked)
+		| Conference papers
+		input(type='checkbox' name='workshop' onclick='showPubs(true);')
+		| Lightly reviewed papers (workshop papers, posters)
 		mixin display_publications(bib, true)
+		script.
+			var mapping = {'conference':['paper', 'note'], 'workshop':['wip', 'workshop', 'poster']};
+			function showPubs(animate) {
+				var allChecked = [];
+				$('input:checkbox').each(function () {
+					var checked = this.checked;
+					mapping[$(this).attr('name')].forEach(function(n) {
+						if(animate) {
+							checked?$('article.' + n).show('fast'):$('article.' + n).hide('fast');
+						} else {
+							checked?$('article.' + n).show():$('article.' + n).hide();
+						}
+						if(checked) {
+							allChecked.push(n);
+						}
+					});
+				});
+				//Hide/show publication years
+				var bib = !{JSON.stringify(bib)};
+				var years = jQuery.unique(bib.map(function(b) { return b.YEAR; }));
+				var yearsFiltered = jQuery.unique(bib.filter(function(b) { return allChecked.indexOf(b.type) != -1;}).map(function(b) { return b.YEAR; }));
+				years.forEach(function(y) {
+					console.log(yearsFiltered.indexOf(y));
+					if(animate) {
+						yearsFiltered.indexOf(y) == -1?$('h2.' + y).hide('fast'):$('h2.' + y).show('fast');
+					} else {
+						yearsFiltered.indexOf(y) == -1?$('h2.' + y).hide():$('h2.' + y).show();
+					}
+				});
+			}
+			showPubs(false);
+			
