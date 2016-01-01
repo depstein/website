@@ -17,7 +17,7 @@ block content
 					var checked = this.checked;
 					mapping[$(this).attr('name')].forEach(function(n) {
 						if(animate) {
-							checked?$('article.' + n).show('fast'):$('article.' + n).hide('fast');
+							checked?$('article.' + n).slideDown('fast'):$('article.' + n).slideUp('fast');
 						} else {
 							checked?$('article.' + n).show():$('article.' + n).hide();
 						}
@@ -33,9 +33,9 @@ block content
 				years.forEach(function(y) {
 					console.log(yearsFiltered.indexOf(y));
 					if(animate) {
-						yearsFiltered.indexOf(y) == -1?$('h2.' + y).hide('fast'):$('h2.' + y).show('fast');
+						yearsFiltered.indexOf(y) != -1?$('h2.' + y).slideDown('fast'):$('h2.' + y).slideUp('fast');
 					} else {
-						yearsFiltered.indexOf(y) == -1?$('h2.' + y).hide():$('h2.' + y).show();
+						yearsFiltered.indexOf(y) != -1?$('h2.' + y).show():$('h2.' + y).hide();
 					}
 				});
 			}
