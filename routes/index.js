@@ -67,7 +67,7 @@ function parseAPICalls(results) {
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	Promise.all(getPromises()).then(function(results) {
-		res.render('index', parseAPICalls(results));
+		res.render('index', extend(parseAPICalls(results), {'bib':bib_data.slice(1, 5)}));
 	}).catch(function(err) { //try refreshing the fitbit token to see if that helps...
 		console.log('Refreshing fitbit token...');
 		fitbit_access_token.refresh().then(function saveToken(newToken) {
@@ -77,9 +77,9 @@ router.get('/', function(req, res, next) {
 			fitbit_credentials.refresh_token = newToken.token.refresh_token;
 			fs.writeFileSync('data/fitbit_credentials.json', JSON.stringify(fitbit_credentials));
 			Promise.all(getPromises()).then(function(results) { //try again
-				res.render('index', parseAPICalls(results));
+				res.render('index', extend(parseAPICalls(results), {'bib':bib_data.slice(1, 5)}));
 			}).catch(function(err) {
-				res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing'});
+				res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':bib_data.slice(1, 5)});
 			})
 		});
 	});

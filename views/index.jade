@@ -1,4 +1,5 @@
 extends layout
+include mixins/display_publications
 
 block content
 	.col-sm-3.col-md-2.hidden-xs
@@ -22,3 +23,5 @@ block content
 			| I study the design of 
 			a(href="//www.personalinformatics.org/") personal informatics
 			|  tools to integrate into people's everyday lives.
+		h2 Recent Publications
+		mixin display_publications(bib, false)

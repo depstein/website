@@ -1,0 +1,29 @@
+mixin display_publications(bib, displayYears)
+	- var years = []
+	each pub in bib
+		if displayYears && years.indexOf(pub.YEAR) == -1
+			h2= pub.YEAR
+			- years.push(pub.YEAR)
+		article
+			= pub.TITLE
+			| . 
+			each author, i in pub.AUTHOR
+				if author == 'Daniel A. Epstein'
+					em= author
+				else
+					= author
+				if i < pub.AUTHOR.length -1
+					| , 
+				else
+					| . 
+			= pub.SERIES
+			| .
+			if pub.notes
+				= pub.notes
+			if pub.local
+				a(href=pub.local target="_blank") local PDF
+			if pub.URL
+				a(href=pub.URL target="_blank") official PDF
+				a(href=pub.bib) BibTeX
+			if pub.supplemental
+				a(href=pub.supplemental target="_blank") #{pub.supplemental_name}
