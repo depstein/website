@@ -36,12 +36,16 @@ function formatBib(f, bib) {
 function compareBib(a, b) {
 	var ma = moment(a.date, "MMM YYYY").valueOf();
 	var mb = moment(b.date, "MMM YYYY").valueOf();
-	if(ma > mb) { //inverse year sort
-		return -1;
-	} else if(ma < mb) {
-		return 1;
+	if(ma != mb) {
+		return ma > mb ? -1 : 1;
 	}
-	return 0; //TODO: more detailed sorting when pubs were published at the same time
+	var typeSortOrder = ['paper', 'note', 'wip', 'workshop', 'poster'];
+	var ta = typeSortOrder.indexOf(a.type);
+	var tb = typeSortOrder.indexOf(b.type)
+	if(ta != tb) {
+		return ta > tb ? 1 : -1;
+	}
+	return 0; //TODO: more detailed sorting when pubs were published at the same time at the same "priority" level
 }
 
 function getPromises() {
