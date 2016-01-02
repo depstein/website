@@ -11,18 +11,20 @@ html
 	body
 		.container
 			.row
-				.col-xs-12
+				header.col-xs-12
 					.col-xs-6
 						h1 Daniel Epstein
-					.col-xs-6.navlinks
+					nav.col-xs-6
 						a(href='/') Home
+						|  &#166; 
 						a(href='/publications') Publications
+						|  &#166; 
 						a(href='/projects') Projects
-						a(href='/cv') CV
+						|  &#166; 
+						a(href='/cv' target='_blank') CV
 			.row
 				block content
 			.row
-				.col-xs-12
-					footer
+				footer.col-xs-12
 					script.
 						$('footer').html("Copyright © " + moment().format("YYYY") + " by Daniel Epstein.");

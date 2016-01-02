@@ -33,8 +33,35 @@ body {
 	font-size: 150%;
 }
 
+.container {
+	max-width: 1000px;
+}
+
+nav {
+	text-align: right;
+}
+
+nav > a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+footer {
+	text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Lato', sans-serif;
+}
+
+aside {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.8em;
+}
+
+aside > h2 {
+	font-weight: 700;
+	font-size: 1.2em;
 }
 
 cite {

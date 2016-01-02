@@ -2,16 +2,22 @@ extends layout
 include mixins/display_publications
 
 block content
-	.col-sm-3.col-md-2.hidden-xs
+	aside.col-sm-3.col-md-2.hidden-xs
 		img(src='images/profile.jpg' width='150px' alt='photo taken by Sean Munson').img-rounded.profile
 		h2 Contact
 		p Paul Allen Center, Room 605
 		p depstein at cs dot washington dot edu
 		h2 I am...	
-		p Reading: #{kindle}
-		p Tweeting: #{twitter}
-		p Walking: #{fitbit}
-	.col-sm-9.col-md-10.col-xs-12
+		p 
+			strong Reading: 
+			| #{kindle}
+		p
+			strong Tweeting: 
+			| #{twitter}
+		p
+			strong Walking: 
+			| #{fitbit}
+	main.col-sm-9.col-md-10.col-xs-12
 		p 
 			| Hi! I'm a fourth year Ph.D student in 
 			a(href="//cs.washington.edu") Computer Science & Engineering 
