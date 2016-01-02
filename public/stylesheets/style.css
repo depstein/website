@@ -27,6 +27,10 @@
 .color-complement-4 { color: #51000A }
 */
 
+hr {
+	border-top: 5px double #888;
+}
+
 body {
 	padding: 50px;
 	font-family: 'Droid Serif', serif;
@@ -39,11 +43,20 @@ body {
 
 nav {
 	text-align: right;
+	top: 50%;
+	-webkit-transform: translateY(50%);
+	-ms-transform: translateY(50%);
+	transform: translateY(50%);
 }
 
 nav > a {
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
+}
+
+.name > h1 {
+	font-weight: 700;
+	margin:0px;
 }
 
 footer {
@@ -52,21 +65,46 @@ footer {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 1.5em;
 }
 
 aside {
 	font-family: 'Lato', sans-serif;
-	font-size: 0.8em;
+	font-size: 0.7em;
 }
 
 aside > h2 {
 	font-weight: 700;
-	font-size: 1.2em;
+	font-size: 1.1em;
+	margin: 10px 0px 5px 0px;
+}
+
+aside > p {
+	margin: 2px;
+}
+
+aside > a {
+	display: block;
+}
+
+aside > a > span {
+	vertical-align: top;
+	line-height: 16px;
+}
+
+svg.icon {
+	width: 16px;
+	height: 16px;
+	padding: 1px 2px;
 }
 
 cite {
 	font-style: normal;
-	padding: 10px;
+	padding: 10px 0px;
 	display: block;
 }
 
@@ -76,11 +114,13 @@ cite > .series {
 
 cite > a {
 	font-family: 'Lato', sans-serif;
-	font-weight: 700;
+	font-size: 0.8em;
+	vertical-align: middle;
 }
 
 cite > .authors {
 	font-family: 'Droid Serif', serif;
+	font-size: 0.9em;
 }
 
 cite > .title {
@@ -93,6 +133,31 @@ cite > .notes {
 	color: #A33643;
 	font-weight: 300;
 	font-size: 0.8em;
+}
+
+.show {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	/*border-radius: 10px;
+	border: 2px solid #888;*/
+}
+
+.show > hr {
+	border-top: 1px solid #888;
+	margin: 5px 0px;
+}
+
+.show > span {
+	font-weight: 700;
+}
+
+.show > label {
+	font-weight: 400;
+	padding: 5px;
+}
+
+.show > label > input[type="checkbox"] {
+	margin: 2px;
 }
 
 a {

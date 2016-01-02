@@ -2,14 +2,16 @@ extends layout
 include mixins/display_publications
 
 block content
-	.col-xs-12
-		h1 Publications
-		label(for='conference')
-			input(type='checkbox' id='conference' name='conference' onclick='showPubs(true);' checked)
-			| Conference papers
-		label(for='workshop')
-			input(type='checkbox' id='workshop' name='workshop' onclick='showPubs(true);')
-			| Lightly reviewed papers (workshop papers, posters)
+	main.col-xs-12
+		.show
+			span Show: 
+			label(for='conference')
+				input(type='checkbox' id='conference' name='conference' onclick='showPubs(true);' checked)
+				| Conference papers
+			label(for='workshop')
+				input(type='checkbox' id='workshop' name='workshop' onclick='showPubs(true);')
+				| Lightly reviewed papers (workshop papers, posters)
+			hr
 		mixin display_publications(bib, true)
 		script.
 			var mapping = {'conference':['paper', 'note'], 'workshop':['wip', 'workshop', 'poster']};

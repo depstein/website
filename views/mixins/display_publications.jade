@@ -8,7 +8,7 @@ mixin display_publications(bib, displayYears)
 			.title #{pub.TITLE}
 			.authors
 				each author, i in pub.AUTHOR
-					if author == 'Daniel A. Epstein'
+					if author == 'Daniel\xa0A.\xa0Epstein'
 						em= author
 					else
 						= author

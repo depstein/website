@@ -29,7 +29,7 @@ var recentPublications = bib_data.filter(function(f) { return moment(f.date, "MM
 function formatBib(f, bib) {
 	var name = Object.keys(bib)[0];
 	bib = extend(extend(bib[name], publications[name]), {'bib':BIB_FILES.replace(/public/g, '') + '/' + f}); //drop the "public" prefix for the web
-	bib.AUTHOR = bib.AUTHOR.split(" and ").map(function(n) {return n.split(",").reverse().join(' ').trim()}); //reverse hack will work in all trivial cases, e.g. Epstein, Daniel A.
+	bib.AUTHOR = bib.AUTHOR.split(" and ").map(function(n) {return n.split(",").reverse().join(' ').replace(/ /g, "\xa0").trim()}); //reverse hack will work in all trivial cases, e.g. Epstein, Daniel A.
 	bib.BOOKTITLE = bib.BOOKTITLE.replace(/\\/g, "").replace(/#38;/g, "");
 	bib.SERIES = bib.SERIES.replace(/'/g, 20); // '15 -> 2015
 	return bib;
