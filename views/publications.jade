@@ -21,7 +21,7 @@ block content
 					var checked = this.checked;
 					mapping[$(this).attr('name')].forEach(function(n) {
 						if(animate) {
-							checked?$('cite.' + n).slideDown('fast'):$('cite.' + n).slideUp('fast').css('display', 'block');
+							checked?$('cite.' + n).slideDown('fast').css('display', 'block'):$('cite.' + n).slideUp('fast');
 						} else {
 							checked?$('cite.' + n).show().css('display', 'block'):$('cite.' + n).hide();
 						}

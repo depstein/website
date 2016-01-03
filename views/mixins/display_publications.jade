@@ -16,7 +16,10 @@ mixin display_publications(bib, displayYears)
 						| , 
 					else
 						| . 
-			span.series #{pub.SERIES} 
+			if pub.type == 'paper' || pub.type == 'note' || pub.type == 'wip'
+				span.series #{pub.SERIES} 
+			else
+				span.series #{pub.SERIES} (#{pub.BOOKTITLE})
 			if pub.local
 				|  &bull; 
 				a(href=pub.local target="_blank") PDF
