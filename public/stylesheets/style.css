@@ -47,6 +47,15 @@ nav {
 	-webkit-transform: translateY(50%);
 	-ms-transform: translateY(50%);
 	transform: translateY(50%);
+	font-size: 1em;
+}
+
+@media (max-width: @screen-xs) {
+    body{font-size: 300%;}
+}
+
+@media (max-width: @screen-sm) {
+    body{font-size: 200%;}
 }
 
 nav > a {
