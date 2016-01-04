@@ -183,3 +183,11 @@ hr.separate {
 a {
 	color: #448F30;
 }
+
+a:hover {
+	color: #9ED78F;
+}
+
+a:active {
+	color: #6CB359;
+}
