@@ -21,7 +21,7 @@ var api_data = {};
 var api_update = null;
 
 var publications = JSON.parse(fs.readFileSync('data/publications.json', 'utf8'));
-var BIB_FILES = 'public/bibtex';
+var BIB_FILES = 'bibtex';
 var bib_data = fs.readdirSync(BIB_FILES).map(function(f) { return formatBib(f, bibtex(fs.readFileSync(BIB_FILES + '/' + f, 'utf-8'))); });
 bib_data.sort(compareBib);
 
@@ -29,7 +29,7 @@ var recentPublications = bib_data.filter(function(f) { return moment(f.date, "MM
 
 function formatBib(f, bib) {
 	var name = Object.keys(bib)[0];
-	bib = extend(extend(bib[name], publications[name]), {'bib':BIB_FILES.replace(/public/g, '') + '/' + f}); //drop the "public" prefix for the web
+	bib = extend(extend(bib[name], publications[name]), {'bib':BIB_FILES + '/' + f});
 	bib.AUTHOR = bib.AUTHOR.split(" and ").map(function(n) {return n.split(",").reverse().join(' ').replace(/ /g, "\xa0").trim()}); //reverse hack will work in all trivial cases, e.g. Epstein, Daniel A.
 	bib.BOOKTITLE = bib.BOOKTITLE.replace(/\\/g, "").replace(/#38;/g, "");
 	bib.SERIES = bib.SERIES.replace(/'/g, 20); // '15 -> 2015
@@ -97,8 +97,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/cv*', function(req, res, next) {
-	var cv = "public/docs/cv.pdf";
-	fs.readFile(cv, function (err,data) {
+	fs.readFile("public/docs/cv.pdf", function (err,data) {
     	res.contentType("application/pdf");
     	res.send(data);
 	});
@@ -113,6 +112,17 @@ router.get('/projects', function(req, res, next) {
 	var bib_design = bib_data.filter(function(b) { return ['EPSTEIN_DIS_2014', 'EPSTEIN_CHI_2016A', 'EPSTEIN_CHI_2016B'].indexOf(b.NAME) != -1; });
 	var bib_social = bib_data.filter(function(b) { return ['EPSTEIN_UBICOMP_2013', 'EPSTEIN_CSCW_2015', 'EPSTEIN_CHI_2016B'].indexOf(b.NAME) != -1; });
 	res.render('projects', {'bib_practices': bib_practices, 'bib_design': bib_design, 'bib_social': bib_social});
+});
+
+router.get('/bibtex/:bibfile.bib', function(req, res, next) {
+	fs.readFile("bibtex/" + req.params.bibfile + ".bib", function (err,data) {
+		res.contentType("text/plain");
+		if(!err) {
+    		res.send(data);
+		} else {
+			res.send("No such bibfile.");
+		}
+	});
 });
 
 module.exports = router;
