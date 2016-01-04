@@ -96,6 +96,23 @@ aside > a > span {
 	line-height: 16px;
 }
 
+.project {
+	margin-bottom: 20px;
+}
+
+.project > .image > img {
+	max-width: 200px;
+}
+
+.project > .description > h2 {
+	margin: 0px 0px 5px 0px;
+}
+
+.project > .description > h3 {
+	font-size: 1.2em;
+	margin: 5px 0px 0px 0px;
+}
+
 svg.icon {
 	width: 16px;
 	height: 16px;

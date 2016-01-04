@@ -25,6 +25,8 @@ var BIB_FILES = 'public/bibtex';
 var bib_data = fs.readdirSync(BIB_FILES).map(function(f) { return formatBib(f, bibtex(fs.readFileSync(BIB_FILES + '/' + f, 'utf-8'))); });
 bib_data.sort(compareBib);
 
+console.log(bib_data);
+
 var recentPublications = bib_data.filter(function(f) { return moment(f.date, "MMM YYYY").add(13, 'month').valueOf() >= moment().valueOf() && f.local && (f.type == 'paper' || f.type == 'note');});
 
 function formatBib(f, bib) {
@@ -33,6 +35,7 @@ function formatBib(f, bib) {
 	bib.AUTHOR = bib.AUTHOR.split(" and ").map(function(n) {return n.split(",").reverse().join(' ').replace(/ /g, "\xa0").trim()}); //reverse hack will work in all trivial cases, e.g. Epstein, Daniel A.
 	bib.BOOKTITLE = bib.BOOKTITLE.replace(/\\/g, "").replace(/#38;/g, "");
 	bib.SERIES = bib.SERIES.replace(/'/g, 20); // '15 -> 2015
+	bib.NAME = name;
 	return bib;
 }
 
@@ -108,7 +111,10 @@ router.get('/publications', function(req, res, next) {
 });
 
 router.get('/projects', function(req, res, next) {
-	res.render('projects', {});
+	var bib_practices = bib_data.filter(function(b) { return ['CORDEIRO_CHI_2015', 'EPSTEIN_UBICOMP_2015', 'EPSTEIN_CHI_2016C'].indexOf(b.NAME) != -1; });
+	var bib_design = bib_data.filter(function(b) { return ['EPSTEIN_DIS_2014', 'EPSTEIN_CHI_2016A', 'EPSTEIN_CHI_2016B'].indexOf(b.NAME) != -1; });
+	var bib_social = bib_data.filter(function(b) { return ['EPSTEIN_UBICOMP_2013', 'EPSTEIN_CSCW_2015', 'EPSTEIN_CHI_2016B'].indexOf(b.NAME) != -1; });
+	res.render('projects', {'bib_practices': bib_practices, 'bib_design': bib_design, 'bib_social': bib_social});
 });
 
 module.exports = router;
