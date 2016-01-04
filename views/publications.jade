@@ -11,7 +11,7 @@ block content
 			label(for='workshop')
 				input(type='checkbox' id='workshop' name='workshop' onclick='showPubs(true);')
 				| Lightly reviewed papers (workshop papers, posters)
-			hr
+		hr.separate
 		mixin display_publications(bib, true)
 		script.
 			var mapping = {'conference':['paper', 'note'], 'workshop':['wip', 'workshop', 'poster']};

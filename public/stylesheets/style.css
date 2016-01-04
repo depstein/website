@@ -96,10 +96,6 @@ aside > a > span {
 	line-height: 16px;
 }
 
-.project {
-	margin-bottom: 20px;
-}
-
 .project > .image > img {
 	max-width: 200px;
 }
@@ -155,13 +151,11 @@ cite > .notes {
 .show {
 	text-align: center;
 	font-family: 'Lato', sans-serif;
-	/*border-radius: 10px;
-	border: 2px solid #888;*/
 }
 
-.show > hr {
+hr.separate {
 	border-top: 1px solid #888;
-	margin: 5px 0px;
+	margin: 10px 0px;
 }
 
 .show > span {

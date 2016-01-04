@@ -25,8 +25,6 @@ var BIB_FILES = 'public/bibtex';
 var bib_data = fs.readdirSync(BIB_FILES).map(function(f) { return formatBib(f, bibtex(fs.readFileSync(BIB_FILES + '/' + f, 'utf-8'))); });
 bib_data.sort(compareBib);
 
-console.log(bib_data);
-
 var recentPublications = bib_data.filter(function(f) { return moment(f.date, "MMM YYYY").add(13, 'month').valueOf() >= moment().valueOf() && f.local && (f.type == 'paper' || f.type == 'note');});
 
 function formatBib(f, bib) {
