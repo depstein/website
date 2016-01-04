@@ -2,7 +2,7 @@ extends layout
 include mixins/display_publications
 
 block content
-	aside.col-sm-3.col-md-2.hidden-xs
+	aside.col-md-2.hidden-sm
 		img(src='images/profile.jpg' width='150px' alt='photo taken by Sean Munson').img-rounded.profile
 		h2 Contact
 		p Paul Allen Center, Room 605
@@ -25,7 +25,7 @@ block content
 		p
 			strong Walking: 
 			| #{fitbit} steps
-	main.col-sm-9.col-md-10.col-xs-12
+	main.col-md-10.col-sm-12
 		p 
 			| Hi! I'm a fourth year Ph.D student in 
 			a(href="//cs.washington.edu") Computer Science & Engineering 
