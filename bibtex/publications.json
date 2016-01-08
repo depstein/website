@@ -1,0 +1,95 @@
+{
+	"EPSTEIN_CHI_2016A" : {
+		"date": "May 2016",
+		"local": "pubs/depstein_chi16a.pdf",
+		"type": "paper",
+		"supplemental":"docs/chi16a_supplemental.zip",
+		"supplemental_name":"study materials"
+	},
+	"EPSTEIN_CHI_2016B" : {
+		"date": "May 2016",
+		"local": "pubs/depstein_chi16b.pdf",
+		"type": "paper",
+		"supplemental":"docs/chi16b_supplemental.zip",
+		"supplemental_name":"study materials"
+	},
+	"EPSTEIN_CHI_2016C" : {
+		"date": "May 2016",
+		"local": "pubs/depstein_chi16c.pdf",
+		"type": "note",
+		"supplemental":"docs/chi16c_supplemental.zip",
+		"supplemental_name":"survey materials"
+	},
+	"EPSTEIN_CSCW_2015" : {
+		"date": "March 2015",
+		"local": "pubs/depstein_cscw15.pdf",
+		"type": "paper"
+	},
+	"EPSTEIN_UBICOMP_2015" : {
+		"date": "September 2015",
+		"local": "pubs/depstein_ubi15.pdf",
+		"type": "paper",
+		"supplemental":"//github.com/depstein/lived-informatics",
+		"supplemental_name":"survey materials"
+	},
+	"EPSTEIN_DIS_2014" : {
+		"date": "June 2014",
+		"local": "pubs/depstein_dis14.pdf",
+		"type": "paper"
+	},
+	"CORDEIRO_CHI_2015" : {
+		"date": "April 2015",
+		"local": "pubs/fcordeiro_chi15.pdf",
+		"type": "note",
+		"notes": "Best Paper Nominee (Top 5%)"
+	},
+	"EPSTEIN_UBICOMP_2013" : {
+		"date": "September 2013",
+		"local": "pubs/depstein_ubi13.pdf",
+		"type": "paper"
+	},
+	"EPSTEIN_UBICOMP_2015_DS": {
+		"date": "September 2015",
+		"local": "pubs/depstein_ubi15_ds.pdf",
+		"type": "workshop",
+		"supplemental":"pubs/depstein_ubi15_ds_poster.pdf",
+		"supplemental_name":"poster"
+	},
+	"EPSTEIN_CHI_2015_WS" : {
+		"date": "April 2015",
+		"local": "pubs/depstein_chi15_work.pdf",
+		"type": "workshop",
+		"supplemental": "//medium.com/@nkkl/wearables-of-2025-beb53e48b66f#.1gmq9b593",
+		"supplemental_name":"blog post"
+	},
+	"EPSTEIN_UBICOMP_2014_WS" : {
+		"date": "September 2014",
+		"local" : "pubs/depstein_ubi14_work.pdf",
+		"type": "workshop"
+	},
+	"EPSTEIN_CHI_2014_WS" : {
+		"date": "April 2014",
+		"local": "pubs/depstein_chi14_work.pdf",
+		"type": "workshop"
+	},
+	"EPSTEIN_UBICOMP_2013_DS" : {
+		"date": "September 2013",
+		"local": "pubs/depstein_ubi13_ds.pdf",
+		"type": "workshop"
+	},
+	"EPSTEIN_CHI_2013_WS" : {
+		"date": "April 2013",
+		"local": "pubs/depstein_chi13_work.pdf",
+		"type": "workshop"
+	},
+	"EPSTEIN_DFMY_2012_WS": {
+		"date": "June 2012",
+		"local": "pubs/depstein_dfmy12.pdf",
+		"type": "workshop"
+	},
+	"EPSTEIN_DAC_2012_WIP": {
+		"date": "June 2012",
+		"local": "pubs/depstein_dac12_wip.pdf",
+		"type": "wip"
+	}
+}

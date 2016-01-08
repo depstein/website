@@ -20,9 +20,9 @@ var twitter_client = new twitter(twitter_credentials);
 var api_data = {};
 var api_update = null;
 
-var publications = JSON.parse(fs.readFileSync('data/publications.json', 'utf8'));
+var publications = JSON.parse(fs.readFileSync('bibtex/publications.json', 'utf8'));
 var BIB_FILES = 'bibtex';
-var bib_data = fs.readdirSync(BIB_FILES).map(function(f) { return formatBib(f, bibtex(fs.readFileSync(BIB_FILES + '/' + f, 'utf-8'))); });
+var bib_data = fs.readdirSync(BIB_FILES).map(function(f) { if(f.endsWith('.bib')){return formatBib(f, bibtex(fs.readFileSync(BIB_FILES + '/' + f, 'utf-8'))); } else {return null;} }).filter(Boolean);
 bib_data.sort(compareBib);
 
 var recentPublications = bib_data.filter(function(f) { return moment(f.date, "MMM YYYY").add(13, 'month').valueOf() >= moment().valueOf() && f.local && (f.type == 'paper' || f.type == 'note');});
