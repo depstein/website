@@ -10,6 +10,8 @@ var dom = require('xmldom-silent').DOMParser;
 var twitter = require('twitter');
 var Promise = require('promise');
 var bibtex = require('bibtex-parser');
+var Entities = require('html-entities').AllHtmlEntities;
+var entities = new Entities();
 require('string.prototype.endswith');
 
 var twitter_credentials = JSON.parse(fs.readFileSync('data/twitter_credentials.json', 'utf8'));
@@ -65,7 +67,7 @@ function parseAPICalls(results) {
 	var nodes = xpath.select('//*[@class="bookInfo"]', doc);
 	data.kindle = nodes[0].textContent.split("by")[0].trim();
 	data.fitbit = results[1].summary.steps;
-	data.twitter = results[2][0].text;
+	data.twitter = entities.decode(results[2][0].text);
 	api_data = data;
 	api_update = moment();
 	return data;
