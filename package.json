@@ -22,6 +22,7 @@
     "request-promise": "^1.0.2",
     "serve-favicon": "~2.3.0",
     "simple-oauth2": "^0.3.0",
+    "string.prototype.endswith": "^0.2.0",
     "twitter": "^1.2.5",
     "util": "^0.10.3",
     "xmldom": "^0.1.19",
