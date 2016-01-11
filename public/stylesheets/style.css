@@ -111,12 +111,12 @@ aside > a > span {
 }
 
 .project > .description > h2 {
-	margin: 0px 0px 5px 0px;
+	margin: 0px 0px 20px 0px;
 }
 
 .project > .description > h3 {
 	font-size: 1.2em;
-	margin: 5px 0px 0px 0px;
+	margin: 40px 0px 0px 0px;
 }
 
 svg.icon {
@@ -163,9 +163,16 @@ cite > .notes {
 	font-family: 'Lato', sans-serif;
 }
 
-hr.separate {
+hr {
 	border-top: 1px solid #888;
+}
+
+hr.publications {
 	margin: 10px 0px;
+}
+
+hr.projects {
+	margin: 50px 0px;
 }
 
 .show > span {
