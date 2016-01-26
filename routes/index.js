@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var fs = require('fs');
+var fs = require('fs-extra-promise');
 var util = require('util');
 var extend = require('node.extend');
 var moment = require('moment');
@@ -88,19 +88,20 @@ router.get('/', function(req, res, next) {
 				//write the new token to the credentials file, in hope this saves us in the future
 				fitbit_credentials.access_token = newToken.token.access_token;
 				fitbit_credentials.refresh_token = newToken.token.refresh_token;
-				fs.writeFileSync('data/fitbit_credentials.json', JSON.stringify(fitbit_credentials));
-				Promise.all(getPromises()).then(function(results) { //try again
-					res.render('index', extend(parseAPICalls(results), {'bib':recentPublications}));
-				}).catch(function(err) {
-					res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':recentPublications});
-				})
+				fs.writeFileAsync('data/fitbit_credentials.json', JSON.stringify(fitbit_credentials)).then(function() {
+					Promise.all(getPromises()).then(function(results) { //try again
+						res.render('index', extend(parseAPICalls(results), {'bib':recentPublications}));
+					}).catch(function(err) {
+						res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':recentPublications});
+					});
+				});
 			});
 		});
 	}
 });
 
 router.get('/cv*', function(req, res, next) {
-	fs.readFile("public/docs/cv.pdf", function (err,data) {
+	fs.readFileAsync("public/docs/cv.pdf").then(function (data,err) {
     	res.contentType("application/pdf");
     	res.send(data);
 	});
@@ -118,7 +119,7 @@ router.get('/projects', function(req, res, next) {
 });
 
 router.get('/bibtex/:bibfile.bib', function(req, res, next) {
-	fs.readFile("bibtex/" + req.params.bibfile + ".bib", function (err,data) {
+	fs.readFile("bibtex/" + req.params.bibfile + ".bib").then(function (data,err) {
 		res.contentType("text/plain");
 		if(!err) {
     		res.send(data);
