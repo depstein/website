@@ -75,7 +75,7 @@ function parseAPICalls(results) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	if(api_update != null && api_update.diff(moment(), 'hours') < 1) { //API data is recent enough
+	if(api_update != null && api_update.diff(moment(), 'hours') <= -1) { //API data is recent enough
 		res.render('index', extend(api_data, {'bib':recentPublications}));
 	} else { //retrieve new API data
 		console.log("Getting fresh API data...");
