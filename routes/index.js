@@ -82,9 +82,10 @@ router.get('/', function(req, res, next) {
 		Promise.all(getPromises()).then(function(results) {
 			res.render('index', extend(parseAPICalls(results), {'bib':recentPublications}));
 		}).catch(function(err) { //try refreshing the fitbit token to see if that helps...
+			console.log(err);
 			console.log('Refreshing fitbit token...');
 			fitbit_access_token.refresh().then(function saveToken(newToken) {
-				fitbit_access_token = newToken;
+				fitbit_access_token = newToken.token;
 				//write the new token to the credentials file, in hope this saves us in the future
 				fitbit_credentials.access_token = newToken.token.access_token;
 				fitbit_credentials.refresh_token = newToken.token.refresh_token;
