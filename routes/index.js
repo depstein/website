@@ -96,12 +96,13 @@ router.get('/', function(req, res, next) {
 						}).catch(function(err) {
 							res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':recentPublications});
 						});
+				});
 				}
 				else {
 					//Something went wrong, but let's not mess with the "good" credentials in the meantime.
 					res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':recentPublications});
 				}
-				});
+				
 			});
 		});
 	}
