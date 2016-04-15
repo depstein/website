@@ -85,16 +85,22 @@ router.get('/', function(req, res, next) {
 			console.log(err);
 			console.log('Refreshing fitbit token...');
 			fitbit_access_token.refresh().then(function saveToken(newToken) {
-				//write the new token to the credentials file, in hope this saves us in the future
-				fitbit_credentials.access_token = newToken.token.access_token;
-				fitbit_credentials.refresh_token = newToken.token.refresh_token;
-				fitbit_access_token = fitbit.accessToken.create({access_token: fitbit_credentials.access_token, refresh_token: fitbit_credentials.refresh_token, expires_in:3600});
-				fs.writeFileAsync('data/fitbit_credentials.json', JSON.stringify(fitbit_credentials)).then(function() {
-					Promise.all(getPromises()).then(function(results) { //try again
-						res.render('index', extend(parseAPICalls(results), {'bib':recentPublications}));
-					}).catch(function(err) {
-						res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':recentPublications});
-					});
+				if(newToken.token.access_token !== undefined) {
+					//write the new token to the credentials file, in hope this saves us in the future
+					fitbit_credentials.access_token = newToken.token.access_token;
+					fitbit_credentials.refresh_token = newToken.token.refresh_token;
+					fitbit_access_token = fitbit.accessToken.create({access_token: fitbit_credentials.access_token, refresh_token: fitbit_credentials.refresh_token, expires_in:3600});
+					fs.writeFileAsync('data/fitbit_credentials.json', JSON.stringify(fitbit_credentials)).then(function() {
+						Promise.all(getPromises()).then(function(results) { //try again
+							res.render('index', extend(parseAPICalls(results), {'bib':recentPublications}));
+						}).catch(function(err) {
+							res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':recentPublications});
+						});
+				}
+				else {
+					//Something went wrong, but let's not mess with the "good" credentials in the meantime.
+					res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':recentPublications});
+				}
 				});
 			});
 		});
