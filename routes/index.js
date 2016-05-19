@@ -127,7 +127,7 @@ router.get('/projects', function(req, res, next) {
 });
 
 router.get('/bibtex/:bibfile.bib', function(req, res, next) {
-	fs.readFile("bibtex/" + req.params.bibfile + ".bib").then(function (data,err) {
+	fs.readFileAsync(BIB_FILES + "/" + req.params.bibfile + ".bib", 'utf-8').then(function (data,err) {
 		res.contentType("text/plain");
 		if(!err) {
     		res.send(data);
