@@ -1,4 +1,16 @@
 {
+	"EPSTEIN_UBICOMP_2016" : {
+		"date": "September 2016",
+		"type": "paper"
+	},
+	"EPSTEIN_UBICOMP_2016_WS" : {
+		"date": "September 2016",
+		"type": "organizer"
+	},
+	"EPSTEIN_IEEE_PERVASIVE_2016" : {
+		"date": "July 2016",
+		"type": "journal"
+	},
 	"EPSTEIN_CHI_2016A" : {
 		"date": "May 2016",
 		"local": "pubs/depstein_chi16a.pdf",

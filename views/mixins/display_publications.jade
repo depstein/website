@@ -16,7 +16,7 @@ mixin display_publications(bib, displayYears)
 						| , 
 					else
 						| . 
-			if pub.type == 'paper' || pub.type == 'note' || pub.type == 'wip'
+			if pub.type == 'paper' || pub.type == 'note' || pub.type == 'wip' || pub.type == 'journal'
 				span.series #{pub.SERIES} 
 			else
 				span.series #{pub.SERIES} (#{pub.BOOKTITLE})

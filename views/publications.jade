@@ -5,6 +5,9 @@ block content
 	main.col-xs-12
 		.show
 			span Show: 
+			label(for='journal')
+				input(type='checkbox' id='journal' name='journal' onclick='showPubs(true);' checked)
+				| Journal articles
 			label(for='conference')
 				input(type='checkbox' id='conference' name='conference' onclick='showPubs(true);' checked)
 				| Conference papers
@@ -14,7 +17,7 @@ block content
 		hr.publications
 		mixin display_publications(bib, true)
 		script.
-			var mapping = {'conference':['paper', 'note'], 'workshop':['wip', 'workshop', 'poster']};
+			var mapping = {'journal':['journal'], 'conference':['paper', 'note'], 'workshop':['organizer', 'wip', 'workshop', 'poster']};
 			function showPubs(animate) {
 				var allChecked = [];
 				$('input:checkbox').each(function () {

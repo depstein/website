@@ -28,7 +28,7 @@ var BIB_FILES = 'bibtex';
 var bib_data = fs.readdirSync(BIB_FILES).map(function(f) { if(f.endsWith('.bib')){return formatBib(f, bibtex(fs.readFileSync(BIB_FILES + '/' + f, 'utf-8'))); } else {return null;} }).filter(Boolean);
 bib_data.sort(compareBib);
 
-var recentPublications = bib_data.filter(function(f) { return moment(f.date, "MMM YYYY").add(13, 'month').valueOf() >= moment().valueOf() && f.local && (f.type == 'paper' || f.type == 'note');});
+var recentPublications = bib_data.filter(function(f) { return moment(f.date, "MMM YYYY").add(13, 'month').valueOf() >= moment().valueOf() && f.local && (f.type == 'paper' || f.type == 'note' || f.type == 'journal');});
 
 function formatBib(f, bib) {
 	var name = Object.keys(bib)[0];
@@ -46,7 +46,7 @@ function compareBib(a, b) {
 	if(ma != mb) {
 		return ma > mb ? -1 : 1;
 	}
-	var typeSortOrder = ['paper', 'note', 'wip', 'workshop', 'poster'];
+	var typeSortOrder = ['paper', 'note', 'journal', 'organizer', 'wip', 'workshop', 'poster'];
 	var ta = typeSortOrder.indexOf(a.type);
 	var tb = typeSortOrder.indexOf(b.type)
 	if(ta != tb) {
@@ -121,7 +121,7 @@ router.get('/publications', function(req, res, next) {
 
 router.get('/projects', function(req, res, next) {
 	var bib_practices = bib_data.filter(function(b) { return ['CORDEIRO_CHI_2015', 'EPSTEIN_UBICOMP_2015', 'EPSTEIN_CHI_2016C'].indexOf(b.NAME) != -1; });
-	var bib_design = bib_data.filter(function(b) { return ['EPSTEIN_DIS_2014', 'EPSTEIN_CHI_2016A', 'EPSTEIN_CHI_2016B'].indexOf(b.NAME) != -1; });
+	var bib_design = bib_data.filter(function(b) { return ['EPSTEIN_DIS_2014', 'EPSTEIN_CHI_2016A', 'EPSTEIN_CHI_2016B', 'EPSTEIN_UBICOMP_2016'].indexOf(b.NAME) != -1; });
 	var bib_social = bib_data.filter(function(b) { return ['EPSTEIN_UBICOMP_2013', 'EPSTEIN_CSCW_2015', 'EPSTEIN_CHI_2016B'].indexOf(b.NAME) != -1; });
 	res.render('projects', {'bib_practices': bib_practices, 'bib_design': bib_design, 'bib_social': bib_social});
 });
