@@ -28,7 +28,7 @@ var BIB_FILES = 'bibtex';
 var bib_data = fs.readdirSync(BIB_FILES).map(function(f) { if(f.endsWith('.bib')){return formatBib(f, bibtex(fs.readFileSync(BIB_FILES + '/' + f, 'utf-8'))); } else {return null;} }).filter(Boolean);
 bib_data.sort(compareBib);
 
-var recentPublications = bib_data.filter(function(f) { return moment(f.date, "MMM YYYY").add(13, 'month').valueOf() >= moment().valueOf() && (f.type == 'paper' || f.type == 'note' || f.type == 'journal');});
+var selectedPublications = bib_data.filter(function(f) { return f.type == 'paper' || f.type == 'note' || f.type == 'journal';});
 
 function formatBib(f, bib) {
 	var name = Object.keys(bib)[0];
@@ -76,11 +76,11 @@ function parseAPICalls(results) {
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	if(api_update != null && api_update.isAfter(moment().subtract(1, 'hours'))) { //API data is recent enough
-		res.render('index', extend(api_data, {'bib':recentPublications}));
+		res.render('index', extend(api_data, {'bib':selectedPublications}));
 	} else { //retrieve new API data
 		console.log("Getting fresh API data...");
 		Promise.all(getPromises()).then(function(results) {
-			res.render('index', extend(parseAPICalls(results), {'bib':recentPublications}));
+			res.render('index', extend(parseAPICalls(results), {'bib':selectedPublications}));
 		}).catch(function(err) { //try refreshing the fitbit token to see if that helps...
 			console.log(err);
 			console.log('Refreshing fitbit token...');
@@ -92,15 +92,15 @@ router.get('/', function(req, res, next) {
 					fitbit_access_token = fitbit.accessToken.create({access_token: fitbit_credentials.access_token, refresh_token: fitbit_credentials.refresh_token, expires_in:3600});
 					fs.writeFileAsync('data/fitbit_credentials.json', JSON.stringify(fitbit_credentials)).then(function() {
 						Promise.all(getPromises()).then(function(results) { //try again
-							res.render('index', extend(parseAPICalls(results), {'bib':recentPublications}));
+							res.render('index', extend(parseAPICalls(results), {'bib':selectedPublications}));
 						}).catch(function(err) {
-							res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':recentPublications});
+							res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':selectedPublications});
 						});
 				});
 				}
 				else {
 					//Something went wrong, but let's not mess with the "good" credentials in the meantime.
-					res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':recentPublications});
+					res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':selectedPublications});
 				}
 				
 			});
@@ -115,8 +115,12 @@ router.get('/cv*', function(req, res, next) {
 	});
 })
 
+router.get('/publications/all', function(req, res, next) {
+	res.render('publications', {'bib': bib_data, 'conference':true, 'journal':true, 'workshop':true});
+});
+
 router.get('/publications', function(req, res, next) {
-	res.render('publications', {'bib': bib_data});
+	res.render('publications', {'bib': bib_data, 'conference':true, 'journal':true});
 });
 
 router.get('/projects', function(req, res, next) {

@@ -6,13 +6,22 @@ block content
 		.show
 			span Show: 
 			label(for='journal')
-				input(type='checkbox' id='journal' name='journal' onclick='showPubs(true);' checked)
+				if journal
+					input(type='checkbox' id='journal' name='journal' onclick='showPubs(true);' checked)
+				else
+					input(type='checkbox' id='journal' name='journal' onclick='showPubs(true);')
 				| Journal articles
 			label(for='conference')
-				input(type='checkbox' id='conference' name='conference' onclick='showPubs(true);' checked)
+				if conference
+					input(type='checkbox' id='conference' name='conference' onclick='showPubs(true);' checked)
+				else
+					input(type='checkbox' id='conference' name='conference' onclick='showPubs(true);')
 				| Conference papers
 			label(for='workshop')
-				input(type='checkbox' id='workshop' name='workshop' onclick='showPubs(true);')
+				if workshop
+					input(type='checkbox' id='workshop' name='workshop' onclick='showPubs(true);' checked)
+				else
+					input(type='checkbox' id='workshop' name='workshop' onclick='showPubs(true);')
 				| Lightly reviewed papers (workshop papers, posters)
 		hr.publications
 		mixin display_publications(bib, true)

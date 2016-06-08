@@ -14,8 +14,6 @@ mixin display_publications(bib, displayYears)
 						= author
 					if i < pub.AUTHOR.length -1
 						| , 
-					else
-						| . 
 			if pub.type == 'paper' || pub.type == 'note' || pub.type == 'wip' || pub.type == 'journal'
 				span.series #{pub.SERIES} 
 			else
