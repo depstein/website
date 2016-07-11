@@ -5,6 +5,7 @@
 	},
 	"EPSTEIN_UBICOMP_2016_WS" : {
 		"date": "September 2016",
+		"local" : "pubs/arapp_ubi16_work.pdf",
 		"type": "organizer"
 	},
 	"EPSTEIN_IEEE_PERVASIVE_2016" : {
