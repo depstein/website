@@ -115,7 +115,7 @@ router.get('/cv*', function(req, res, next) {
 	});
 })
 
-router.get('/publications/all', function(req, res, next) {
+router.get('/publications_all', function(req, res, next) {
 	res.render('publications', {'bib': bib_data, 'conference':true, 'journal':true, 'workshop':true});
 });
 
