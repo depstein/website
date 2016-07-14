@@ -1,6 +1,7 @@
 {
 	"EPSTEIN_UBICOMP_2016" : {
 		"date": "September 2016",
+		"local": "pubs/depstein_ubi16.pdf",
 		"type": "paper"
 	},
 	"EPSTEIN_UBICOMP_2016_WS" : {
