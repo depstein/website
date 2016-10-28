@@ -30,6 +30,11 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+// pretty your html
+if (app.get('env') === 'development') {
+  app.locals.pretty = true;
+}
+
 // error handlers
 
 // development error handler
