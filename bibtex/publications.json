@@ -1,4 +1,9 @@
 {
+	"EKCHOE_PERVASIVE_2017" : {
+		"date": "January 2017",
+		"local": "pubs/ekchoe_pervasive17.pdf",
+		"type": "journal"
+	},
 	"EPSTEIN_UBICOMP_2016" : {
 		"date": "September 2016",
 		"local": "pubs/depstein_ubi16.pdf",
@@ -8,10 +13,6 @@
 		"date": "September 2016",
 		"local" : "pubs/arapp_ubi16_work.pdf",
 		"type": "organizer"
-	},
-	"EPSTEIN_IEEE_PERVASIVE_2016" : {
-		"date": "July 2016",
-		"type": "journal"
 	},
 	"EPSTEIN_CHI_2016A" : {
 		"date": "May 2016",
