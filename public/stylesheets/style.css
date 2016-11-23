@@ -199,3 +199,17 @@ a:hover {
 a:active {
 	color: #6CB359;
 }
+
+.faded {
+	opacity: .5;
+}
+
+.spacing {
+	margin-bottom: 5px;
+}
+
+flag-icon { /*TODO: potentially archive later*/
+	margin-right: 2px;
+	border-style: solid;
+	border-width: 1px;
+}

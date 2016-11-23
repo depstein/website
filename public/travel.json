@@ -1,0 +1,51 @@
+{
+	"UBICOMP_2017" : {
+		"startDate": "September 11 2017",
+		"endDate": "September 15 2017",
+		"destination": "UbiComp 2017",
+		"flag": "hi",
+		"domestic": true
+	},
+	"CHI_2017" : {
+		"startDate": "May 6 2017",
+		"endDate": "May 11 2017",
+		"destination": "CHI 2017",
+		"flag": "co",
+		"domestic": true
+	},
+	"CSCW_2017" : {
+		"startDate": "February 27 2017",
+		"endDate": "March 1 2017",
+		"destination": "CSCW 2017",
+		"flag": "or",
+		"domestic": true
+	},
+	"WINTER_BREAK_2016" : {
+		"startDate": "December 15 2016",
+		"endDate": "December 18 2016",
+		"destination": "Vacation (Vancouver BC)",
+		"flag": "ca",
+		"domestic": false
+	},
+	"THANKSGIVING_2016" : {
+		"startDate": "November 22 2016",
+		"endDate": "November 27 2016",
+		"destination": "Vacation (Chicago)",
+		"flag": "il",
+		"domestic": true
+	},
+	"SF_FALL_2016" : {
+		"startDate": "October 11 2016",
+		"endDate": "October 14 2016",
+		"destination": "18F (San Francisco)",
+		"flag": "ca",
+		"domestic": true
+	},
+	"UBICOMP_2016" : {
+		"startDate": "September 7 2016",
+		"endDate": "September 20 2016",
+		"destination": "UbiComp 2016",
+		"flag": "de",
+		"domestic": false
+	}
+}

@@ -27,6 +27,9 @@ var publications = JSON.parse(fs.readFileSync('bibtex/publications.json', 'utf8'
 var BIB_FILES = 'bibtex';
 var bib_data = fs.readdirSync(BIB_FILES).map(function(f) { if(f.endsWith('.bib')){return formatBib(f, bibtex(fs.readFileSync(BIB_FILES + '/' + f, 'utf-8'))); } else {return null;} }).filter(Boolean);
 bib_data.sort(compareBib);
+var travel_data = JSON.parse(fs.readFileSync('public/travel.json', 'utf8'));
+travel_data = Object.keys(travel_data).map(function(f) {return extend(travel_data[f], {'days':formatTravelDate(travel_data[f])});}); //TODO: there's a function for this, but I forget what it is.
+travel_data.sort(compareTravel);
 
 var selectedPublications = bib_data.filter(function(f) { return f.type == 'paper' || f.type == 'note' || f.type == 'journal';});
 
@@ -55,6 +58,22 @@ function compareBib(a, b) {
 	return 0; //TODO: more detailed sorting when pubs were published at the same time at the same "priority" level
 }
 
+function compareTravel(a, b) {
+	var ma = moment(a.startDate, "MMM DD YYYY").valueOf();
+	var mb = moment(b.startDate, "MMM DD YYYY").valueOf();
+	return ma > mb ? -1 : 1;
+}
+
+function formatTravelDate(trip) {
+	var ma = moment(trip.startDate, "MMM DD YYYY");
+	var mb = moment(trip.endDate, "MMM DD YYYY");
+	if(ma.month() == mb.month()) {
+		return ma.format("MMMM D") + "-" + mb.format("D");
+	} else {
+		return ma.format("MMMM D") + "-" + mb.format("MMMM D");
+	}
+}
+
 function getPromises() {
 	return [request({uri: "http://kindle.amazon.com/profile/Daniel/4607804/reading"}),
 	fitbit.api('GET', util.format('/1/user/23PXR4/activities/date/%s.json', moment().subtract(1, 'days').format('YYYY-MM-DD')), {access_token: fitbit_access_token.token.access_token}),
@@ -75,12 +94,15 @@ function parseAPICalls(results) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+	var pastTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() < moment().valueOf();}).slice(0, 1);
+	var futureTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() >= moment().valueOf();}).reverse().slice(0, 3);
+	var travelDictionary = {'pastTravel':pastTravel, 'futureTravel':futureTravel};
 	if(api_update != null && api_update.isAfter(moment().subtract(1, 'hours'))) { //API data is recent enough
-		res.render('index', extend(api_data, {'bib':selectedPublications}));
+		res.render('index', extend(api_data, travelDictionary, {'bib':selectedPublications}));
 	} else { //retrieve new API data
 		console.log("Getting fresh API data...");
 		Promise.all(getPromises()).then(function(results) {
-			res.render('index', extend(parseAPICalls(results), {'bib':selectedPublications}));
+			res.render('index', extend(parseAPICalls(results), travelDictionary, {'bib':selectedPublications}));
 		}).catch(function(err) { //try refreshing the fitbit token to see if that helps...
 			console.log(err);
 			console.log('Refreshing fitbit token...');
@@ -92,15 +114,15 @@ router.get('/', function(req, res, next) {
 					fitbit_access_token = fitbit.accessToken.create({access_token: fitbit_credentials.access_token, refresh_token: fitbit_credentials.refresh_token, expires_in:3600});
 					fs.writeFileAsync('data/fitbit_credentials.json', JSON.stringify(fitbit_credentials)).then(function() {
 						Promise.all(getPromises()).then(function(results) { //try again
-							res.render('index', extend(parseAPICalls(results), {'bib':selectedPublications}));
+							res.render('index', extend(parseAPICalls(results), travelDictionary, {'bib':selectedPublications}));
 						}).catch(function(err) {
-							res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':selectedPublications});
+							res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', travelDictionary, 'bib':selectedPublications});
 						});
 				});
 				}
 				else {
 					//Something went wrong, but let's not mess with the "good" credentials in the meantime.
-					res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':selectedPublications});
+					res.render('index', extend(travelDictionary, {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':selectedPublications}));
 				}
 				
 			});
