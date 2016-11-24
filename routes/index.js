@@ -116,7 +116,7 @@ router.get('/', function(req, res, next) {
 						Promise.all(getPromises()).then(function(results) { //try again
 							res.render('index', extend(parseAPICalls(results), travelDictionary, {'bib':selectedPublications}));
 						}).catch(function(err) {
-							res.render('index', {kindle:'Nothing', fitbit:0, twitter:'Nothing', travelDictionary, 'bib':selectedPublications});
+							res.render('index', extend(travelDictionary, {kindle:'Nothing', fitbit:0, twitter:'Nothing', 'bib':selectedPublications}));
 						});
 				});
 				}
