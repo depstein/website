@@ -1,4 +1,12 @@
 {
+	"KARKAR_CHI_2017" : {
+		"date": "May 2017",
+		"type": "paper"
+	},
+	"EPSTEIN_CHI_2017" : {
+		"date": "May 2017",
+		"type": "paper"
+	},
 	"EKCHOE_PERVASIVE_2017" : {
 		"date": "January 2017",
 		"local": "pubs/ekchoe_pervasive17.pdf",
