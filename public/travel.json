@@ -13,6 +13,13 @@
 		"flag": "co",
 		"domestic": true
 	},
+	"SPRING_BREAK_2017" : {
+		"startDate": "March 11 2017",
+		"endDate": "March 25 2017",
+		"destination": "Vacation (Romania/Israel)",
+		"flag": "il",
+		"domestic": false
+	},
 	"CSCW_2017" : {
 		"startDate": "February 27 2017",
 		"endDate": "March 1 2017",
