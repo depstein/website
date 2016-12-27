@@ -125,6 +125,12 @@ svg.icon {
 	padding: 1px 2px;
 }
 
+img.instagram {
+	width: 60px;
+	height: 60px;
+	padding: 2px;
+}
+
 cite {
 	font-style: normal;
 	padding: 10px 0px;

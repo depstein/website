@@ -5,20 +5,23 @@ var util = require('util');
 var extend = require('node.extend');
 var moment = require('moment');
 var request = require('request-promise');
-var xpath = require('xpath');
-var dom = require('xmldom-silent').DOMParser;
 var twitter = require('twitter');
 var Promise = require('promise');
 var bibtex = require('bibtex-parser');
+var GitHubApi = require('github');
+var InstagramApi = require('instagram-api');
 var Entities = require('html-entities').AllHtmlEntities;
 var entities = new Entities();
 require('string.prototype.endswith');
 
 var twitter_credentials = JSON.parse(fs.readFileSync('data/twitter_credentials.json', 'utf8'));
+var instagram_credentials = JSON.parse(fs.readFileSync('data/instagram_credentials.json', 'utf8'));
+var instagram = new InstagramApi(instagram_credentials.access_token);
 var fitbit_credentials = JSON.parse(fs.readFileSync('data/fitbit_credentials.json', 'utf8'));
 var fitbit = require('simple-oauth2')({site: 'https://api.fitbit.com', tokenPath: '/oauth2/token', clientID:fitbit_credentials.clientID, clientSecret:fitbit_credentials.clientSecret});
 var fitbit_access_token = fitbit.accessToken.create({access_token: fitbit_credentials.access_token, refresh_token: fitbit_credentials.refresh_token, expires_in:3600});
 var twitter_client = new twitter(twitter_credentials);
+var github = new GitHubApi();
 
 var api_data = {};
 var api_update = null;
@@ -75,18 +78,40 @@ function formatTravelDate(trip) {
 }
 
 function getPromises() {
-	return [request({uri: "http://kindle.amazon.com/profile/Daniel/4607804/reading"}),
+	return [github.activity.getEventsForUser({'username':'depstein'}),
 	fitbit.api('GET', util.format('/1/user/23PXR4/activities/date/%s.json', moment().subtract(1, 'days').format('YYYY-MM-DD')), {access_token: fitbit_access_token.token.access_token}),
-	new Promise(function(fulfill, reject) {twitter_client.get('statuses/user_timeline', {screen_name:'daepstein', count:'1'}, function(error, tweets) {if(error) reject(error); else fulfill(tweets); }); })];
+	new Promise(function(fulfill, reject) {twitter_client.get('statuses/user_timeline', {screen_name:'daepstein', count:'1'}, function(error, tweets) {if(error) reject(error); else fulfill(tweets); }); }),
+	instagram.userSelfMedia()];
 }
 
 function parseAPICalls(results) {
 	var data = {};
-	var doc = new dom().parseFromString(results[0]);
-	var nodes = xpath.select('//*[@class="bookInfo"]', doc);
-	data.kindle = nodes[0].textContent.split("by")[0].trim();
+	//GitHub data
+	var commits = results[0].filter(function(f) {return f.type == 'PushEvent' && moment(f.created_at).valueOf() >= moment().subtract(1, 'weeks').valueOf()});
+	if(commits.length == 0) {
+		data.github = 'No recent commits';
+	} else {
+		var frequency = {};
+		var urls = {}
+		commits.forEach(function(el) {
+			frequency[el.repo.name] = frequency[el.repo.name] + 1 || 1;
+			urls[el.repo.name] = el.repo.url;
+		});
+		var mostFrequent = Object.keys(frequency).reduce(function(a, b){return frequency[a] > frequency[b] ? a : b;});
+		data.github = frequency[mostFrequent] + ' commits to ' + mostFrequent;
+		//TODO: this is a hack to avoid another page load. "html_url" at api.github.com/repos/... resolves to the correct url.
+		data.github_url = urls[mostFrequent].replace('api.github.com', 'github.com').replace('/repos/', '/');
+	}
+	//Fitbit data
 	data.fitbit = results[1].summary.steps;
+	data.fitbit_url = '//www.fitbit.com/user/23PXR4';
+	//Twitter data
 	data.twitter = entities.decode(results[2][0].text);
+	data.twitter_url = '//www.twitter.com/statuses/' + results[2][0].id_str;
+	//Instagram data
+	data.instagram_url = '//www.instagram.com/dae5y/';
+	data.instagram = results[3].data.slice(0, 6).map(function(f) {return {'link':f.link, 'source':f.images.thumbnail.url}});
+	//Metadata
 	api_data = data;
 	api_update = moment();
 	return data;
