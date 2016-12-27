@@ -18,7 +18,7 @@ var fitbit_credentials = JSON.parse(fs.readFileSync('data/fitbit_credentials.jso
 var fitbit = require('simple-oauth2')({site: 'https://api.fitbit.com', tokenPath: '/oauth2/token', clientID:fitbit_credentials.clientID, clientSecret:fitbit_credentials.clientSecret});
 var fitbit_access_token = fitbit.accessToken.create({access_token: fitbit_credentials.access_token, refresh_token: fitbit_credentials.refresh_token, expires_in:3600});
 var twitter_client = new twitter(twitter_credentials);
-var github = new GitHubApi();
+var github = new GitHubApi({Promise: Promise});
 
 var api_data = {};
 var api_update = null;
