@@ -9,14 +9,11 @@ var twitter = require('twitter');
 var Promise = require('promise');
 var bibtex = require('bibtex-parser');
 var GitHubApi = require('github');
-var InstagramApi = require('instagram-api');
 var Entities = require('html-entities').AllHtmlEntities;
 var entities = new Entities();
 require('string.prototype.endswith');
 
 var twitter_credentials = JSON.parse(fs.readFileSync('data/twitter_credentials.json', 'utf8'));
-var instagram_credentials = JSON.parse(fs.readFileSync('data/instagram_credentials.json', 'utf8'));
-var instagram = new InstagramApi(instagram_credentials.access_token);
 var fitbit_credentials = JSON.parse(fs.readFileSync('data/fitbit_credentials.json', 'utf8'));
 var fitbit = require('simple-oauth2')({site: 'https://api.fitbit.com', tokenPath: '/oauth2/token', clientID:fitbit_credentials.clientID, clientSecret:fitbit_credentials.clientSecret});
 var fitbit_access_token = fitbit.accessToken.create({access_token: fitbit_credentials.access_token, refresh_token: fitbit_credentials.refresh_token, expires_in:3600});
@@ -80,8 +77,7 @@ function formatTravelDate(trip) {
 function getPromises() {
 	return [github.activity.getEventsForUser({'username':'depstein'}),
 	fitbit.api('GET', util.format('/1/user/23PXR4/activities/date/%s.json', moment().subtract(1, 'days').format('YYYY-MM-DD')), {access_token: fitbit_access_token.token.access_token}),
-	new Promise(function(fulfill, reject) {twitter_client.get('statuses/user_timeline', {screen_name:'daepstein', count:'1'}, function(error, tweets) {if(error) reject(error); else fulfill(tweets); }); }),
-	instagram.userSelfMedia()];
+	new Promise(function(fulfill, reject) {twitter_client.get('statuses/user_timeline', {screen_name:'daepstein', count:'1'}, function(error, tweets) {if(error) reject(error); else fulfill(tweets); }); })];
 }
 
 function parseAPICalls(results) {
@@ -108,9 +104,6 @@ function parseAPICalls(results) {
 	//Twitter data
 	data.twitter = entities.decode(results[2][0].text);
 	data.twitter_url = '//www.twitter.com/statuses/' + results[2][0].id_str;
-	//Instagram data
-	data.instagram_url = '//www.instagram.com/dae5y/';
-	data.instagram = results[3].data.slice(0, 6).map(function(f) {return {'link':f.link, 'source':f.images.thumbnail.url}});
 	//Metadata
 	api_data = data;
 	api_update = moment();

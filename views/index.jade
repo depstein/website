@@ -28,13 +28,6 @@ block content
 			a(href="#{github_url}") Coding
 			| : 
 			| #{github}
-		p
-			a(href="#{instagram_url}") Instagramming
-			| :
-			br
-			each photo in instagram
-				a(href="#{photo.link}")
-					img(src="#{photo.source}").instagram
 		h2 Travel
 		each past in pastTravel
 			p.faded.spacing
