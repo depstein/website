@@ -146,8 +146,8 @@ router.get('/publications', function(req, res, next) {
 });
 
 router.get('/projects', function(req, res, next) {
-	var bib_practices = bib_data.filter(function(b) { return ['CORDEIRO_CHI_2015', 'EPSTEIN_UBICOMP_2015', 'EPSTEIN_CHI_2016C'].indexOf(b.NAME) != -1; });
-	var bib_design = bib_data.filter(function(b) { return ['EPSTEIN_DIS_2014', 'EPSTEIN_CHI_2016A', 'EPSTEIN_CHI_2016B', 'EPSTEIN_UBICOMP_2016'].indexOf(b.NAME) != -1; });
+	var bib_practices = bib_data.filter(function(b) { return ['CORDEIRO_CHI_2015', 'EPSTEIN_UBICOMP_2015', 'EPSTEIN_CHI_2016C', 'EPSTEIN_CHI_2017'].indexOf(b.NAME) != -1; });
+	var bib_design = bib_data.filter(function(b) { return ['EPSTEIN_DIS_2014', 'EPSTEIN_CHI_2016A', 'EPSTEIN_CHI_2016B', 'EPSTEIN_UBICOMP_2016', 'KARKAR_CHI_2017'].indexOf(b.NAME) != -1; });
 	var bib_social = bib_data.filter(function(b) { return ['EPSTEIN_UBICOMP_2013', 'EPSTEIN_CSCW_2015', 'EPSTEIN_CHI_2016B'].indexOf(b.NAME) != -1; });
 	res.render('projects', {'bib_practices': bib_practices, 'bib_design': bib_design, 'bib_social': bib_social});
 });
