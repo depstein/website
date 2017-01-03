@@ -134,11 +134,13 @@ router.get('/', function(req, res, next) {
 						Promise.all(getPromises()).then(function(results) { //try again
 							res.render('index', extend(parseAPICalls(results), travelDictionary, {'bib':selectedPublications}));
 						}).catch(function(err) {
+							console.log(err);
 							res.render('index', extend(travelDictionary, {github:'No recent commits', fitbit:0, twitter:'Nothing', github_url:'//github.com/depstein', fitbit_url:'//www.fitbit.com/user/23PXR4', twitter_url: '//twitter.com/daepstein', 'bib':selectedPublications}));
 						});
 				});
 				}
 				else {
+					console.log(newToken.token);
 					//Something went wrong, but let's not mess with the "good" credentials in the meantime.
 					res.render('index', extend(travelDictionary, {github:'No recent commits', fitbit:0, twitter:'Nothing', github_url:'//github.com/depstein', fitbit_url:'//www.fitbit.com/user/23PXR4', twitter_url: '//twitter.com/daepstein', 'bib':selectedPublications}));
 				}

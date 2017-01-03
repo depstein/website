@@ -5,7 +5,10 @@
 	},
 	"EPSTEIN_CHI_2017" : {
 		"date": "May 2017",
-		"type": "paper"
+		"local": "pubs/depstein_chi17.pdf",
+		"type": "paper",
+		"supplemental":"docs/chi17_supplemental.zip",
+		"supplemental_name":"study materials"
 	},
 	"EKCHOE_PERVASIVE_2017" : {
 		"date": "January 2017",
