@@ -37,8 +37,15 @@ function formatBib(f, bib) {
 	var name = Object.keys(bib)[0];
 	bib = extend(extend(bib[name], publications[name]), {'bib':BIB_FILES + '/' + f});
 	bib.AUTHOR = bib.AUTHOR.split(" and ").map(function(n) {return n.split(",").reverse().join(' ').replace(/ /g, "\xa0").trim()}); //reverse hack will work in all trivial cases, e.g. Epstein, Daniel A.
-	bib.BOOKTITLE = bib.BOOKTITLE.replace(/\\/g, "").replace(/#38;/g, "");
-	bib.SERIES = bib.SERIES.replace(/'/g, 20); // '15 -> 2015
+	if('BOOKTITLE' in bib) { //Most of my publications have a book title field (e.g., conference publications).
+		bib.BOOKTITLE = bib.BOOKTITLE.replace(/\\/g, "").replace(/#38;/g, "");
+	}
+	if('JOURNAL' in bib) { //A few have journals instead.
+		bib.JOURNAL = bib.JOURNAL.replace(/\\/g, "").replace(/#38;/g, "");
+	}
+	if('SERIES' in bib) {
+		bib.SERIES = bib.SERIES.replace(/'/g, 20); // '15 -> 2015
+	}
 	bib.NAME = name;
 	return bib;
 }
