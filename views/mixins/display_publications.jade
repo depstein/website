@@ -29,7 +29,8 @@ mixin display_publications(bib, displayYears)
 				|  &bull; 
 				a(href=pub.bib) BibTeX
 			if pub.supplemental
-				|  &bull; 
-				a(href=pub.supplemental target="_blank") #{pub.supplemental_name}
+				each url, name in pub.supplemental
+					|  &bull; 
+					a(href=url target="_blank") #{name}
 			if pub.notes
 				.notes #{pub.notes}

@@ -8,8 +8,7 @@
 		"date": "May 2017",
 		"local": "pubs/depstein_chi17.pdf",
 		"type": "paper",
-		"supplemental":"docs/chi17_supplemental.zip",
-		"supplemental_name":"study materials"
+		"supplemental": {"study materials": "docs/chi17_supplemental.zip","blog post (part 1)":"//medium.com/hci-design-at-uw/what-can-we-learn-from-period-tracking-23d98e544255", "blog post (part 2)":"https://medium.com/@nkkl/five-things-to-think-about-when-designing-a-period-tracking-app-9a79ac7cf446"}
 	},
 	"EKCHOE_PERVASIVE_2017" : {
 		"date": "January 2017",
@@ -30,22 +29,19 @@
 		"date": "May 2016",
 		"local": "pubs/depstein_chi16a.pdf",
 		"type": "paper",
-		"supplemental":"docs/chi16a_supplemental.zip",
-		"supplemental_name":"study materials"
+		"supplemental": {"study materials": "docs/chi16a_supplemental.zip"}
 	},
 	"EPSTEIN_CHI_2016B" : {
 		"date": "May 2016",
 		"local": "pubs/depstein_chi16b.pdf",
 		"type": "paper",
-		"supplemental":"docs/chi16b_supplemental.zip",
-		"supplemental_name":"study materials"
+		"supplemental": {"study materials": "docs/chi16b_supplemental.zip"}
 	},
 	"EPSTEIN_CHI_2016C" : {
 		"date": "May 2016",
 		"local": "pubs/depstein_chi16c.pdf",
 		"type": "note",
-		"supplemental":"docs/chi16c_supplemental.zip",
-		"supplemental_name":"survey materials"
+		"supplemental":{"survey materials": "docs/chi16c_supplemental.zip"}
 	},
 	"EPSTEIN_CSCW_2015" : {
 		"date": "March 2015",
@@ -56,8 +52,7 @@
 		"date": "September 2015",
 		"local": "pubs/depstein_ubi15.pdf",
 		"type": "paper",
-		"supplemental":"//github.com/depstein/lived-informatics",
-		"supplemental_name":"survey materials"
+		"supplemental": {"survey materials": "//github.com/depstein/lived-informatics"}
 	},
 	"EPSTEIN_DIS_2014" : {
 		"date": "June 2014",
@@ -79,15 +74,13 @@
 		"date": "September 2015",
 		"local": "pubs/depstein_ubi15_ds.pdf",
 		"type": "workshop",
-		"supplemental":"pubs/depstein_ubi15_ds_poster.pdf",
-		"supplemental_name":"poster"
+		"supplemental": {"poster": "pubs/depstein_ubi15_ds_poster.pdf"}
 	},
 	"EPSTEIN_CHI_2015_WS" : {
 		"date": "April 2015",
 		"local": "pubs/depstein_chi15_work.pdf",
 		"type": "workshop",
-		"supplemental": "//medium.com/@nkkl/wearables-of-2025-beb53e48b66f#.1gmq9b593",
-		"supplemental_name":"blog post"
+		"supplemental": {"blog post": "//medium.com/@nkkl/wearables-of-2025-beb53e48b66f#.1gmq9b593"}
 	},
 	"EPSTEIN_UBICOMP_2014_WS" : {
 		"date": "September 2014",
