@@ -1,14 +1,20 @@
 {
+	"EPSTEIN_CHI_2017_WSA" : {
+		"date": "May 2017",
+		"type": "workshop"
+	},
 	"KARKAR_CHI_2017" : {
 		"date": "May 2017",
 		"local": "pubs/rkarkar_chi17.pdf",
-		"type": "paper"
+		"type": "paper",
+		"notes": "Honorable Mention (Top 5%)"
 	},
 	"EPSTEIN_CHI_2017" : {
 		"date": "May 2017",
 		"local": "pubs/depstein_chi17.pdf",
 		"type": "paper",
-		"supplemental": {"study materials": "docs/chi17_supplemental.zip","blog post (part 1)":"//medium.com/hci-design-at-uw/what-can-we-learn-from-period-tracking-23d98e544255", "blog post (part 2)":"https://medium.com/@nkkl/five-things-to-think-about-when-designing-a-period-tracking-app-9a79ac7cf446"}
+		"supplemental": {"study materials": "docs/chi17_supplemental.zip","blog post (part 1)":"//medium.com/hci-design-at-uw/what-can-we-learn-from-period-tracking-23d98e544255", "blog post (part 2)":"https://medium.com/@nkkl/five-things-to-think-about-when-designing-a-period-tracking-app-9a79ac7cf446"},
+		"notes": "Best Paper (Top 1%)"
 	},
 	"EKCHOE_PERVASIVE_2017" : {
 		"date": "January 2017",
@@ -63,7 +69,7 @@
 		"date": "April 2015",
 		"local": "pubs/fcordeiro_chi15.pdf",
 		"type": "note",
-		"notes": "Best Paper Nominee (Top 5%)"
+		"notes": "Honorable Mention (Top 5%)"
 	},
 	"EPSTEIN_UBICOMP_2013" : {
 		"date": "September 2013",
