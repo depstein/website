@@ -24,7 +24,7 @@ block content
 					input(type='checkbox' id='workshop' name='workshop' onclick='showPubs(true);')
 				| Lightly reviewed papers (workshop papers, posters)
 		hr.publications
-		mixin display_publications(bib, true)
+		+display_publications(bib, true)
 		script.
 			var mapping = {'journal':['journal'], 'conference':['paper', 'note'], 'workshop':['organizer', 'wip', 'workshop', 'poster']};
 			function showPubs(animate) {

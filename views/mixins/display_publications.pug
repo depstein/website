@@ -2,9 +2,9 @@ mixin display_publications(bib, displayYears)
 	- var years = []
 	each pub in bib
 		if displayYears && years.indexOf(pub.YEAR) == -1
-			h2(class="#{pub.YEAR}")= pub.YEAR
+			h2(class=pub.YEAR)= pub.YEAR
 			- years.push(pub.YEAR)
-		cite(class="#{pub.type}")
+		cite(class=pub.type)
 			.title #{pub.TITLE}
 			.authors
 				each author, i in pub.AUTHOR

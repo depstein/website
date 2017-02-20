@@ -23,6 +23,7 @@
     "morgan": "~1.6.1",
     "node.extend": "^1.1.5",
     "promise": "^7.1.1",
+    "pug": "^2.0.0-beta11",
     "request-promise": "^1.0.2",
     "serve-favicon": "~2.3.0",
     "simple-oauth2": "^0.3.0",
