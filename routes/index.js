@@ -62,6 +62,17 @@ function compareBib(a, b) {
 	if(ta != tb) {
 		return ta > tb ? 1 : -1;
 	}
+	//There are non-breaking spaces in these strings. Be careful of that when copy-pasting.
+	var oa = a.AUTHOR.indexOf('Daniel A. Epstein');
+	var ob = b.AUTHOR.indexOf('Daniel A. Epstein');
+	if(oa != ob) {
+		return oa > ob ? 1 : -1;
+	}
+	var al = a.AUTHOR.length;
+	var bl = b.AUTHOR.length;
+	if(al != bl) {
+		return al > bl ? 1 : -1;
+	}
 	return 0; //TODO: more detailed sorting when pubs were published at the same time at the same "priority" level
 }
 

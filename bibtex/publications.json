@@ -1,4 +1,8 @@
 {
+	"EPSTEIN_CHI_2017_WSB" : {
+		"date": "May 2017",
+		"type": "workshop"
+	},
 	"EPSTEIN_CHI_2017_WSA" : {
 		"date": "May 2017",
 		"type": "workshop"
@@ -47,7 +51,7 @@
 		"date": "May 2016",
 		"local": "pubs/depstein_chi16c.pdf",
 		"type": "note",
-		"supplemental":{"survey materials": "docs/chi16c_supplemental.zip"}
+		"supplemental": {"survey materials": "docs/chi16c_supplemental.zip"}
 	},
 	"EPSTEIN_CSCW_2015" : {
 		"date": "March 2015",
