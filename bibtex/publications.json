@@ -1,10 +1,12 @@
 {
 	"EPSTEIN_CHI_2017_WSB" : {
 		"date": "May 2017",
+		"local": "pubs/depstein_chi17_work_b.pdf",
 		"type": "workshop"
 	},
 	"EPSTEIN_CHI_2017_WSA" : {
 		"date": "May 2017",
+		"local": "pubs/depstein_chi17_work_a.pdf",
 		"type": "workshop"
 	},
 	"KARKAR_CHI_2017" : {
