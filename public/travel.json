@@ -6,6 +6,13 @@
 		"flag": "hi",
 		"domestic": true
 	},
+	"JULY_4_2017": {
+		"startDate": "July 1 2017",
+		"endDate": "July 8 2017",
+		"destination": "Vacation (Galcier/Banff)",
+		"flag": "mt",
+		"domestic": true
+	},
 	"CHI_2017" : {
 		"startDate": "May 6 2017",
 		"endDate": "May 11 2017",
