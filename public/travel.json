@@ -1,4 +1,11 @@
 {
+  "VA_SUMMER_2017": {
+    "startDate": "September 20 2017",
+    "endDate": "September 25 2017",
+    "destination": "Vacation (Virginia)",
+    "flag": "va",
+    "domestic": true
+  },
 	"UBICOMP_2017" : {
 		"startDate": "September 11 2017",
 		"endDate": "September 15 2017",
@@ -6,6 +13,13 @@
 		"flag": "hi",
 		"domestic": true
 	},
+  "SF_SUMMER_2017": {
+    "startDate": "July 19 2017",
+    "endDate": "July 22 2017",
+    "destination": "Adobe/Fitbit (San Francisco)",
+    "flag": "ca",
+    "domestic": true
+  },
 	"JULY_4_2017": {
 		"startDate": "July 1 2017",
 		"endDate": "July 8 2017",
