@@ -206,6 +206,10 @@ a:active {
 	color: #6CB359;
 }
 
+a:visited {
+	color: #2a8f0e;
+}
+
 .faded {
 	opacity: .5;
 }

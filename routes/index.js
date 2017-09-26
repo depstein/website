@@ -130,8 +130,12 @@ function parseAPICalls(results) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	var pastTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() < moment().valueOf();}).slice(0, 1);
-	var futureTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() >= moment().valueOf();}).reverse().slice(0, 3);
+	var futureLimit = 10;
+	var futureTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() >= moment().valueOf();}).reverse().slice(0, futureLimit);
+	var pastAmount = Math.max(3 - futureTravel.length, 1);
+
+	var pastTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() < moment().valueOf();}).slice(0, pastAmount);
+	pastTravel.reverse();
 	var travelDictionary = {'pastTravel':pastTravel, 'futureTravel':futureTravel};
 	if(api_update != null && api_update.isAfter(moment().subtract(1, 'hours'))) { //API data is recent enough
 		res.render('index', extend(api_data, travelDictionary, {'bib':selectedPublications}));

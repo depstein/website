@@ -1,10 +1,12 @@
 {
 	"MCARAWAY_CSCW_2017_ONLINEFIRST" : {
 		"date": "November 2017",
+		"local": "pubs/mcaraway_cscw17.pdf",
 		"type": "journal"
 	},
 	"RAPP_UBICOMP_2017_WS" : {
 		"date": "September 2017",
+		"local": "pubs/arapp_ubi17_work.pdf",
 		"type": "organizer"
 	},
 	"EPSTEIN_CHI_2017_WSB" : {

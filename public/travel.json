@@ -1,4 +1,11 @@
 {
+	"THANKSGIVING_2017": {
+    "startDate": "November 21 2017",
+    "endDate": "November 26 2017",
+    "destination": "Vacation (Chicago)",
+    "flag": "il",
+    "domestic": true
+  },
   "VA_SUMMER_2017": {
     "startDate": "September 20 2017",
     "endDate": "September 25 2017",
