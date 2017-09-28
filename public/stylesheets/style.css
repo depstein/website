@@ -218,6 +218,11 @@ a:visited {
 	margin-bottom: 5px;
 }
 
+.emph {
+	font-family: 'Lato', sans-serif;
+	color: #A33643;
+}
+
 flag-icon { /*TODO: potentially archive later*/
 	margin-right: 2px;
 	border-style: solid;
