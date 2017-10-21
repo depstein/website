@@ -2,7 +2,7 @@ doctype html
 html
 	head
 		title= 'Daniel Epstein'
-		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Droid+Serif|Lato:400,400italic,300,700' type='text/css')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway' type='text/css')
 		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		script(src="/javascripts/jquery-2.1.4.min.js")
@@ -20,10 +20,10 @@ html
 	body
 		.container
 			.row
-				header.col-xs-12
-					.col-xs-6.name
+				header
+					.col-md-6.col-sm-12.name
 						h1 Daniel Epstein
-					nav.col-xs-6
+					nav.col-md-6.col-sm-12
 						a(href='/') Home
 						|  | 
 						a(href='/publications') Publications
@@ -31,7 +31,8 @@ html
 						a(href='/projects') Projects
 						|  | 
 						a(href='/cv' target='_blank') CV
-			hr
+			.row
+				hr
 			.row
 				block content
 			hr

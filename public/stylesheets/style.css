@@ -33,7 +33,7 @@ hr {
 
 body {
 	padding: 50px;
-	font-family: 'Droid Serif', serif;
+	font-family: 'Raleway', serif;
 	font-size: 150%;
 }
 
@@ -50,12 +50,21 @@ nav {
 	font-size: 1em;
 }
 
-@media (max-width: @screen-xs) {
-    body{font-size: 300%;}
-}
-
-@media (max-width: @screen-sm) {
-    body{font-size: 200%;}
+@media screen and (max-width : 800px)
+{
+	.name > h1 {
+		font-size: 400%;
+	}
+	nav {
+		text-align: left;
+		font-size: 200%;
+	}
+  main {
+  	font-size:200%;
+  }
+  footer {
+  	font-size:200%;
+  }
 }
 
 nav > a {
@@ -148,7 +157,7 @@ cite > a {
 }
 
 cite > .authors {
-	font-family: 'Droid Serif', serif;
+	font-family: 'Raleway', serif;
 	font-size: 0.9em;
 }
 
