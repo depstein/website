@@ -27,14 +27,30 @@
 .color-complement-4 { color: #51000A }
 */
 
+@font-face {
+	font-family: ChaparralPro;
+	font-style: normal;
+	src: url("../fonts/ChaparralPro-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: ChaparralPro;
+	font-style: italic;
+	src: url("../fonts/ChaparralPro-Italic.woff") format("woff");
+}
+
 hr {
 	border-top: 5px double #888;
 }
 
 body {
 	padding: 50px;
-	font-family: 'Raleway', serif;
-	font-size: 150%;
+	font-family: 'ChaparralPro', serif;
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 1.1em;
 }
 
 .container {
@@ -103,6 +119,7 @@ aside > h2 {
 
 aside > p {
 	margin: 2px;
+	font-size: 1.0em;
 }
 
 aside > a {
@@ -157,8 +174,8 @@ cite > a {
 }
 
 cite > .authors {
-	font-family: 'Raleway', serif;
-	font-size: 0.9em;
+	font-family: 'ChaparralPro', serif;
+	font-size: 1.1em;
 }
 
 cite > .title {
