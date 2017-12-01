@@ -85,7 +85,9 @@ function compareTravel(a, b) {
 function formatTravelDate(trip) {
 	var ma = moment(trip.startDate, "MMM DD YYYY");
 	var mb = moment(trip.endDate, "MMM DD YYYY");
-	if(ma.month() == mb.month()) {
+	if(ma.month() == mb.month() && ma.date() == mb.date()) {
+		return ma.format("MMMM D");
+	} else if(ma.month() == mb.month()) {
 		return ma.format("MMMM D") + "-" + mb.format("D");
 	} else {
 		return ma.format("MMMM D") + "-" + mb.format("MMMM D");
@@ -177,7 +179,28 @@ router.get('/cv*', function(req, res, next) {
     	res.contentType("application/pdf");
     	res.send(data);
 	});
-})
+});
+
+router.get('/research_statement*', function(req, res, next) {
+	fs.readFileAsync("public/docs/research_statement_web.pdf").then(function (data,err) {
+    	res.contentType("application/pdf");
+    	res.send(data);
+	});
+});
+
+router.get('/teaching_statement*', function(req, res, next) {
+	fs.readFileAsync("public/docs/teaching_statement_web.pdf").then(function (data,err) {
+    	res.contentType("application/pdf");
+    	res.send(data);
+	});
+});
+
+router.get('/diversity_statement*', function(req, res, next) {
+	fs.readFileAsync("public/docs/diversity_statement_web.pdf").then(function (data,err) {
+    	res.contentType("application/pdf");
+    	res.send(data);
+	});
+});
 
 router.get('/publications_all', function(req, res, next) {
 	res.render('publications', {'bib': bib_data, 'conference':true, 'journal':true, 'workshop':true});

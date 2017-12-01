@@ -1,4 +1,25 @@
 {
+  "FXPAL_PRACTICE_2018": {
+    "startDate": "January 11 2018",
+    "endDate": "January 11 2018",
+    "destination": "FXPAL",
+    "flag": "ca",
+    "domestic": true
+  },
+  "UCSC_PRACTICE_2018": {
+    "startDate": "January 10 2018",
+    "endDate": "January 10 2018",
+    "destination": "UC Santa Cruz",
+    "flag": "ca",
+    "domestic": true
+  },
+  "WINTER_2017": {
+    "startDate": "December 19 2017",
+    "endDate": "December 27 2017",
+    "destination": "Vacation (Utah/LA)",
+    "flag": "ut",
+    "domestic": true
+  },
 	"THANKSGIVING_2017": {
     "startDate": "November 21 2017",
     "endDate": "November 26 2017",
