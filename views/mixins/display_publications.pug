@@ -17,7 +17,7 @@ mixin display_publications(bib, displayYears)
 			if pub.type == 'paper' || pub.type == 'note' || pub.type == 'wip'
 				span.series #{pub.SERIES} 
 			else if pub.type == 'journal'
-				span.series #{pub.JOURNAL} #{pub.VOLUME}(#{pub.NUMBER})
+				span.series #{pub.JOURNAL} #{pub.VOLUME}, #{pub.NUMBER}
 			else
 				span.series #{pub.SERIES} (#{pub.BOOKTITLE})
 			if pub.local
