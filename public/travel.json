@@ -1,4 +1,11 @@
 {
+  "PENNSTATE_2018": {
+    "startDate": "January 22 2018",
+    "endDate": "January 24 2018",
+    "destination": "Penn State",
+    "flag": "pa",
+    "domestic": true
+  },
   "FXPAL_PRACTICE_2018": {
     "startDate": "January 11 2018",
     "endDate": "January 11 2018",
