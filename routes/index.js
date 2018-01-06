@@ -139,7 +139,9 @@ router.get('/', function(req, res, next) {
 	var pastTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() < moment().valueOf();}).slice(0, pastAmount);
 	pastTravel.reverse();
 	var travelDictionary = {'pastTravel':pastTravel, 'futureTravel':futureTravel};
-	if(api_update != null && api_update.isAfter(moment().subtract(1, 'hours'))) { //API data is recent enough
+	if(true) { //Jan 2018 change: render without API data. Revert later
+		res.render('index', extend(travelDictionary, {'bib':selectedPublications}));
+	} else if(api_update != null && api_update.isAfter(moment().subtract(1, 'hours'))) { //API data is recent enough
 		res.render('index', extend(api_data, travelDictionary, {'bib':selectedPublications}));
 	} else { //retrieve new API data
 		console.log("Getting fresh API data...");
