@@ -4,7 +4,11 @@
     "local": "pubs/jmeyer_chi18_work.pdf",
 		"type": "organizer"
 	},
-	"MCARAWAY_CSCW_2017_ONLINEFIRST" : {
+	"TANG_IMWUT_2018" : {
+		"date": "January 2018",
+		"type": "journal"
+	},
+	"CARAWAY_CSCW_2017_ONLINEFIRST" : {
 		"date": "November 2017",
 		"local": "pubs/mcaraway_cscw17.pdf",
 		"type": "journal"
