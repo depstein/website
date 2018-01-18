@@ -136,7 +136,8 @@ router.get('/', function(req, res, next) {
 	var futureTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() >= moment().valueOf();}).reverse().slice(0, futureLimit);
 	var pastAmount = Math.max(3 - futureTravel.length, 1);
 
-	var pastTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() < moment().valueOf();}).slice(0, pastAmount);
+	//Include all past travel from this calendar year
+	var pastTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() < moment().valueOf() && moment(f.endDate, "MMM DD YYYY").year() == moment().year();});
 	pastTravel.reverse();
 	var travelDictionary = {'pastTravel':pastTravel, 'futureTravel':futureTravel};
 	if(true) { //Jan 2018 change: render without API data. Revert later

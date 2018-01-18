@@ -1,4 +1,18 @@
 {
+  "CHI_2018" : {
+    "startDate": "April 21 2018",
+    "endDate": "April 26 2018",
+    "destination": "CHI 2018",
+    "flag": "ca",
+    "domestic": false
+  },
+  "UCHICAGO_2018": {
+    "startDate": "March 5 2018",
+    "endDate": "March 6 2018",
+    "destination": "UChicago",
+    "flag": "il",
+    "domestic": true
+  },
   "PENNSTATE_2018": {
     "startDate": "January 22 2018",
     "endDate": "January 24 2018",
