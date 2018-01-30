@@ -9,14 +9,21 @@
   "UCHICAGO_2018": {
     "startDate": "March 5 2018",
     "endDate": "March 6 2018",
-    "destination": "UChicago",
+    "destination": "University of Chicago",
     "flag": "il",
+    "domestic": true
+  },
+  "ROCHESTER_2018": {
+    "startDate": "February 11 2018",
+    "endDate": "February 13 2018",
+    "destination": "University of Rochester",
+    "flag": "ny",
     "domestic": true
   },
   "PENNSTATE_2018": {
     "startDate": "January 22 2018",
     "endDate": "January 24 2018",
-    "destination": "Penn State",
+    "destination": "Pennsylvania State University",
     "flag": "pa",
     "domestic": true
   },
@@ -30,7 +37,7 @@
   "UCSC_PRACTICE_2018": {
     "startDate": "January 10 2018",
     "endDate": "January 10 2018",
-    "destination": "UC Santa Cruz",
+    "destination": "University of California, Santa Cruz",
     "flag": "ca",
     "domestic": true
   },
