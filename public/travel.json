@@ -6,6 +6,13 @@
     "flag": "ca",
     "domestic": false
   },
+  "INDIANA_2018": {
+    "startDate": "March 8 2018",
+    "endDate": "March 10 2018",
+    "destination": "Indiana University, Bloomington",
+    "flag": "in",
+    "domestic": true
+  },
   "UCHICAGO_2018": {
     "startDate": "March 5 2018",
     "endDate": "March 6 2018",
