@@ -20,6 +20,13 @@
     "flag": "il",
     "domestic": true
   },
+  "UTAH_2018": {
+    "startDate": "February 27 2018",
+    "endDate": "March 1 2018",
+    "destination": "University of Utah",
+    "flag": "ut",
+    "domestic": true
+  },
   "ROCHESTER_2018": {
     "startDate": "February 11 2018",
     "endDate": "February 13 2018",
