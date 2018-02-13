@@ -6,6 +6,13 @@
     "flag": "ca",
     "domestic": false
   },
+  "UCI_2018": {
+    "startDate": "March 15 2018",
+    "endDate": "March 16 2018",
+    "destination": "University of California, Irvine",
+    "flag": "ca",
+    "domestic": true
+  },
   "INDIANA_2018": {
     "startDate": "March 8 2018",
     "endDate": "March 10 2018",
