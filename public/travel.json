@@ -6,6 +6,13 @@
     "flag": "ca",
     "domestic": false
   },
+  "UIUC_2018": {
+    "startDate": "April 9 2018",
+    "endDate": "April 11 2018",
+    "destination": "University of Illinois, Urbana-Champaign",
+    "flag": "il",
+    "domestic": true
+  },
   "UCI_2018": {
     "startDate": "March 15 2018",
     "endDate": "March 16 2018",
