@@ -1,4 +1,8 @@
 {
+	"SCHROEDER_DIS_2018" : {
+		"date": "June 2018",
+		"type": "paper"
+	},
 	"MEYER_CHI_2018_WS" : {
 		"date": "May 2018",
     "local": "pubs/jmeyer_chi18_work.pdf",
