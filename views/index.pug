@@ -4,7 +4,10 @@ include mixins/display_publications
 block content
   aside.col-md-2.hidden-sm.hidden-xs
     img(src='images/profile.jpg' width='150px' alt='photo of me, taken by Kristin Osborne').img-rounded.profile
-    h2 Contact
+    h2 Title &amp; Contact
+    p Assistant Professor
+    p Department of Informatics, UC Irvine
+    p Department of Computer Science (by courtesy)
     p Paul Allen Center, Room 605
     p depstein at cs dot washington dot edu
     a(href="//twitter.com/daepstein")
@@ -43,22 +46,16 @@ block content
         br
         | #{future.days}
   main.col-md-10.col-sm-12
-    p 
-      | Hi! I'm a Ph.D. candidate in 
-      a(href="//cs.washington.edu") Computer Science &amp; Engineering 
-      |  at the University of Washington. I'm coadvised by 
-      a(href="//homes.cs.washington.edu/~jfogarty/index.html") James Fogarty
-      |  and 
-      a(href="//www.smunson.com/") Sean Munson
-      | .
     p
-      | I study how and why people use 
+      | I study how personal 
       a(href="//www.personalinformatics.org/") tracking
-      |  technology today, create models and frameworks generalizing those findings, and implement and evaluate novel systems which resolve needs surfaced by the models and frameworks. I envision a world where a novice can be their own expert by identifying what they need to track to answer a question they have about their habit or their body, finding a tool that supports collecting data that can help answer that question, drawing accurate conclusions from the data collected, and receiving encouragement and advice from others along the way.
+      |  technology can acknowledge and account for the realities of everyday life. More people are tracking today than ever before, and as a result they bring more varied expertise and goals than many apps and devices are designed to accomodate. I therefore examine how the design of tracking technology can be improved, often prototyping and evaluating new design ideas.
     p
-      | When I'm not doing research, I try to spend time outside by hiking or running. I also collect turtle figurines, plushies, and pictures.
-    p
-      strong.emph I'm starting as an Assistant Professor in Informatics at UC Irvine in the Fall!
+      | I recently finished my Ph.D. in 
+      a(href="//cs.washington.edu") Computer Science &amp; Engineering
+      |  from the University of Washington. I'm starting as an Assistant Professor in 
+      a(href="//informatics.uci.edu/") Informatics
+      |  at UC Irvine in the Fall!
     p
       |  I'm no longer looking for a job. But if you would like to read my statements: 
       a(href="/research_statement", target='_blank') research
@@ -66,6 +63,8 @@ block content
       a(href="/teaching_statement", target='_blank') teaching
       |  | 
       a(href="/diversity_statement", target='_blank') diversity
+    p
+      | When I'm not doing research, I try to spend time outside by hiking or running. I also collect turtle figurines, plushies, and pictures.
     h2 Selected Publications
       a(href='/publications_all')  (all)
     +display_publications(bib, false)

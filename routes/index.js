@@ -31,7 +31,7 @@ var travel_data = JSON.parse(fs.readFileSync('public/travel.json', 'utf8'));
 travel_data = Object.keys(travel_data).map(function(f) {return extend(travel_data[f], {'days':formatTravelDate(travel_data[f])});}); //TODO: there's a function for this, but I forget what it is.
 travel_data.sort(compareTravel);
 
-var selectedPublications = bib_data.filter(function(f) { return f.type == 'paper' || f.type == 'note' || f.type == 'journal';});
+var selectedPublications = bib_data.filter(function(f) { return (f.type == 'paper' || f.type == 'note' || f.type == 'journal')});
 
 function formatBib(f, bib) {
 	var name = Object.keys(bib)[0];
@@ -134,10 +134,10 @@ function parseAPICalls(results) {
 router.get('/', function(req, res, next) {
 	var futureLimit = 10;
 	var futureTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() >= moment().subtract(1, 'days').valueOf();}).reverse().slice(0, futureLimit);
-	var pastAmount = Math.max(3 - futureTravel.length, 1);
+	var pastAmount = Math.max(7 - futureTravel.length, 1);
 
 	//Include all past travel from this calendar year
-	var pastTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() < moment().subtract(1, 'days').valueOf() && moment(f.endDate, "MMM DD YYYY").year() == moment().year();});
+	var pastTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() < moment().subtract(1, 'days').valueOf() && moment(f.endDate, "MMM DD YYYY").year() == moment().year();}).slice(0, pastAmount);
 	pastTravel.reverse();
 	var travelDictionary = {'pastTravel':pastTravel, 'futureTravel':futureTravel};
 	if(true) { //Jan 2018 change: render without API data. Revert later
@@ -215,11 +215,11 @@ router.get('/publications', function(req, res, next) {
 
 router.get('/robots.txt', function(req, res, next) {
 	res.contentType('text/plain');
-	res.send("User-agent: *\nDisallow: /pubs/yarn.pdf");
+	res.send("User-agent: *");
 });
 
 router.get('/projects', function(req, res, next) {
-	var bib_practices = bib_data.filter(function(b) { return ['CORDEIRO_CHI_2015', 'EPSTEIN_UBICOMP_2015', 'EPSTEIN_CHI_2016C', 'EPSTEIN_CHI_2017'].indexOf(b.NAME) != -1; });
+	var bib_practices = bib_data.filter(function(b) { return ['CORDEIRO_CHI_2015', 'EPSTEIN_UBICOMP_2015', 'EPSTEIN_CHI_2016C', 'EPSTEIN_CHI_2017', 'SCHROEDER_DIS_2018'].indexOf(b.NAME) != -1; });
 	var bib_design = bib_data.filter(function(b) { return ['EPSTEIN_DIS_2014', 'EPSTEIN_CHI_2016A', 'EPSTEIN_CHI_2016B', 'EPSTEIN_UBICOMP_2016', 'KARKAR_CHI_2017'].indexOf(b.NAME) != -1; });
 	var bib_social = bib_data.filter(function(b) { return ['EPSTEIN_UBICOMP_2013', 'EPSTEIN_CSCW_2015', 'EPSTEIN_CHI_2016B', 'CARAWAY_CSCW_2017_ONLINEFIRST'].indexOf(b.NAME) != -1; });
 	res.render('projects', {'bib_practices': bib_practices, 'bib_design': bib_design, 'bib_social': bib_social});

@@ -20,6 +20,13 @@
     "flag": "si",
     "domestic": false
   },
+  "ROADTRIP_2018" : {
+    "startDate": "June 29 2018",
+    "endDate": "July 8 2018",
+    "destination": "Vacation (Road Trip to Irvine)",
+    "flag": "ca",
+    "domestic": true
+  },
   "OLYMPICS_2018" : {
     "startDate": "June 9 2018",
     "endDate": "June 12 2018",
