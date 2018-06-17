@@ -4,24 +4,10 @@ var fs = require('fs-extra-promise');
 var util = require('util');
 var extend = require('node.extend');
 var moment = require('moment');
-var request = require('request-promise');
-var twitter = require('twitter');
-var Promise = require('promise');
 var bibtex = require('bibtex-parser');
-var GitHubApi = require('github');
 var Entities = require('html-entities').AllHtmlEntities;
 var entities = new Entities();
 require('string.prototype.endswith');
-
-var twitter_credentials = JSON.parse(fs.readFileSync('data/twitter_credentials.json', 'utf8'));
-var fitbit_credentials = JSON.parse(fs.readFileSync('data/fitbit_credentials.json', 'utf8'));
-var fitbit = require('simple-oauth2')({site: 'https://api.fitbit.com', tokenPath: '/oauth2/token', clientID:fitbit_credentials.clientID, clientSecret:fitbit_credentials.clientSecret});
-var fitbit_access_token = fitbit.accessToken.create({access_token: fitbit_credentials.access_token, refresh_token: fitbit_credentials.refresh_token, expires_in:3600});
-var twitter_client = new twitter(twitter_credentials);
-var github = new GitHubApi({Promise: Promise});
-
-var api_data = {};
-var api_update = null;
 
 var publications = JSON.parse(fs.readFileSync('bibtex/publications.json', 'utf8'));
 var BIB_FILES = 'bibtex';
@@ -94,42 +80,6 @@ function formatTravelDate(trip) {
 	}
 }
 
-function getPromises() {
-	return [github.activity.getEventsForUser({'username':'depstein'}),
-	fitbit.api('GET', util.format('/1/user/23PXR4/activities/date/%s.json', moment().subtract(1, 'days').format('YYYY-MM-DD')), {access_token: fitbit_access_token.token.access_token}),
-	new Promise(function(fulfill, reject) {twitter_client.get('statuses/user_timeline', {screen_name:'daepstein', count:'1'}, function(error, tweets) {if(error) reject(error); else fulfill(tweets); }); })];
-}
-
-function parseAPICalls(results) {
-	var data = {};
-	//GitHub data
-	var commits = results[0].filter(function(f) {return f.type == 'PushEvent' && moment(f.created_at).valueOf() >= moment().subtract(1, 'weeks').valueOf()});
-	if(commits.length == 0) {
-		data.github = 'No recent commits';
-	} else {
-		var frequency = {};
-		var urls = {}
-		commits.forEach(function(el) {
-			frequency[el.repo.name] = frequency[el.repo.name] + 1 || 1;
-			urls[el.repo.name] = el.repo.url;
-		});
-		var mostFrequent = Object.keys(frequency).reduce(function(a, b){return frequency[a] > frequency[b] ? a : b;});
-		data.github = frequency[mostFrequent] + ' commits to ' + mostFrequent;
-		//TODO: this is a hack to avoid another page load. "html_url" at api.github.com/repos/... resolves to the correct url.
-		data.github_url = urls[mostFrequent].replace('api.github.com', 'github.com').replace('/repos/', '/');
-	}
-	//Fitbit data
-	data.fitbit = results[1].summary.steps;
-	data.fitbit_url = '//www.fitbit.com/user/23PXR4';
-	//Twitter data
-	data.twitter = entities.decode(results[2][0].text);
-	data.twitter_url = '//www.twitter.com/statuses/' + results[2][0].id_str;
-	//Metadata
-	api_data = data;
-	api_update = moment();
-	return data;
-}
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	var futureLimit = 10;
@@ -140,41 +90,7 @@ router.get('/', function(req, res, next) {
 	var pastTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() < moment().subtract(1, 'days').valueOf() && moment(f.endDate, "MMM DD YYYY").year() == moment().year();}).slice(0, pastAmount);
 	pastTravel.reverse();
 	var travelDictionary = {'pastTravel':pastTravel, 'futureTravel':futureTravel};
-	if(true) { //Jan 2018 change: render without API data. Revert later
-		res.render('index', extend(travelDictionary, {'bib':selectedPublications}));
-	} else if(api_update != null && api_update.isAfter(moment().subtract(1, 'hours'))) { //API data is recent enough
-		res.render('index', extend(api_data, travelDictionary, {'bib':selectedPublications}));
-	} else { //retrieve new API data
-		console.log("Getting fresh API data...");
-		Promise.all(getPromises()).then(function(results) {
-			res.render('index', extend(parseAPICalls(results), travelDictionary, {'bib':selectedPublications}));
-		}).catch(function(err) { //try refreshing the fitbit token to see if that helps...
-			console.log(err);
-			console.log('Refreshing fitbit token...');
-			fitbit_access_token.refresh().then(function saveToken(newToken) {
-				if(newToken.token.access_token !== undefined) {
-					//write the new token to the credentials file, in hope this saves us in the future
-					fitbit_credentials.access_token = newToken.token.access_token;
-					fitbit_credentials.refresh_token = newToken.token.refresh_token;
-					fitbit_access_token = fitbit.accessToken.create({access_token: fitbit_credentials.access_token, refresh_token: fitbit_credentials.refresh_token, expires_in:3600});
-					fs.writeFileAsync('data/fitbit_credentials.json', JSON.stringify(fitbit_credentials)).then(function() {
-						Promise.all(getPromises()).then(function(results) { //try again
-							res.render('index', extend(parseAPICalls(results), travelDictionary, {'bib':selectedPublications}));
-						}).catch(function(err) {
-							console.log(err);
-							res.render('index', extend(travelDictionary, {github:'No recent commits', fitbit:0, twitter:'Nothing', github_url:'//github.com/depstein', fitbit_url:'//www.fitbit.com/user/23PXR4', twitter_url: '//twitter.com/daepstein', 'bib':selectedPublications}));
-						});
-				});
-				}
-				else {
-					console.log(newToken.token);
-					//Something went wrong, but let's not mess with the "good" credentials in the meantime.
-					res.render('index', extend(travelDictionary, {github:'No recent commits', fitbit:0, twitter:'Nothing', github_url:'//github.com/depstein', fitbit_url:'//www.fitbit.com/user/23PXR4', twitter_url: '//twitter.com/daepstein', 'bib':selectedPublications}));
-				}
-				
-			});
-		});
-	}
+	res.render('index', extend(travelDictionary, {'bib':selectedPublications}));
 });
 
 router.get('/cv*', function(req, res, next) {
