@@ -2,211 +2,151 @@
   "CHI_2019_PC" : {
     "startDate": "December 7 2018",
     "endDate": "December 8 2018",
-    "destination": "CHI 2019 Virtual PC",
-    "flag": "??",
-    "domestic": false
+    "destination": "CHI 2019 Virtual PC"
   },
   "CSCW_2018" : {
     "startDate": "November 3 2018",
     "endDate": "November 7 2018",
-    "destination": "CSCW 2018",
-    "flag": "ny",
-    "domestic": true
+    "destination": "CSCW 2018"
   },
   "UBICOMP_2018" : {
     "startDate": "October 8 2018",
     "endDate": "October 12 2018",
-    "destination": "UbiComp 2018",
-    "flag": "si",
-    "domestic": false
+    "destination": "UbiComp 2018"
   },
   "ROADTRIP_2018" : {
     "startDate": "June 29 2018",
     "endDate": "July 8 2018",
-    "destination": "Vacation (Road Trip to Irvine)",
-    "flag": "ca",
-    "domestic": true
+    "destination": "Vacation (Road Trip to Irvine)"
   },
   "OLYMPICS_2018" : {
     "startDate": "June 9 2018",
     "endDate": "June 12 2018",
-    "destination": "Vacation (Olympic Peninsula)",
-    "flag": "wa",
-    "domestic": true
+    "destination": "Vacation (Olympic Peninsula)"
   },
   "DISSERTATION_DEFENSE_2018" : {
     "startDate": "June 7 2018",
     "endDate": "June 7 2018",
-    "destination": "Dissertation Defense!",
-    "flag": "wa",
-    "domestic": true
+    "destination": "Dissertation Defense!"
   },
   "CHI_2018" : {
     "startDate": "April 21 2018",
     "endDate": "April 26 2018",
-    "destination": "CHI 2018",
-    "flag": "ca",
-    "domestic": false
+    "destination": "CHI 2018"
   },
   "UIUC_2018": {
     "startDate": "April 9 2018",
     "endDate": "April 11 2018",
-    "destination": "University of Illinois, Urbana-Champaign",
-    "flag": "il",
-    "domestic": true
+    "destination": "University of Illinois, Urbana-Champaign"
   },
   "UMN_2018": {
     "startDate": "March 29 2018",
     "endDate": "March 31 2018",
-    "destination": "University of Minnesota, Twin Cities",
-    "flag": "mn",
-    "domestic": true
+    "destination": "University of Minnesota, Twin Cities"
   },
   "UCI_2018": {
     "startDate": "March 15 2018",
     "endDate": "March 16 2018",
-    "destination": "University of California, Irvine",
-    "flag": "ca",
-    "domestic": true
+    "destination": "University of California, Irvine"
   },
   "INDIANA_2018": {
     "startDate": "March 8 2018",
     "endDate": "March 10 2018",
-    "destination": "Indiana University, Bloomington",
-    "flag": "in",
-    "domestic": true
+    "destination": "Indiana University, Bloomington"
   },
   "UCHICAGO_2018": {
     "startDate": "March 5 2018",
     "endDate": "March 6 2018",
-    "destination": "University of Chicago",
-    "flag": "il",
-    "domestic": true
+    "destination": "University of Chicago"
   },
   "UTAH_2018": {
     "startDate": "February 27 2018",
     "endDate": "March 1 2018",
-    "destination": "University of Utah",
-    "flag": "ut",
-    "domestic": true
+    "destination": "University of Utah"
   },
   "ROCHESTER_2018": {
     "startDate": "February 11 2018",
     "endDate": "February 13 2018",
-    "destination": "University of Rochester",
-    "flag": "ny",
-    "domestic": true
+    "destination": "University of Rochester"
   },
   "PENNSTATE_2018": {
     "startDate": "January 22 2018",
     "endDate": "January 24 2018",
-    "destination": "Pennsylvania State University",
-    "flag": "pa",
-    "domestic": true
+    "destination": "Pennsylvania State University"
   },
   "FXPAL_PRACTICE_2018": {
     "startDate": "January 11 2018",
     "endDate": "January 11 2018",
-    "destination": "FXPAL",
-    "flag": "ca",
-    "domestic": true
+    "destination": "FXPAL"
   },
   "UCSC_PRACTICE_2018": {
     "startDate": "January 10 2018",
     "endDate": "January 10 2018",
-    "destination": "University of California, Santa Cruz",
-    "flag": "ca",
-    "domestic": true
+    "destination": "University of California, Santa Cruz"
   },
   "WINTER_2017": {
     "startDate": "December 19 2017",
     "endDate": "December 27 2017",
-    "destination": "Vacation (Utah/LA)",
-    "flag": "ut",
-    "domestic": true
+    "destination": "Vacation (Utah/LA)"
   },
 	"THANKSGIVING_2017": {
     "startDate": "November 21 2017",
     "endDate": "November 26 2017",
-    "destination": "Vacation (Chicago)",
-    "flag": "il",
-    "domestic": true
+    "destination": "Vacation (Chicago)"
   },
   "VA_SUMMER_2017": {
     "startDate": "September 20 2017",
     "endDate": "September 25 2017",
-    "destination": "Vacation (Virginia)",
-    "flag": "va",
-    "domestic": true
+    "destination": "Vacation (Virginia)"
   },
 	"UBICOMP_2017" : {
 		"startDate": "September 11 2017",
 		"endDate": "September 15 2017",
-		"destination": "UbiComp 2017",
-		"flag": "hi",
-		"domestic": true
+		"destination": "UbiComp 2017"
 	},
   "SF_SUMMER_2017": {
     "startDate": "July 19 2017",
     "endDate": "July 22 2017",
-    "destination": "Adobe/Fitbit (San Francisco)",
-    "flag": "ca",
-    "domestic": true
+    "destination": "Adobe/Fitbit (San Francisco)"
   },
 	"JULY_4_2017": {
 		"startDate": "July 1 2017",
 		"endDate": "July 8 2017",
-		"destination": "Vacation (Galcier/Banff)",
-		"flag": "mt",
-		"domestic": true
+		"destination": "Vacation (Galcier/Banff)"
 	},
 	"CHI_2017" : {
 		"startDate": "May 6 2017",
 		"endDate": "May 11 2017",
-		"destination": "CHI 2017",
-		"flag": "co",
-		"domestic": true
+		"destination": "CHI 2017"
 	},
 	"SPRING_BREAK_2017" : {
 		"startDate": "March 11 2017",
 		"endDate": "March 25 2017",
-		"destination": "Vacation (Romania/Israel)",
-		"flag": "il",
-		"domestic": false
+		"destination": "Vacation (Romania/Israel)"
 	},
 	"CSCW_2017" : {
 		"startDate": "February 27 2017",
 		"endDate": "March 1 2017",
-		"destination": "CSCW 2017",
-		"flag": "or",
-		"domestic": true
+		"destination": "CSCW 2017"
 	},
 	"WINTER_BREAK_2016" : {
 		"startDate": "December 15 2016",
 		"endDate": "December 18 2016",
-		"destination": "SFU/Vacation (Vancouver)",
-		"flag": "ca",
-		"domestic": false
+		"destination": "SFU/Vacation (Vancouver)"
 	},
 	"THANKSGIVING_2016" : {
 		"startDate": "November 22 2016",
 		"endDate": "November 27 2016",
-		"destination": "Vacation (Chicago)",
-		"flag": "il",
-		"domestic": true
+		"destination": "Vacation (Chicago)"
 	},
 	"SF_FALL_2016" : {
 		"startDate": "October 11 2016",
 		"endDate": "October 14 2016",
-		"destination": "18F (San Francisco)",
-		"flag": "ca",
-		"domestic": true
+		"destination": "18F (San Francisco)"
 	},
 	"UBICOMP_2016" : {
 		"startDate": "September 7 2016",
 		"endDate": "September 20 2016",
-		"destination": "UbiComp 2016",
-		"flag": "de",
-		"domestic": false
+		"destination": "UbiComp 2016"
 	}
 }

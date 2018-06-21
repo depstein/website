@@ -42,7 +42,7 @@ function compareBib(a, b) {
 	if(ma != mb) {
 		return ma > mb ? -1 : 1;
 	}
-	var typeSortOrder = ['paper', 'note', 'journal', 'organizer', 'wip', 'workshop', 'poster'];
+	var typeSortOrder = ['paper', 'note', 'journal', 'organizer', 'wip', 'workshop', 'poster', 'dissertation'];
 	var ta = typeSortOrder.indexOf(a.type);
 	var tb = typeSortOrder.indexOf(b.type)
 	if(ta != tb) {
