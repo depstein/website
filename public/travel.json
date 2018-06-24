@@ -7,22 +7,32 @@
   "CSCW_2018" : {
     "startDate": "November 3 2018",
     "endDate": "November 7 2018",
-    "destination": "CSCW 2018"
+    "destination": "CSCW 2018",
+    "location": "Jersey City, NJ"
   },
   "UBICOMP_2018" : {
     "startDate": "October 8 2018",
     "endDate": "October 12 2018",
-    "destination": "UbiComp 2018"
+    "destination": "UbiComp 2018",
+    "location": "Singapore"
+  },
+  "CRA_TEACHING_WORKSHOP_2018" : {
+    "startDate": "August 5 2018",
+    "endDate": "August 8 2018",
+    "destination": "New Computing Faculty Workshop",
+    "location": "San Diego, CA"
   },
   "ROADTRIP_2018" : {
     "startDate": "June 29 2018",
     "endDate": "July 8 2018",
-    "destination": "Vacation (Road Trip to Irvine)"
+    "destination": "Vacation",
+    "location": "Road Trip"
   },
   "OLYMPICS_2018" : {
     "startDate": "June 9 2018",
     "endDate": "June 12 2018",
-    "destination": "Vacation (Olympic Peninsula)"
+    "destination": "Vacation",
+    "location": "Olympic Peninsula"
   },
   "DISSERTATION_DEFENSE_2018" : {
     "startDate": "June 7 2018",

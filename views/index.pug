@@ -8,8 +8,9 @@ block content
     p Assistant Professor
     p Department of Informatics, UC Irvine
     p Department of Computer Science (by courtesy)
-    p Paul Allen Center, Room 605
+    //p Paul Allen Center, Room 605
     p depstein at cs dot washington dot edu
+    p (Irvine email TBA)
     a(href="//twitter.com/daepstein")
       svg(viewBox="0 0 16 16").icon
         title Twitter icon
@@ -24,11 +25,17 @@ block content
     each past in pastTravel
       p.faded.spacing
         strong #{past.destination}
+        if past.location
+          br
+          | #{past.location}
         br
         | #{past.days}
     each future in futureTravel
       p.spacing
         strong #{future.destination}
+        if future.location
+          br
+          | #{future.location}
         br
         | #{future.days}
   main.col-md-10.col-sm-12
