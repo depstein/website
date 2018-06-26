@@ -5,11 +5,7 @@ html
 		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:300,400,700' type='text/css')
 		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
-		script(src="/javascripts/jquery-2.1.4.min.js")
 		script(src="/javascripts/bootstrap.min.js")
-		script(src="/javascripts/moment.min.js")
-		//script(src="/bower_components/webcomponentsjs/webcomponents.min.js")
-		//link(rel="import", href="/bower_components/flag-icon/flag-icon.html")
 		script.
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -35,8 +31,11 @@ html
 				hr
 			.row
 				block content
-			hr
+			.row
+				hr
 			.row
 				footer.col-xs-12
+					| Copyright &copy; 
 					script.
-						$('footer').html("Copyright © " + moment().format("YYYY") + " by Daniel Epstein.");
+						document.write(new Date().getFullYear());
+					|  by Daniel Epstein.
