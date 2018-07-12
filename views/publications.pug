@@ -23,10 +23,16 @@ block content
 				else
 					input(type='checkbox' id='workshop' name='workshop' onclick='showPubs(true);')
 				| Lightly reviewed papers (workshop papers, posters)
+			label(for='book')
+				if book
+					input(type='checkbox' id='book' name='book' onclick='showPubs(true);' checked)
+				else
+					input(type='checkbox' id='book' name='book' onclick='showPubs(true);')
+				| Books and book chapters
 		hr.publications
 		+display_publications(bib, true)
 		script.
-			var mapping = {'journal':['journal'], 'conference':['paper', 'note'], 'workshop':['organizer', 'wip', 'workshop', 'poster']};
+			var mapping = {'journal':['journal'], 'conference':['paper', 'note'], 'workshop':['organizer', 'wip', 'workshop', 'poster'], 'book':['dissertation']};
 			function showPubs(animate) {
 				var allChecked = [];
 				$('input:checkbox').each(function () {

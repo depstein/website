@@ -18,6 +18,8 @@ mixin display_publications(bib, displayYears)
 				span.series #{pub.SERIES} 
 			else if pub.type == 'journal'
 				span.series #{pub.JOURNAL} #{pub.VOLUME}, #{pub.NUMBER}
+			else if pub.type == 'dissertation'
+				span.series #{pub.SERIES}, #{pub.DEPARTMENT}, #{pub.SCHOOL}
 			else
 				span.series #{pub.SERIES} (#{pub.BOOKTITLE})
 			if pub.local

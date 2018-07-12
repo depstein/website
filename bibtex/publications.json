@@ -1,4 +1,9 @@
 {
+	"EPSTEIN_DISSERTATION" : {
+		"date": "August 2018",
+		"local": "pubs/depstein_dissertation.pdf",
+		"type": "dissertation"
+	},
 	"SCHROEDER_DIS_2018" : {
 		"date": "June 2018",
 		"local": "pubs/jschroeder_dis18.pdf",
