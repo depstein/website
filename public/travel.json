@@ -10,11 +10,11 @@
     "destination": "CSCW 2018",
     "location": "Jersey City, NJ"
   },
-  "UBICOMP_2018" : {
-    "startDate": "October 8 2018",
-    "endDate": "October 12 2018",
-    "destination": "UbiComp 2018",
-    "location": "Singapore"
+  "PARENTS_VISIT_2018" : {
+    "startDate": "September 6 2018",
+    "endDate": "September 11 2018",
+    "destination": "Visiting Family",
+    "location": "Fairfax, VA"
   },
   "CRA_TEACHING_WORKSHOP_2018" : {
     "startDate": "August 5 2018",
@@ -31,7 +31,7 @@
   "OLYMPICS_2018" : {
     "startDate": "June 9 2018",
     "endDate": "June 12 2018",
-    "destination": "Vacation",
+    "destination": "Family Trip",
     "location": "Olympic Peninsula"
   },
   "DISSERTATION_DEFENSE_2018" : {

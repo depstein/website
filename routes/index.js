@@ -152,4 +152,8 @@ router.get('/bibtex/:bibfile.bib', function(req, res, next) {
 	});
 });
 
+router.get('/133', function(req, res, next) {
+	res.redirect(302, 'http://ics133-fa18.depstein.net');
+});
+
 module.exports = router;
