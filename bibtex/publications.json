@@ -1,4 +1,9 @@
 {
+	"EPSTEIN_CSCW2018_WS" : {
+		"date": "October 2018",
+		"type": "workshop",
+		"local": "pubs/depstein_cscw18_work.pdf"
+	},
 	"EPSTEIN_DISSERTATION" : {
 		"date": "August 2018",
 		"local": "pubs/depstein_dissertation.pdf",
@@ -23,7 +28,8 @@
 	"CARAWAY_CSCW_2017_ONLINEFIRST" : {
 		"date": "November 2017",
 		"local": "pubs/mcaraway_cscw17.pdf",
-		"type": "journal"
+		"type": "journal",
+		"supplemental": {"blog post": "//medium.com/@daepstein/friends-dont-need-receipts-the-joys-and-risks-of-venmo-s-social-feed-1e8cb6724b91"}
 	},
 	"RAPP_UBICOMP_2017_WS" : {
 		"date": "September 2017",
@@ -95,7 +101,7 @@
 		"date": "September 2015",
 		"local": "pubs/depstein_ubi15.pdf",
 		"type": "paper",
-		"supplemental": {"survey materials": "//github.com/depstein/lived-informatics"}
+		"supplemental": {"hi-res model & survey materials": "//github.com/depstein/lived-informatics"}
 	},
 	"EPSTEIN_DIS_2014" : {
 		"date": "June 2014",

@@ -122,7 +122,7 @@ router.get('/diversity_statement*', function(req, res, next) {
 });
 
 router.get('/publications_all', function(req, res, next) {
-	res.render('publications', {'bib': bib_data, 'conference':true, 'journal':true, 'workshop':true});
+	res.render('publications', {'bib': bib_data, 'conference':true, 'journal':true, 'workshop':true, 'book':true});
 });
 
 router.get('/publications', function(req, res, next) {

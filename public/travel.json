@@ -1,8 +1,25 @@
 {
+  "CHI_2019" : {
+    "startDate": "May 4 2019",
+    "endDate": "May 9 2019",
+    "destination": "CHI 2019"
+  },
+  "VACATION_WINTER_2018" : {
+    "startDate": "December 19 2018",
+    "endDate": "December 31 2018",
+    "destination": "Vacation",
+    "location": "Taiwan & Japan"
+  },
   "CHI_2019_PC" : {
     "startDate": "December 7 2018",
     "endDate": "December 8 2018",
     "destination": "CHI 2019 Virtual PC"
+  },
+  "THANKSGIVING_2018" : {
+    "startDate": "November 21 2018",
+    "endDate": "November 25 2018",
+    "destination": "Thanksgiving",
+    "location": "St. Louis, MO"
   },
   "CSCW_2018" : {
     "startDate": "November 3 2018",
