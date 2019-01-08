@@ -129,6 +129,10 @@ router.get('/publications', function(req, res, next) {
 	res.render('publications', {'bib': bib_data, 'conference':true, 'journal':true});
 });
 
+router.get('/teaching', function(req, res, next) {
+	res.render('teaching', {});
+});
+
 router.get('/robots.txt', function(req, res, next) {
 	res.contentType('text/plain');
 	res.send("User-agent: *");
@@ -154,6 +158,10 @@ router.get('/bibtex/:bibfile.bib', function(req, res, next) {
 
 router.get('/133', function(req, res, next) {
 	res.redirect(302, 'http://inf133-fa18.depstein.net');
+});
+
+router.get('/241', function(req, res, next) {
+	res.redirect(302, 'http://inf241-wi19.depstein.net');
 });
 
 module.exports = router;

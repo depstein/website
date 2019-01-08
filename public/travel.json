@@ -1,8 +1,18 @@
 {
+  "DAGSTUHL_2019" : {
+    "startDate": "July 14 2019",
+    "endDate": "July 19 2019",
+    "destination": "Dagstuhl on Mobile Visualization"
+  },
   "CHI_2019" : {
     "startDate": "May 4 2019",
     "endDate": "May 9 2019",
     "destination": "CHI 2019"
+  },
+  "PERVASIVEHEALTH_2019_PC" : {
+    "startDate": "March 4 2019",
+    "endDate": "March 5 2019",
+    "destination": "PervasiveHealth 2019 Virtual PC"
   },
   "VACATION_WINTER_2018" : {
     "startDate": "December 19 2018",
