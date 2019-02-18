@@ -4,14 +4,25 @@
     "endDate": "July 19 2019",
     "destination": "Dagstuhl on Mobile Visualization"
   },
+  "DIS_2019" : {
+    "startDate": "June 25 2019",
+    "endDate": "June 28 2019",
+    "destination": "DIS/C&C 2019"
+  },
   "CHI_2019" : {
     "startDate": "May 4 2019",
     "endDate": "May 9 2019",
     "destination": "CHI 2019"
   },
+  "ROADTRIP_2018" : {
+    "startDate": "March 23 2019",
+    "endDate": "March 31 2019",
+    "destination": "Spring Break",
+    "location": "Seattle, WA"
+  },
   "PERVASIVEHEALTH_2019_PC" : {
-    "startDate": "March 4 2019",
-    "endDate": "March 5 2019",
+    "startDate": "March 6 2019",
+    "endDate": "March 6 2019",
     "destination": "PervasiveHealth 2019 Virtual PC"
   },
   "VACATION_WINTER_2018" : {

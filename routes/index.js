@@ -13,9 +13,13 @@ var publications = JSON.parse(fs.readFileSync('bibtex/publications.json', 'utf8'
 var BIB_FILES = 'bibtex';
 var bib_data = fs.readdirSync(BIB_FILES).map(function(f) { if(f.endsWith('.bib')){return formatBib(f, bibtex(fs.readFileSync(BIB_FILES + '/' + f, 'utf-8'))); } else {return null;} }).filter(Boolean);
 bib_data.sort(compareBib);
+
 var travel_data = JSON.parse(fs.readFileSync('public/travel.json', 'utf8'));
-travel_data = Object.keys(travel_data).map(function(f) {return extend(travel_data[f], {'days':formatTravelDate(travel_data[f])});}); //TODO: there's a function for this, but I forget what it is.
-travel_data.sort(compareTravel);
+travel_data = Object.keys(travel_data).map(function(f) {return extend(travel_data[f], {'days':formatTravelDate(travel_data[f])});});
+travel_data.sort(compareDates);
+
+var news_data = JSON.parse(fs.readFileSync('public/news.json', 'utf8'));
+news_data = Object.keys(news_data).map(function(f) {return extend(news_data[f], {'formattedDate':moment(news_data[f].date, "MMM DD YYYY").format("MMMM D")});});
 
 var selectedPublications = bib_data.filter(function(f) { return (f.type == 'paper' || f.type == 'note' || f.type == 'journal')});
 
@@ -62,7 +66,7 @@ function compareBib(a, b) {
 	return 0; //TODO: more detailed sorting when pubs were published at the same time at the same "priority" level
 }
 
-function compareTravel(a, b) {
+function compareDates(a, b) {
 	var ma = moment(a.startDate, "MMM DD YYYY").valueOf();
 	var mb = moment(b.startDate, "MMM DD YYYY").valueOf();
 	return ma > mb ? -1 : 1;
@@ -86,11 +90,10 @@ router.get('/', function(req, res, next) {
 	var futureTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() >= moment().subtract(1, 'days').valueOf();}).reverse().slice(0, futureLimit);
 	var pastAmount = Math.max(7 - futureTravel.length, 1);
 
-	//Include all past travel from this calendar year
-	var pastTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() < moment().subtract(1, 'days').valueOf() && moment(f.endDate, "MMM DD YYYY").year() == moment().year();}).slice(0, pastAmount);
+	var pastTravel = travel_data.filter(function(f) {return moment(f.endDate, "MMM DD YYYY").valueOf() < moment().subtract(1, 'days').valueOf();}).slice(0, pastAmount);
 	pastTravel.reverse();
 	var travelDictionary = {'pastTravel':pastTravel, 'futureTravel':futureTravel};
-	res.render('index', extend(travelDictionary, {'bib':selectedPublications}));
+	res.render('index', extend(travelDictionary, {'bib':selectedPublications}, {'news': news_data}));
 });
 
 router.get('/cv*', function(req, res, next) {
