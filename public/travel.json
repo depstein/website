@@ -14,11 +14,16 @@
     "endDate": "May 9 2019",
     "destination": "CHI 2019"
   },
-  "ROADTRIP_2018" : {
+  "POMONA_2019" : {
+    "startDate": "April 1 2019",
+    "endDate": "April 1 2019",
+    "destination": "Guest Lecture, Pomona College"
+  },
+  "SPRING_BREAK_2019" : {
     "startDate": "March 23 2019",
     "endDate": "March 31 2019",
     "destination": "Spring Break",
-    "location": "Seattle, WA"
+    "location": "Seattle, WA/Whistler, BC"
   },
   "PERVASIVEHEALTH_2019_PC" : {
     "startDate": "March 6 2019",

@@ -1,4 +1,9 @@
 {
+	"SCHROEDER_WISH_2019" : {
+		"date": "May 2019",
+		"local": "pubs/jschroeder_wish19.pdf",
+		"type": "workshop"
+	},
 	"EPSTEIN_CSCW2018_WS" : {
 		"date": "October 2018",
 		"type": "workshop",
