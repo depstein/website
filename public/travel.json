@@ -4,10 +4,16 @@
     "endDate": "July 19 2019",
     "destination": "Dagstuhl on Mobile Visualization"
   },
-  "DIS_2019" : {
-    "startDate": "June 25 2019",
-    "endDate": "June 28 2019",
-    "destination": "DIS/C&C 2019"
+  "HCIC_2019" : {
+    "startDate": "June 23 2019",
+    "endDate": "June 29 2019",
+    "destination": "HCIC"
+  },
+  "SCOTLAND_2019" : {
+    "startDate": "May 10 2019",
+    "endDate": "May 16 2019",
+    "destination": "Vacation",
+    "location": "Scotland, UK"
   },
   "CHI_2019" : {
     "startDate": "May 4 2019",
