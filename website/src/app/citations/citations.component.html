@@ -1,0 +1,23 @@
+<div *ngFor="let pub of publications; index as i" [@simpleFadeAnimation]="'in'">
+  <h2 [class]="pub.year" *ngIf="displayYears && (i==0 || pub.year != publications[i-1].year)">{{pub.year}}</h2>
+  <cite [class]="pub.type">
+  	<div class="title">{{pub.title}}</div>
+  	<div class="authors">
+  		<span *ngFor="let a of pub.author; index as j">
+	  		<em *ngIf="a == 'Daniel A. Epstein'">{{a}}</em>
+	  		<span *ngIf="a != 'Daniel A. Epstein'">{{a}}</span>
+	  		<span *ngIf="j < pub.author.length - 1">, </span>
+	  	</span>
+  	</div>
+  	<span class="series" *ngIf="pub.type == 'paper' || pub.type == 'note' || pub.type == 'wip'">{{pub.series}}</span>
+  	<span class="series" *ngIf="pub.type == 'journal'">{{pub.journal}} {{pub.volume}}, {{pub.number}}</span>
+  	<span class="series" *ngIf="pub.type == 'dissertation'">{{pub.series}} {{pub.department}}, {{pub.school}}</span>
+  	<span class="series" *ngIf="pub.type != 'paper' && pub.type != 'note' && pub.type != 'wip' && pub.type != 'journal' && pub.type != 'dissertation'">{{pub.series}} {{pub.booktitle}}</span>
+  	<span *ngIf="pub.local"> &bull; <a href="./assets/{{pub.local}}" target="_blank">PDF</a></span>
+  	<span *ngIf="pub.url"> &bull; <a [href]="pub.url" target="_blank">DOI</a> &bull; <a [href]="pub.bib">BibTeX</a></span>
+  	<span *ngFor="let s of pub.supplemental"> &bull; <a [href]="s.link" target="_blank">{{s.label}}</a></span>
+  	<div class="notes" *ngIf="pub.notes">
+  		{{pub.notes}}
+  	</div>
+  </cite>
+</div>
