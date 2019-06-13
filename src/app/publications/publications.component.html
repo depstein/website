@@ -1,0 +1,21 @@
+<div class="row">
+	<main class="col-xs-12">
+		<div class="show">
+			<span>Show: </span>
+			<label for="journal">
+				<input type='checkbox' name='journal' id='Journal' (change)="filterPublications()" [(ngModel)]="journal"> Journal articles
+			</label>
+			<label for="conference">
+				<input type='checkbox' name='conference' id='conference' (change)="filterPublications()" [(ngModel)]="conference"> Conference papers
+			</label>
+			<label for="workshop">
+				<input type='checkbox' name='workshop' id='workshop' (change)="filterPublications()" [(ngModel)]="workshop"> Lightly reviewed papers (workshop papers, posters)
+			</label>
+			<label for="book">
+				<input type='checkbox' name='book' id='book' (change)="filterPublications()" [(ngModel)]="book"> Books and book chapters
+			</label>
+		</div>
+		<hr class="publications">
+		<app-citations [publications]="publications" [displayYears]=true [animate]=true></app-citations>
+	</main>
+</div>

@@ -1,0 +1,217 @@
+[
+  {
+    "startDate": "July 14 2019",
+    "endDate": "July 19 2019",
+    "destination": "Dagstuhl on Mobile Visualization"
+  },
+  {
+    "startDate": "June 30 2019",
+    "endDate": "July 7 2019",
+    "destination": "Vacation",
+    "location": "Glacier & Waterton National Parks"
+  },
+  {
+    "startDate": "June 23 2019",
+    "endDate": "June 28 2019",
+    "destination": "HCIC"
+  },
+  {
+    "startDate": "May 10 2019",
+    "endDate": "May 16 2019",
+    "destination": "Vacation",
+    "location": "Scotland, UK"
+  },
+  {
+    "startDate": "May 4 2019",
+    "endDate": "May 9 2019",
+    "destination": "CHI 2019"
+  },
+  {
+    "startDate": "April 1 2019",
+    "endDate": "April 1 2019",
+    "destination": "Guest Lecture, Pomona College"
+  },
+  {
+    "startDate": "March 23 2019",
+    "endDate": "March 31 2019",
+    "destination": "Spring Break",
+    "location": "Seattle, WA & Whistler, BC"
+  },
+  {
+    "startDate": "March 6 2019",
+    "endDate": "March 6 2019",
+    "destination": "PervasiveHealth 2019 Virtual PC"
+  },
+  {
+    "startDate": "December 19 2018",
+    "endDate": "December 31 2018",
+    "destination": "Vacation",
+    "location": "Taiwan & Japan"
+  },
+  {
+    "startDate": "December 7 2018",
+    "endDate": "December 8 2018",
+    "destination": "CHI 2019 Virtual PC"
+  },
+  {
+    "startDate": "November 21 2018",
+    "endDate": "November 25 2018",
+    "destination": "Thanksgiving",
+    "location": "St. Louis, MO"
+  },
+  {
+    "startDate": "November 3 2018",
+    "endDate": "November 7 2018",
+    "destination": "CSCW 2018",
+    "location": "Jersey City, NJ"
+  },
+  {
+    "startDate": "September 6 2018",
+    "endDate": "September 11 2018",
+    "destination": "Visiting Family",
+    "location": "Fairfax, VA"
+  },
+  {
+    "startDate": "August 5 2018",
+    "endDate": "August 8 2018",
+    "destination": "New Computing Faculty Workshop",
+    "location": "San Diego, CA"
+  },
+  {
+    "startDate": "June 29 2018",
+    "endDate": "July 8 2018",
+    "destination": "Vacation",
+    "location": "Road Trip"
+  },
+  {
+    "startDate": "June 9 2018",
+    "endDate": "June 12 2018",
+    "destination": "Family Trip",
+    "location": "Olympic Peninsula"
+  },
+  {
+    "startDate": "June 7 2018",
+    "endDate": "June 7 2018",
+    "destination": "Dissertation Defense!"
+  },
+  {
+    "startDate": "April 21 2018",
+    "endDate": "April 26 2018",
+    "destination": "CHI 2018"
+  },
+  {
+    "startDate": "April 9 2018",
+    "endDate": "April 11 2018",
+    "destination": "University of Illinois, Urbana-Champaign"
+  },
+  {
+    "startDate": "March 29 2018",
+    "endDate": "March 31 2018",
+    "destination": "University of Minnesota, Twin Cities"
+  },
+  {
+    "startDate": "March 15 2018",
+    "endDate": "March 16 2018",
+    "destination": "University of California, Irvine"
+  },
+  {
+    "startDate": "March 8 2018",
+    "endDate": "March 10 2018",
+    "destination": "Indiana University, Bloomington"
+  },
+  {
+    "startDate": "March 5 2018",
+    "endDate": "March 6 2018",
+    "destination": "University of Chicago"
+  },
+  {
+    "startDate": "February 27 2018",
+    "endDate": "March 1 2018",
+    "destination": "University of Utah"
+  },
+  {
+    "startDate": "February 11 2018",
+    "endDate": "February 13 2018",
+    "destination": "University of Rochester"
+  },
+  {
+    "startDate": "January 22 2018",
+    "endDate": "January 24 2018",
+    "destination": "Pennsylvania State University"
+  },
+  {
+    "startDate": "January 11 2018",
+    "endDate": "January 11 2018",
+    "destination": "FXPAL"
+  },
+  {
+    "startDate": "January 10 2018",
+    "endDate": "January 10 2018",
+    "destination": "University of California, Santa Cruz"
+  },
+  {
+    "startDate": "December 19 2017",
+    "endDate": "December 27 2017",
+    "destination": "Vacation (Utah/LA)"
+  },
+	{
+    "startDate": "November 21 2017",
+    "endDate": "November 26 2017",
+    "destination": "Vacation (Chicago)"
+  },
+  {
+    "startDate": "September 20 2017",
+    "endDate": "September 25 2017",
+    "destination": "Vacation (Virginia)"
+  },
+	{
+		"startDate": "September 11 2017",
+		"endDate": "September 15 2017",
+		"destination": "UbiComp 2017"
+	},
+  {
+    "startDate": "July 19 2017",
+    "endDate": "July 22 2017",
+    "destination": "Adobe/Fitbit (San Francisco)"
+  },
+	{
+		"startDate": "July 1 2017",
+		"endDate": "July 8 2017",
+		"destination": "Vacation (Galcier/Banff)"
+	},
+	{
+		"startDate": "May 6 2017",
+		"endDate": "May 11 2017",
+		"destination": "CHI 2017"
+	},
+	{
+		"startDate": "March 11 2017",
+		"endDate": "March 25 2017",
+		"destination": "Vacation (Romania/Israel)"
+	},
+	{
+		"startDate": "February 27 2017",
+		"endDate": "March 1 2017",
+		"destination": "CSCW 2017"
+	},
+	{
+		"startDate": "December 15 2016",
+		"endDate": "December 18 2016",
+		"destination": "SFU/Vacation (Vancouver)"
+	},
+	{
+		"startDate": "November 22 2016",
+		"endDate": "November 27 2016",
+		"destination": "Vacation (Chicago)"
+	},
+	{
+		"startDate": "October 11 2016",
+		"endDate": "October 14 2016",
+		"destination": "18F (San Francisco)"
+	},
+	{
+		"startDate": "September 7 2016",
+		"endDate": "September 20 2016",
+		"destination": "UbiComp 2016"
+	}
+]
