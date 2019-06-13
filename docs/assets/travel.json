@@ -1,211 +1,217 @@
-{
-  "DAGSTUHL_2019" : {
+[
+  {
     "startDate": "July 14 2019",
     "endDate": "July 19 2019",
     "destination": "Dagstuhl on Mobile Visualization"
   },
-  "HCIC_2019" : {
+  {
+    "startDate": "June 30 2019",
+    "endDate": "July 7 2019",
+    "destination": "Vacation",
+    "location": "Glacier & Waterton National Parks"
+  },
+  {
     "startDate": "June 23 2019",
-    "endDate": "June 29 2019",
+    "endDate": "June 28 2019",
     "destination": "HCIC"
   },
-  "SCOTLAND_2019" : {
+  {
     "startDate": "May 10 2019",
     "endDate": "May 16 2019",
     "destination": "Vacation",
     "location": "Scotland, UK"
   },
-  "CHI_2019" : {
+  {
     "startDate": "May 4 2019",
     "endDate": "May 9 2019",
     "destination": "CHI 2019"
   },
-  "POMONA_2019" : {
+  {
     "startDate": "April 1 2019",
     "endDate": "April 1 2019",
     "destination": "Guest Lecture, Pomona College"
   },
-  "SPRING_BREAK_2019" : {
+  {
     "startDate": "March 23 2019",
     "endDate": "March 31 2019",
     "destination": "Spring Break",
-    "location": "Seattle, WA/Whistler, BC"
+    "location": "Seattle, WA & Whistler, BC"
   },
-  "PERVASIVEHEALTH_2019_PC" : {
+  {
     "startDate": "March 6 2019",
     "endDate": "March 6 2019",
     "destination": "PervasiveHealth 2019 Virtual PC"
   },
-  "VACATION_WINTER_2018" : {
+  {
     "startDate": "December 19 2018",
     "endDate": "December 31 2018",
     "destination": "Vacation",
     "location": "Taiwan & Japan"
   },
-  "CHI_2019_PC" : {
+  {
     "startDate": "December 7 2018",
     "endDate": "December 8 2018",
     "destination": "CHI 2019 Virtual PC"
   },
-  "THANKSGIVING_2018" : {
+  {
     "startDate": "November 21 2018",
     "endDate": "November 25 2018",
     "destination": "Thanksgiving",
     "location": "St. Louis, MO"
   },
-  "CSCW_2018" : {
+  {
     "startDate": "November 3 2018",
     "endDate": "November 7 2018",
     "destination": "CSCW 2018",
     "location": "Jersey City, NJ"
   },
-  "PARENTS_VISIT_2018" : {
+  {
     "startDate": "September 6 2018",
     "endDate": "September 11 2018",
     "destination": "Visiting Family",
     "location": "Fairfax, VA"
   },
-  "CRA_TEACHING_WORKSHOP_2018" : {
+  {
     "startDate": "August 5 2018",
     "endDate": "August 8 2018",
     "destination": "New Computing Faculty Workshop",
     "location": "San Diego, CA"
   },
-  "ROADTRIP_2018" : {
+  {
     "startDate": "June 29 2018",
     "endDate": "July 8 2018",
     "destination": "Vacation",
     "location": "Road Trip"
   },
-  "OLYMPICS_2018" : {
+  {
     "startDate": "June 9 2018",
     "endDate": "June 12 2018",
     "destination": "Family Trip",
     "location": "Olympic Peninsula"
   },
-  "DISSERTATION_DEFENSE_2018" : {
+  {
     "startDate": "June 7 2018",
     "endDate": "June 7 2018",
     "destination": "Dissertation Defense!"
   },
-  "CHI_2018" : {
+  {
     "startDate": "April 21 2018",
     "endDate": "April 26 2018",
     "destination": "CHI 2018"
   },
-  "UIUC_2018": {
+  {
     "startDate": "April 9 2018",
     "endDate": "April 11 2018",
     "destination": "University of Illinois, Urbana-Champaign"
   },
-  "UMN_2018": {
+  {
     "startDate": "March 29 2018",
     "endDate": "March 31 2018",
     "destination": "University of Minnesota, Twin Cities"
   },
-  "UCI_2018": {
+  {
     "startDate": "March 15 2018",
     "endDate": "March 16 2018",
     "destination": "University of California, Irvine"
   },
-  "INDIANA_2018": {
+  {
     "startDate": "March 8 2018",
     "endDate": "March 10 2018",
     "destination": "Indiana University, Bloomington"
   },
-  "UCHICAGO_2018": {
+  {
     "startDate": "March 5 2018",
     "endDate": "March 6 2018",
     "destination": "University of Chicago"
   },
-  "UTAH_2018": {
+  {
     "startDate": "February 27 2018",
     "endDate": "March 1 2018",
     "destination": "University of Utah"
   },
-  "ROCHESTER_2018": {
+  {
     "startDate": "February 11 2018",
     "endDate": "February 13 2018",
     "destination": "University of Rochester"
   },
-  "PENNSTATE_2018": {
+  {
     "startDate": "January 22 2018",
     "endDate": "January 24 2018",
     "destination": "Pennsylvania State University"
   },
-  "FXPAL_PRACTICE_2018": {
+  {
     "startDate": "January 11 2018",
     "endDate": "January 11 2018",
     "destination": "FXPAL"
   },
-  "UCSC_PRACTICE_2018": {
+  {
     "startDate": "January 10 2018",
     "endDate": "January 10 2018",
     "destination": "University of California, Santa Cruz"
   },
-  "WINTER_2017": {
+  {
     "startDate": "December 19 2017",
     "endDate": "December 27 2017",
     "destination": "Vacation (Utah/LA)"
   },
-	"THANKSGIVING_2017": {
+	{
     "startDate": "November 21 2017",
     "endDate": "November 26 2017",
     "destination": "Vacation (Chicago)"
   },
-  "VA_SUMMER_2017": {
+  {
     "startDate": "September 20 2017",
     "endDate": "September 25 2017",
     "destination": "Vacation (Virginia)"
   },
-	"UBICOMP_2017" : {
+	{
 		"startDate": "September 11 2017",
 		"endDate": "September 15 2017",
 		"destination": "UbiComp 2017"
 	},
-  "SF_SUMMER_2017": {
+  {
     "startDate": "July 19 2017",
     "endDate": "July 22 2017",
     "destination": "Adobe/Fitbit (San Francisco)"
   },
-	"JULY_4_2017": {
+	{
 		"startDate": "July 1 2017",
 		"endDate": "July 8 2017",
 		"destination": "Vacation (Galcier/Banff)"
 	},
-	"CHI_2017" : {
+	{
 		"startDate": "May 6 2017",
 		"endDate": "May 11 2017",
 		"destination": "CHI 2017"
 	},
-	"SPRING_BREAK_2017" : {
+	{
 		"startDate": "March 11 2017",
 		"endDate": "March 25 2017",
 		"destination": "Vacation (Romania/Israel)"
 	},
-	"CSCW_2017" : {
+	{
 		"startDate": "February 27 2017",
 		"endDate": "March 1 2017",
 		"destination": "CSCW 2017"
 	},
-	"WINTER_BREAK_2016" : {
+	{
 		"startDate": "December 15 2016",
 		"endDate": "December 18 2016",
 		"destination": "SFU/Vacation (Vancouver)"
 	},
-	"THANKSGIVING_2016" : {
+	{
 		"startDate": "November 22 2016",
 		"endDate": "November 27 2016",
 		"destination": "Vacation (Chicago)"
 	},
-	"SF_FALL_2016" : {
+	{
 		"startDate": "October 11 2016",
 		"endDate": "October 14 2016",
 		"destination": "18F (San Francisco)"
 	},
-	"UBICOMP_2016" : {
+	{
 		"startDate": "September 7 2016",
 		"endDate": "September 20 2016",
 		"destination": "UbiComp 2016"
 	}
-}
+]
