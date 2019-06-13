@@ -22,7 +22,7 @@ export class ParsePublicationsService {
 	  		Object.keys(pubList).forEach(pub => {
 	  			let pubURL = './assets/bibtex/' + pub + '.bib';
 	  			this.http.get(pubURL, {responseType: 'text'}).subscribe(bib => {
-	  				this.addBib(bibtex.toJSON(bib), pubURL, pubList[pub]);
+	  				this.addBib(bibtex.toJSON(bib), pub, pubURL, pubList[pub]);
 	  				observer.next(this.allPublications);
 	  			});
 	  		});
@@ -31,8 +31,9 @@ export class ParsePublicationsService {
   	})
   }
 
-  addBib(bib, url, labels) {
+  addBib(bib, key, url, labels) {
   	bib = Object.assign({}, bib[0].entryTags, labels);
+	bib['key'] = key;
 	bib['bib'] = url;
 	bib.author = bib.author.split(" and ").map(function(n) {return n.split(",").reverse().join(' ').replace(/ /g, "\xa0").trim()}); //reverse hack will work in all trivial cases, e.g. Epstein, Daniel A.
 	if('booktitle' in bib) { //Most of my publications have a book title field (e.g., conference publications).

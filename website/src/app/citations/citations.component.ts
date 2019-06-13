@@ -7,7 +7,7 @@ import { trigger, state, style, animate, transition} from '@angular/animations';
   styleUrls: ['./citations.component.css'],
   animations: [
     // the fade-in/fade-out animation.
-    trigger('simpleFadeAnimation', [
+    trigger('fade', [
 
       // the "in" style determines the "resting" state of the element when it is visible.
       state('in', style({opacity: 1, height:'*'})),
@@ -27,6 +27,7 @@ import { trigger, state, style, animate, transition} from '@angular/animations';
 export class CitationsComponent implements OnInit {
 	@Input() publications:[]
 	@Input() displayYears:boolean;
+  @Input() animate:boolean;
 
   constructor() { }
 

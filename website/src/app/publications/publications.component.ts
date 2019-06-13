@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { ParsePublicationsService } from '../parse-publications.service';
 
 @Component({
@@ -14,8 +15,17 @@ export class PublicationsComponent implements OnInit {
 	workshop:boolean = false;
 	book:boolean = true;
 
-  constructor(private pubs:ParsePublicationsService) {
-  	this.pubs.getPublications().subscribe(allPubs => {
+  constructor(private pubs:ParsePublicationsService, private route: ActivatedRoute, private router: Router) {
+    this.route.paramMap.subscribe(params => {
+      if(params.get('filter') == 'all') {
+        this.journal = true;
+        this.conference = true;
+        this.workshop = true;
+        this.book = true;
+      }
+      //One could imagine other filters here, but none are currently implemented
+    });
+    this.pubs.getPublications().subscribe(allPubs => {
   		this.allPublications = allPubs;
   		this.filterPublications();
   	});

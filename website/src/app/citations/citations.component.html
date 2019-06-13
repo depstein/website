@@ -1,4 +1,4 @@
-<div *ngFor="let pub of publications; index as i" [@simpleFadeAnimation]="'in'">
+<div *ngFor="let pub of publications; index as i" [@.disabled]="!animate" [@fade]="'in'">
   <h2 [class]="pub.year" *ngIf="displayYears && (i==0 || pub.year != publications[i-1].year)">{{pub.year}}</h2>
   <cite [class]="pub.type">
   	<div class="title">{{pub.title}}</div>

@@ -8,6 +8,7 @@ import { TeachingComponent } from './teaching/teaching.component';
 
 const routes: Routes = [
 	{ path: '', component: HomepageComponent},
+	{ path: 'publications/:filter', component: PublicationsComponent},
 	{ path: 'publications', component: PublicationsComponent},
 	{ path: 'projects', component: ProjectsComponent},
 	{ path: 'teaching', component: TeachingComponent}
