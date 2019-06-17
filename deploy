@@ -1,1 +1,1 @@
-ng build --prod --output-path docs --base-href /website/
+npx ngh --dir=dist/website
