@@ -12,9 +12,10 @@
   	<span class="series" *ngIf="pub.type == 'paper' || pub.type == 'note' || pub.type == 'wip'">{{pub.series}}</span>
   	<span class="series" *ngIf="pub.type == 'journal'">{{pub.journal}} {{pub.volume}}, {{pub.number}}</span>
   	<span class="series" *ngIf="pub.type == 'dissertation'">{{pub.series}} {{pub.department}}, {{pub.school}}</span>
-  	<span class="series" *ngIf="pub.type != 'paper' && pub.type != 'note' && pub.type != 'wip' && pub.type != 'journal' && pub.type != 'dissertation'">{{pub.series}} {{pub.booktitle}}</span>
+    <span class="series" *ngIf="pub.type == 'bookchapter'">In {{pub.booktitle}}, {{pub.publisher}}</span>
+  	<span class="series" *ngIf="pub.type != 'paper' && pub.type != 'note' && pub.type != 'wip' && pub.type != 'journal' && pub.type != 'dissertation' && pub.type != 'bookchapter'">{{pub.series}} {{pub.booktitle}}</span>
   	<span *ngIf="pub.local"> &bull; <a href="./assets/{{pub.local}}" target="_blank">PDF</a></span>
-  	<span *ngIf="pub.url"> &bull; <a [href]="pub.url" target="_blank">DOI</a> &bull; <a [href]="pub.bib">BibTeX</a></span>
+  	<span *ngIf="pub.url"> &bull; <a [href]="pub.url" target="_blank" *ngIf="pub.url != 'tbd'">DOI</a><span *ngIf="pub.url == 'tbd'">(Email for copy)</span> &bull; <a [href]="pub.bib">BibTeX</a></span>
   	<span *ngFor="let s of pub.supplemental"> &bull; <a [href]="s.link" target="_blank">{{s.label}}</a></span>
   	<div class="notes" *ngIf="pub.notes">
   		{{pub.notes}}

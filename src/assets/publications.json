@@ -1,4 +1,13 @@
 {
+	"critmenstruation19": {
+		"date": "October 2019",
+		"type": "bookchapter"
+	},
+	"cscw19_panel": {
+		"date": "November 2019",
+		"local": "pubs/nkumar_cscw19_panel.pdf",
+		"type":"workshop"
+	},
 	"chi19_wish" : {
 		"date": "May 2019",
 		"local": "pubs/jschroeder_wish19.pdf",
