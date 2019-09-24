@@ -1,2 +1,2 @@
 ng build --prod
-npx ngh --dir=dist/website
+npx ngh --dir=dist/website --cname=depstein.net
