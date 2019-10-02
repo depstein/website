@@ -3,10 +3,15 @@
 		"date": "October 2019",
 		"type": "bookchapter"
 	},
+	"cscw19_ws": {
+		"date": "November 2019",
+		"local": "pubs/depstein_cscw19_work.pdf",
+		"type":"workshop"
+	},
 	"cscw19_panel": {
 		"date": "November 2019",
 		"local": "pubs/nkumar_cscw19_panel.pdf",
-		"type":"workshop"
+		"type":"panel"
 	},
 	"chi19_wish" : {
 		"date": "May 2019",
