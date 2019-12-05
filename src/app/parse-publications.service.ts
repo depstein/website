@@ -9,7 +9,7 @@ import * as moment from 'moment';
 })
 export class ParsePublicationsService {
 	private allPublications:any[] = [];
-	public static readonly ARCHIVAL:string[] = ['paper', 'note', 'journal'];
+	public static readonly ARCHIVAL:string[] = ['paper', 'note', 'journal', 'bookchapter'];
 	public static readonly MAPPING:{} = {'paper':['paper', 'note'], 'journal':['journal'], 'workshop':['organizer', 'wip', 'workshop', 'poster', 'panel'], 'book':['dissertation', 'bookchapter']};
 
   constructor(private http:HttpClient) {

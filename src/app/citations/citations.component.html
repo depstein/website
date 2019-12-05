@@ -10,7 +10,8 @@
 	  	</span>
   	</div>
   	<span class="series" *ngIf="pub.type == 'paper' || pub.type == 'note' || pub.type == 'wip'">{{pub.series}}</span>
-  	<span class="series" *ngIf="pub.type == 'journal'">{{pub.journal}} {{pub.volume}}, {{pub.number}}</span>
+  	<span class="series" *ngIf="pub.type == 'journal' && pub.volume && pub.number">{{pub.journal}} {{pub.volume}}, {{pub.number}}</span>
+    <span class="series" *ngIf="pub.type == 'journal' && (!pub.volume || !pub.number)">{{pub.journal}}</span>
   	<span class="series" *ngIf="pub.type == 'dissertation'">{{pub.series}} {{pub.department}}, {{pub.school}}</span>
     <span class="series" *ngIf="pub.type == 'bookchapter'">In {{pub.booktitle}}, {{pub.publisher}}</span>
   	<span class="series" *ngIf="pub.type != 'paper' && pub.type != 'note' && pub.type != 'wip' && pub.type != 'journal' && pub.type != 'dissertation' && pub.type != 'bookchapter'">{{pub.series}} {{pub.booktitle}}</span>

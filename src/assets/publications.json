@@ -1,6 +1,12 @@
 {
+	"health19": {
+		"date": "December 2019",
+		"local": "pubs/jmeyer_health19.pdf",
+		"type": "journal"
+	},
 	"critmenstruation19": {
-		"date": "October 2019",
+		"date": "December 2019",
+		"local": "pubs/sfox_critmenstruation19.pdf",
 		"type": "bookchapter"
 	},
 	"cscw19_ws": {
