@@ -1,12 +1,16 @@
 {
-	"health19": {
-		"date": "December 2019",
-		"local": "pubs/jmeyer_health19.pdf",
+	"gi20": {
+		"date": "May 2020",
+		"type": "paper"
+	},
+	"health20": {
+		"date": "April 2020",
+		"local": "pubs/jmeyer_health20.pdf",
 		"type": "journal"
 	},
-	"critmenstruation19": {
-		"date": "December 2019",
-		"local": "pubs/sfox_critmenstruation19.pdf",
+	"critmenstruation20": {
+		"date": "March 2020",
+		"local": "pubs/sfox_critmenstruation20.pdf",
 		"type": "bookchapter"
 	},
 	"cscw19_ws": {
