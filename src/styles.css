@@ -173,7 +173,6 @@ cite > .notes {
 }
 
 .show {
-	text-align: center;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -191,7 +190,7 @@ hr.projects {
 
 .show > label {
 	font-weight: 400;
-	padding: 5px;
+	padding: 5px 0px 5px 30px;
 }
 
 .show > label > input[type="checkbox"] {
