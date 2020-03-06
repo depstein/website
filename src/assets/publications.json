@@ -3,6 +3,14 @@
 		"date": "May 2020",
 		"type": "paper"
 	},
+	"pervasivehealth20": {
+		"date": "May 2020",
+		"type": "paper"
+	},
+	"chi20_ws": {
+		"date": "April 2020",
+		"type":"workshop"
+	},
 	"health20": {
 		"date": "April 2020",
 		"local": "pubs/jmeyer_health20.pdf",
