@@ -1,4 +1,8 @@
 {
+	"ubi20_ws" : {
+		"date": "September 2020",
+		"type": "organizer"
+	},
 	"gi20": {
 		"date": "May 2020",
 		"type": "paper"
