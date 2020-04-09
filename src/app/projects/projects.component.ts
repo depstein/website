@@ -28,7 +28,7 @@ export class ProjectsComponent implements OnInit {
   	});
 
   	this.designPublications = this.allPublications.filter((pub:{}) => {
-  		return ['chi17b', 'ubi16', 'chi16a', 'dis14'].includes(pub['key']);
+  		return ['chi17b', 'ubi16', 'chi16a', 'dis14', 'pervasivehealth20'].includes(pub['key']);
   	});
 
   	this.socialPublications = this.allPublications.filter((pub:{}) => {
