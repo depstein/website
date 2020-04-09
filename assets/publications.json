@@ -1,14 +1,17 @@
 {
 	"ubi20_ws" : {
 		"date": "September 2020",
-		"type": "organizer"
+		"type": "organizer",
+		"local": "pubs/rkhurana_ubi20_work.pdf"
 	},
 	"gi20": {
 		"date": "May 2020",
-		"type": "paper"
+		"local":"pubs/depstein_gi20.pdf",
+		"type": "paper",
+		"supplemental": [{"label":"study materials", "link":"assets/docs/gi20_supplemental.zip"}, {"label":"video", "link":"assets/docs/gi20_video.mp4"}]
 	},
 	"pervasivehealth20": {
-		"date": "May 2020",
+		"date": "October 2020",
 		"type": "paper"
 	},
 	"chi20_ws": {
