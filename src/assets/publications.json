@@ -8,7 +8,7 @@
 		"date": "May 2020",
 		"local":"pubs/depstein_gi20.pdf",
 		"type": "paper",
-		"supplemental": [{"label":"study materials", "link":"assets/docs/gi20_supplemental.zip"}, {"label":"demo video", "link":"assets/docs/gi20_video.mp4"}, {"label":"slides", "link":"assets/docs/gi20_slides.pdf"}]
+		"supplemental": [{"label":"study materials", "link":"assets/docs/gi20_supplemental.zip"}, {"label":"demo video", "link":"assets/docs/gi20_video.mp4"}, {"label":"slides", "link":"assets/docs/gi20_slides.pdf"}, {"label":"talk recording", "link":"https://youtu.be/nM2NC5T-XNQ"}]
 	},
 	"pervasivehealth20": {
 		"date": "October 2020",
