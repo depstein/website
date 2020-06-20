@@ -12,7 +12,8 @@
 	},
 	"pervasivehealth20": {
 		"date": "October 2020",
-		"type": "paper"
+		"type": "paper",
+		"local":"pubs/qli_pervasivehealth20.pdf"
 	},
 	"chi20_ws": {
 		"date": "April 2020",
