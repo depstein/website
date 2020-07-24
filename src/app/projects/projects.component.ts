@@ -24,7 +24,7 @@ export class ProjectsComponent implements OnInit {
 
   filterPublications() {
   	this.practicesPublications = this.allPublications.filter((pub:{}) => {
-  		return ['dis18', 'chi17a', 'chi16c', 'ubi15', 'chi15'].includes(pub['key']);
+  		return ['cscw20b', 'dis18', 'chi17a', 'chi16c', 'ubi15', 'chi15'].includes(pub['key']);
   	});
 
   	this.designPublications = this.allPublications.filter((pub:{}) => {
@@ -32,7 +32,7 @@ export class ProjectsComponent implements OnInit {
   	});
 
   	this.socialPublications = this.allPublications.filter((pub:{}) => {
-  		return ['gi20', 'cscw17_online', 'chi16b', 'cscw15', 'ubi13'].includes(pub['key']);
+  		return ['cscw20a', 'gi20', 'cscw17_online', 'chi16b', 'cscw15', 'ubi13'].includes(pub['key']);
   	});
   }
 }

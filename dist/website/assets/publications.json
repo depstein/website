@@ -1,4 +1,12 @@
 {
+	"cscw20a": {
+		"date": "October 2020",
+		"type": "journal"
+	},
+	"cscw20b": {
+		"date": "October 2020",
+		"type": "journal"
+	},
 	"ubi20_ws" : {
 		"date": "September 2020",
 		"type": "organizer",
