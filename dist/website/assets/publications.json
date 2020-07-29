@@ -71,12 +71,12 @@
 	},
 	"chi18_ws" : {
 		"date": "May 2018",
-    "local": "pubs/jmeyer_chi18_work.pdf",
+    	"local": "pubs/jmeyer_chi18_work.pdf",
 		"type": "organizer"
 	},
 	"imwut18" : {
 		"date": "March 2018",
-    "local": "pubs/lmtang_imwut18.pdf",
+    	"local": "pubs/lmtang_imwut18.pdf",
 		"type": "journal"
 	},
 	"cscw17_online" : {
