@@ -1,8 +1,23 @@
 [
   {
-    "startDate": "September 12 2020",
-    "endDate": "September 12 2020",
-    "destination": "Ubicomp Beyond Steps Workshop (Virtual)"
+    "startDate": "December 10 2020",
+    "endDate": "December 12 2020",
+    "destination": "CHI 2021 Virtual PC"
+  },
+  {
+    "startDate": "October 17 2020",
+    "endDate": "October 21 2020",
+    "destination": "CSCW 2020 (Virtual)"
+  },
+  {
+    "startDate": "October 6 2020",
+    "endDate": "October 8 2020",
+    "destination": "PervasiveHealth 2020 (Virtual)"
+  },
+  {
+    "startDate": "September 14 2020",
+    "endDate": "September 16 2020",
+    "destination": "Ubicomp 2020 (Virtual)"
   },
   {
     "startDate": "June 9 2020",
@@ -12,7 +27,7 @@
   {
     "startDate": "May 28 2020",
     "endDate": "May 29 2020",
-    "destination": "Graphics Interface (Virtual)"
+    "destination": "Graphics Interface 2020 (Virtual)"
   },
   {
     "startDate": "December 18 2019",
