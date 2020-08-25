@@ -112,13 +112,6 @@
 		"type": "organizer"
 	},
 	{
-		"key":"chi17b",
-		"date": "May 2017",
-		"local": "pubs/rkarkar_chi17.pdf",
-		"type": "paper",
-		"notes": "Honorable Mention (Top 5%)"
-	},
-	{
 		"key":"chi17a",
 		"date": "May 2017",
 		"local": "pubs/depstein_chi17.pdf",
@@ -127,15 +120,22 @@
 		"notes": "Best Paper (Top 1%)"
 	},
 	{
-		"key":"chi17_wsb",
+		"key":"chi17b",
 		"date": "May 2017",
-		"local": "pubs/depstein_chi17_work_b.pdf",
-		"type": "workshop"
+		"local": "pubs/rkarkar_chi17.pdf",
+		"type": "paper",
+		"notes": "Honorable Mention (Top 5%)"
 	},
 	{
 		"key":"chi17_wsa",
 		"date": "May 2017",
 		"local": "pubs/depstein_chi17_work_a.pdf",
+		"type": "workshop"
+	},
+	{
+		"key":"chi17_wsb",
+		"date": "May 2017",
+		"local": "pubs/depstein_chi17_work_b.pdf",
 		"type": "workshop"
 	},
 	{
