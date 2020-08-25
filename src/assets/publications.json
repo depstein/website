@@ -1,221 +1,262 @@
-{
-	"cscw20a": {
+[
+	{
+		"key": "cscw20a",
 		"date": "October 2020",
 		"type": "journal",
 		"local": "pubs/depstein_cscw20.pdf",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/cscw20a_supplemental.zip"}]
 	},
-	"cscw20b": {
+	{
+		"key":"cscw20b",
 		"date": "October 2020",
 		"type": "journal",
 		"local": "pubs/ioygur_cscw20.pdf"
 	},
-	"pervasivehealth20": {
+	{
+		"key":"pervasivehealth20",
 		"date": "October 2020",
 		"type": "paper",
 		"local":"pubs/qli_pervasivehealth20.pdf"
 	},
-	"ubi20_ws" : {
+	{
+		"key":"ubi20_ws",
 		"date": "September 2020",
 		"type": "organizer",
 		"local": "pubs/rkhurana_ubi20_work.pdf"
 	},
-	"critmenstruation20": {
+	{
+		"key":"critmenstruation20",
 		"date": "July 2020",
 		"local": "pubs/sfox_critmenstruation20.pdf",
 		"type": "bookchapter"
 	},
-	"gi20": {
+	{
+		"key":"gi20",
 		"date": "May 2020",
 		"local":"pubs/depstein_gi20.pdf",
 		"type": "paper",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/gi20_supplemental.zip"}, {"label":"demo video", "link":"assets/docs/gi20_video.mp4"}, {"label":"slides", "link":"assets/docs/gi20_slides.pdf"}, {"label":"talk recording", "link":"https://youtu.be/nM2NC5T-XNQ"}]
 	},
-	"chi20_ws": {
+	{
+		"key":"chi20_ws",
 		"date": "April 2020",
 		"type":"workshop",
 		"local":"pubs/lsilva_chi20_work.pdf"
 	},
-	"health20": {
+	{
+		"key":"health20",
 		"date": "March 2020",
 		"local": "pubs/jmeyer_health20.pdf",
 		"type": "journal"
 	},
-	"cscw19_ws": {
+	{
+		"key":"cscw19_ws",
 		"date": "November 2019",
 		"local": "pubs/depstein_cscw19_work.pdf",
 		"type":"workshop"
 	},
-	"cscw19_panel": {
+	{
+		"key":"cscw19_panel",
 		"date": "November 2019",
 		"local": "pubs/nkumar_cscw19_panel.pdf",
 		"type":"panel"
 	},
-	"chi19_wish" : {
+	{
+		"key":"chi19_wish",
 		"date": "May 2019",
 		"local": "pubs/jschroeder_wish19.pdf",
 		"type": "workshop"
 	},
-	"cscw18_ws" : {
+	{
+		"key":"cscw18_ws",
 		"date": "October 2018",
 		"type": "workshop",
 		"local": "pubs/depstein_cscw18_work.pdf"
 	},
-	"dissertation" : {
+	{
+		"key":"dissertation",
 		"date": "August 2018",
 		"local": "pubs/depstein_dissertation.pdf",
 		"type": "dissertation"
 	},
-	"dis18" : {
+	{
+		"key":"dis18",
 		"date": "June 2018",
 		"local": "pubs/jschroeder_dis18.pdf",
 		"type": "paper",
 		"notes": "Honorable Mention (Top 5%)"
 	},
-	"chi18_ws" : {
+	{
+		"key":"chi18_ws",
 		"date": "May 2018",
     	"local": "pubs/jmeyer_chi18_work.pdf",
 		"type": "organizer"
 	},
-	"imwut18" : {
+	{
+		"key":"imwut18",
 		"date": "March 2018",
     	"local": "pubs/lmtang_imwut18.pdf",
 		"type": "journal"
 	},
-	"cscw17_online" : {
+	{
+		"key":"cscw17_online",
 		"date": "November 2017",
 		"local": "pubs/mcaraway_cscw17.pdf",
 		"type": "journal",
 		"supplemental": [{"label":"blog post", "link":"//medium.com/@daepstein/friends-dont-need-receipts-the-joys-and-risks-of-venmo-s-social-feed-1e8cb6724b91"}]
 	},
-	"ubi17_ws" : {
+	{
+		"key":"ubi17_ws",
 		"date": "September 2017",
 		"local": "pubs/arapp_ubi17_work.pdf",
 		"type": "organizer"
 	},
-	"chi17_wsb" : {
-		"date": "May 2017",
-		"local": "pubs/depstein_chi17_work_b.pdf",
-		"type": "workshop"
-	},
-	"chi17_wsa" : {
-		"date": "May 2017",
-		"local": "pubs/depstein_chi17_work_a.pdf",
-		"type": "workshop"
-	},
-	"chi17b" : {
-		"date": "May 2017",
-		"local": "pubs/rkarkar_chi17.pdf",
-		"type": "paper",
-		"notes": "Honorable Mention (Top 5%)"
-	},
-	"chi17a" : {
+	{
+		"key":"chi17a",
 		"date": "May 2017",
 		"local": "pubs/depstein_chi17.pdf",
 		"type": "paper",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/chi17_supplemental.zip"}, {"label":"blog post (part 1)", "link":"//medium.com/hci-design-at-uw/what-can-we-learn-from-period-tracking-23d98e544255"}, {"label":"blog post (part 2)", "link":"https://medium.com/@nkkl/five-things-to-think-about-when-designing-a-period-tracking-app-9a79ac7cf446"}],
 		"notes": "Best Paper (Top 1%)"
 	},
-	"pervasive17" : {
+	{
+		"key":"chi17b",
+		"date": "May 2017",
+		"local": "pubs/rkarkar_chi17.pdf",
+		"type": "paper",
+		"notes": "Honorable Mention (Top 5%)"
+	},
+	{
+		"key":"chi17_wsa",
+		"date": "May 2017",
+		"local": "pubs/depstein_chi17_work_a.pdf",
+		"type": "workshop"
+	},
+	{
+		"key":"chi17_wsb",
+		"date": "May 2017",
+		"local": "pubs/depstein_chi17_work_b.pdf",
+		"type": "workshop"
+	},
+	{
+		"key":"pervasive17",
 		"date": "January 2017",
 		"local": "pubs/ekchoe_pervasive17.pdf",
 		"type": "journal"
 	},
-	"ubi16" : {
+	{
+		"key":"ubi16",
 		"date": "September 2016",
 		"local": "pubs/depstein_ubi16.pdf",
 		"type": "paper"
 	},
-	"ubi16_ws" : {
+	{
+		"key":"ubi16_ws",
 		"date": "September 2016",
 		"local" : "assets/pubs/arapp_ubi16_work.pdf",
 		"type": "organizer"
 	},
-	"chi16a" : {
+	{
+		"key":"chi16a",
 		"date": "May 2016",
 		"local": "pubs/depstein_chi16a.pdf",
 		"type": "paper",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/chi16a_supplemental.zip"}]
 	},
-	"chi16b" : {
+	{
+		"key":"chi16b",
 		"date": "May 2016",
 		"local": "pubs/depstein_chi16b.pdf",
 		"type": "paper",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/chi16b_supplemental.zip"}]
 	},
-	"chi16c" : {
+	{
+		"key":"chi16c",
 		"date": "May 2016",
 		"local": "pubs/depstein_chi16c.pdf",
 		"type": "note",
 		"supplemental": [{"label":"survey materials", "link":"assets/docs/chi16c_supplemental.zip"}]
 	},
-	"cscw15" : {
-		"date": "March 2015",
-		"local": "pubs/depstein_cscw15.pdf",
-		"type": "paper"
-	},
-	"ubi15" : {
+	{
+		"key":"ubi15",
 		"date": "September 2015",
 		"local": "pubs/depstein_ubi15.pdf",
 		"type": "paper",
 		"supplemental": [{"label":"hi-res model & survey materials", "link":"//github.com/depstein/lived-informatics"}]
 	},
-	"dis14" : {
-		"date": "June 2014",
-		"local": "pubs/depstein_dis14.pdf",
-		"type": "paper"
-	},
-	"chi15" : {
-		"date": "April 2015",
-		"local": "pubs/fcordeiro_chi15.pdf",
-		"type": "note",
-		"notes": "Honorable Mention (Top 5%)"
-	},
-	"ubi13" : {
-		"date": "September 2013",
-		"local": "pubs/depstein_ubi13.pdf",
-		"type": "paper"
-	},
-	"ubi15_ds": {
+	{
+		"key":"ubi15_ds",
 		"date": "September 2015",
 		"local": "pubs/depstein_ubi15_ds.pdf",
 		"type": "workshop",
 		"supplemental": [{"label":"poster", "link":"pubs/depstein_ubi15_ds_poster.pdf"}]
 	},
-	"chi15_ws" : {
+	{
+		"key":"chi15",
+		"date": "April 2015",
+		"local": "pubs/fcordeiro_chi15.pdf",
+		"type": "note",
+		"notes": "Honorable Mention (Top 5%)"
+	},
+	{
+		"key":"chi15_ws",
 		"date": "April 2015",
 		"local": "pubs/depstein_chi15_work.pdf",
 		"type": "workshop",
 		"supplemental": [{"label":"blog post", "link":"//medium.com/@nkkl/wearables-of-2025-beb53e48b66f#.1gmq9b593"}]
 	},
-	"ubi14_ws" : {
+	{
+		"key":"cscw15",
+		"date": "March 2015",
+		"local": "pubs/depstein_cscw15.pdf",
+		"type": "paper"
+	},
+	{
+		"key":"ubi14_ws",
 		"date": "September 2014",
 		"local" : "assets/pubs/depstein_ubi14_work.pdf",
 		"type": "workshop"
 	},
-	"chi14_ws" : {
+	{
+		"key":"dis14",
+		"date": "June 2014",
+		"local": "pubs/depstein_dis14.pdf",
+		"type": "paper"
+	},
+	{
+		"key":"chi14_ws",
 		"date": "April 2014",
 		"local": "pubs/depstein_chi14_work.pdf",
 		"type": "workshop"
 	},
-	"ubi13_ds" : {
+	{
+		"key":"ubi13",
+		"date": "September 2013",
+		"local": "pubs/depstein_ubi13.pdf",
+		"type": "paper"
+	},
+	{
+		"key":"ubi13_ds",
 		"date": "September 2013",
 		"local": "pubs/depstein_ubi13_ds.pdf",
 		"type": "workshop"
 	},
-	"chi13_ws" : {
+	{
+		"key":"chi13_ws",
 		"date": "April 2013",
 		"local": "pubs/depstein_chi13_work.pdf",
 		"type": "workshop"
 	},
-	"dfmy12_ws": {
+	{
+		"key":"dfmy12_ws",
 		"date": "June 2012",
 		"local": "pubs/depstein_dfmy12.pdf",
 		"type": "workshop"
 	},
-	"dac12_wip": {
+	{
+		"key":"dac12_wip",
 		"date": "June 2012",
 		"local": "pubs/depstein_dac12_wip.pdf",
 		"type": "wip"
 	}
-}
+]
