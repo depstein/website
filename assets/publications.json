@@ -1,16 +1,29 @@
 {
 	"cscw20a": {
 		"date": "October 2020",
-		"type": "journal"
+		"type": "journal",
+		"local": "pubs/depstein_cscw20.pdf",
+		"supplemental": [{"label":"study materials", "link":"assets/docs/cscw20a_supplemental.zip"}]
 	},
 	"cscw20b": {
 		"date": "October 2020",
-		"type": "journal"
+		"type": "journal",
+		"local": "pubs/ioygur_cscw20.pdf"
+	},
+	"pervasivehealth20": {
+		"date": "October 2020",
+		"type": "paper",
+		"local":"pubs/qli_pervasivehealth20.pdf"
 	},
 	"ubi20_ws" : {
 		"date": "September 2020",
 		"type": "organizer",
 		"local": "pubs/rkhurana_ubi20_work.pdf"
+	},
+	"critmenstruation20": {
+		"date": "July 2020",
+		"local": "pubs/sfox_critmenstruation20.pdf",
+		"type": "bookchapter"
 	},
 	"gi20": {
 		"date": "May 2020",
@@ -18,20 +31,10 @@
 		"type": "paper",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/gi20_supplemental.zip"}, {"label":"demo video", "link":"assets/docs/gi20_video.mp4"}, {"label":"slides", "link":"assets/docs/gi20_slides.pdf"}, {"label":"talk recording", "link":"https://youtu.be/nM2NC5T-XNQ"}]
 	},
-	"pervasivehealth20": {
-		"date": "October 2020",
-		"type": "paper",
-		"local":"pubs/qli_pervasivehealth20.pdf"
-	},
 	"chi20_ws": {
 		"date": "April 2020",
 		"type":"workshop",
 		"local":"pubs/lsilva_chi20_work.pdf"
-	},
-	"critmenstruation20": {
-		"date": "April 2020",
-		"local": "pubs/sfox_critmenstruation20.pdf",
-		"type": "bookchapter"
 	},
 	"health20": {
 		"date": "March 2020",
