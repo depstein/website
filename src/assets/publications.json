@@ -4,19 +4,21 @@
 		"date": "October 2020",
 		"type": "journal",
 		"local": "pubs/depstein_cscw20.pdf",
-		"supplemental": [{"label":"study materials", "link":"assets/docs/cscw20a_supplemental.zip"}]
+		"supplemental": [{"label":"study materials", "link":"assets/docs/cscw20a_supplemental.zip"}, {"label":"slides", "link":"assets/docs/cscw20a_slides.pdf"}, {"label":"talk recording", "link":"assets/docs/cscw20a_video.mp4"}]
 	},
 	{
 		"key":"cscw20b",
 		"date": "October 2020",
 		"type": "journal",
-		"local": "pubs/ioygur_cscw20.pdf"
+		"local": "pubs/ioygur_cscw20.pdf",
+		"supplemental": [{"label":"slides", "link":"assets/docs/cscw20b_slides.pdf"}, {"label":"talk recording", "link":"assets/docs/cscw20b_video.mp4"}]
 	},
 	{
 		"key":"pervasivehealth20",
 		"date": "October 2020",
 		"type": "paper",
-		"local":"pubs/qli_pervasivehealth20.pdf"
+		"local":"pubs/qli_pervasivehealth20.pdf",
+		"supplemental": [{"label":"slides", "link":"assets/docs/pervasivehealth20_slides.pdf"}, {"label":"talk recording", "link":"assets/docs/pervasivehealth20_video.mp4"}]
 	},
 	{
 		"key":"critmenstruation20",
