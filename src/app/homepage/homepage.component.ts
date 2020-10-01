@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ParsePublicationsService } from '../parse-publications.service';
-import * as moment from 'moment';
+import moment from 'moment';
+import * as news from '../../assets/news.json';
+import * as travel from '../../assets/travel.json';
+import * as labmembers from '../../assets/labmembers.json';
 
 @Component({
   selector: 'app-homepage',
@@ -13,15 +16,12 @@ export class HomepageComponent implements OnInit {
 	priorTravel;
 	futureTravel;
 	publications;
+  phdStudents;
 
   constructor(private http:HttpClient, private pubs:ParsePublicationsService) {
-  	this.http.get('./assets/news.json').subscribe(news => {
-  		this.setNews(news as []);
-
-  	});
-  	this.http.get('./assets/travel.json').subscribe(travel => {
-  		this.setTravel(travel as []);
-  	});
+		this.setNews((news as any).default);
+    this.setTravel((travel as any).default);
+    this.setStudents((labmembers as any).default);
   	this.pubs.getPublications().subscribe(allPubs => {
   		this.publications = allPubs.filter((p) => {
   			return ParsePublicationsService.ARCHIVAL.includes(p.type);
@@ -68,4 +68,14 @@ export class HomepageComponent implements OnInit {
   	this.futureTravel = this.futureTravel.reverse();
   }
 
+  setStudents(students:[]) {
+    this.phdStudents = students.filter((s) => {return s['type'] == "phd"});
+    this.phdStudents.sort((a, b) => {
+      //Sort by last name
+      let aNames = a['name'].split(' ');
+      let bNames = b['name'].split(' ');
+      return aNames[aNames.length - 1].toLowerCase() < bNames[bNames.length - 1].toLowerCase()? -1 : 1;
+    });
+    console.log(this.phdStudents);
+  }
 }

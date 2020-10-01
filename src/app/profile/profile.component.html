@@ -1,0 +1,8 @@
+<p *ngIf="student.link"><a [href]="student.link">
+	<img *ngIf="student.profile && showPicture" class="profile" [src]='student.profile' alt='picture of {{student.name}}'>
+	{{student.name}}
+</a></p>
+<p *ngIf="!student.link">
+	<img *ngIf="student.profile && showPicture" class="profile" [src]='student.profile' alt='picture of {{student.name}}'>
+	{{student.name}}
+</p>

@@ -4,6 +4,8 @@
     "baseUrl": "./",
     "downlevelIteration": true,
     "outDir": "./dist/out-tsc",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
     "module": "esnext",

@@ -8,20 +8,18 @@ import { ParsePublicationsService } from '../parse-publications.service';
   styleUrls: ['./publications.component.css']
 })
 export class PublicationsComponent implements OnInit {
-	allPublications;
+	publicationTypes:any[] = [{type:"journal", name:"Journal articles"}, {type:"paper", name:"Conference papers"}, {type:"workshop", name:"Lightly reviewed publications"}, {type:"book", name:"Books and book chapters"}];
+  allPublications;
 	publications;
-	journal:boolean = true;
-	conference:boolean = true;
-	workshop:boolean = false;
-	book:boolean = true;
+  checked = {journal:true, paper:true, workshop:false, book:true};
 
   constructor(private pubs:ParsePublicationsService, private route: ActivatedRoute, private router: Router) {
     this.route.paramMap.subscribe(params => {
       if(params.get('filter') == 'all') {
-        this.journal = true;
-        this.conference = true;
-        this.workshop = true;
-        this.book = true;
+        this.checked.journal = true;
+        this.checked.paper = true;
+        this.checked.workshop = true;
+        this.checked.book = true;
       }
       //One could imagine other filters here, but none are currently implemented
     });
@@ -37,19 +35,11 @@ export class PublicationsComponent implements OnInit {
 
   filterPublications() {
   	let allowedList = [];
-  	if(this.journal) {
-  		allowedList = allowedList.concat(ParsePublicationsService.MAPPING['journal']);
-  	}
-  	if(this.conference) {
-  		allowedList = allowedList.concat(ParsePublicationsService.MAPPING['paper']);
-  	}
-  	if(this.workshop) {
-  		allowedList = allowedList.concat(ParsePublicationsService.MAPPING['workshop']);
-  	}
-  	if(this.book) {
-  		allowedList = allowedList.concat(ParsePublicationsService.MAPPING['book']);
-  	}
-  	//this.allPublications.filter()
+    Object.keys(this.checked).forEach((key) => {
+      if(this.checked[key]) {
+        allowedList = allowedList.concat(ParsePublicationsService.MAPPING[key]);
+      }
+    });
   	this.publications = this.allPublications.filter((pub) => {
   		return allowedList.includes(pub.type);
   	});

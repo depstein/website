@@ -13,6 +13,8 @@ import { PublicationsComponent } from './publications/publications.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TeachingComponent } from './teaching/teaching.component';
 import { CitationsComponent } from './citations/citations.component';
+import { PielabComponent } from './pielab/pielab.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { CitationsComponent } from './citations/citations.component';
     PublicationsComponent,
     ProjectsComponent,
     TeachingComponent,
-    CitationsComponent
+    CitationsComponent,
+    PielabComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

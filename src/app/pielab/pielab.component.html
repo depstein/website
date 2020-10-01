@@ -1,0 +1,60 @@
+<div class="row">
+	<div class="col-sm-12 col-md-9">
+		<p>The Personal Informatics Everyday (PIE) Lab examines how personal <a href="//www.personalinformatics.org/">informatics</a> systems can be improved to account for the realities of everyday life. For more information about recent PIE Lab projects, please see Daniel Epstein's <a href="/projects">project page</a> or the websites of other lab members.</p>
+		<p>We frequently collaborate and communicate with other labs, students, and faculty including the <a href="//hai.ics.uci.edu/">Health and Information (HAI) Lab</a>, the <a href="//connectedlearning.uci.edu/">Connected Learning Lab</a>, the <a href="//futurehealth.ics.uci.edu/">Institute for Future Health</a>, <a href="//faculty.sites.uci.edu/schueller/">Stephen Schueller</a>, and <a href="//cs.pomona.edu/~apapoutsaki/">Alexandra Papoutsaki</a>.</p>
+	</div>
+	<div class="image d-none d-sm-block col-md-3">
+		<img class="logo" src='assets/images/pielab.png' alt='PIE Lab logo, a pie with wedges showing data represented as graphs and numbers'>
+	</div>
+</div>
+<div class="row">
+	<div class="col-12">
+		<h2>People</h2>
+	</div>
+	<div class="col-12">
+		<h3>Ph.D. Students</h3>
+	</div>
+	<div class="col-12 col-md-3" *ngFor="let phd of phdStudents">
+		<app-profile [student]="phd"></app-profile>
+	</div>
+	<div class="col-12">
+		<h3>M.S. Students</h3>
+	</div>
+	<div class="col-12 col-md-3" *ngFor="let ms of msStudents">
+		<app-profile [student]="ms"></app-profile>
+	</div>
+	<div class="col-12">
+		<h3>B.S. Students</h3>
+	</div>
+	<div class="col-6 col-md-2" *ngFor="let bs of bsStudents">
+		<app-profile [student]="bs" [showPicture]="false"></app-profile>
+	</div>
+	<div class="col-12">
+		<h3>Alumni</h3>
+	</div>
+	<div class="col-6 col-md-2" *ngFor="let alum of alumni">
+		<app-profile [student]="alum" [showPicture]="false"></app-profile>
+	</div>
+</div>
+<div class="row">
+	<div class="col-12">
+	<h2>Working with Us</h2>
+	<p>The PIE Lab is always looking for great students and researchers to join!</p>
+	<h3>Prospective Postdoctoral Scholars</h3>
+	<p>If you have or are soon to graduate with a Ph.D. in Informatics, Computer Science, or a related discipline and have a demonstrated publication record in HCI venues, please contact Daniel via email.</p>
+	<h3>Prospective Ph.D. Students</h3>
+	<p>You can apply to the <a href="//www.informatics.uci.edu/admissions/graduate-application-process/">Informatics Ph.D. Program</a>. Daniel is likely to miss your application if you apply to the Software Engineering or Computer Science programs, though in rare cases it may be possible for your application to one of these programs to get considered and/or moved.</p>
+	<p>Our students tend to have previous degrees in Computer Science, Information/Informatics, or related fields. The PIE Lab utilizes diverse methods, but students typically have a background in one or more of programming, frontend design, and user research. Applicants are expected to have strong interest in HCI, with interest in publishing in venues such as CHI, UbiComp/IMWUT, or CSCW.</p>
+	<p>Some of Daniel's Ph.D. students have emailed him prior to admission to UCI Informatics, while others have not. If you have a specific question, don't hesitate to email. That said, Daniel receives more individual emails from prospective students requesting for feedback on application materials or to chat than he can realistically respond to. The graduate admissions process at UCI incorporates opportunities to chat with one or more faculty if we're interested in your application.</p>
+	<h3>Current B.S. or M.S. Students at UCI</h3>
+	<p>The PIE Lab typically starts considering new students at the end of each quarter (week 8 or so) to join the group at the start of the following quarter. Projects tend to fill up, so waiting until the beginning of a quarter may be too late. We typically expect students to commit to working in the lab for at least two quarters.</p>
+	<p>If you're looking to join, reach out to Daniel with a resume, transcript, and answers to the following questions:
+	<ul>
+		<li>What do you hope to get out of working on research? For example, are you hoping to go to graduate school (Masters or Ph.D.)? Or to work on a project which could contribute to a work portfolio?</li>
+		<li>Are you most interested in programming, frontend design, user research, or something else?</li>
+		<li>Amidst your other commitments, how much do you realistically think you can commit to research each week? An honest assessment is more useful than a higher assessment.</li>
+		<li>When are you planning to graduate?</li>
+	</ul>
+	<p>We highly encourage you to look at recent <a href="/projects">projects</a> to better understand the kind of work done in the PIE Lab to ensure the topics are of interest to you.</p>
+	</div>
+</div>

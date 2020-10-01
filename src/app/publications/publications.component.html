@@ -1,18 +1,9 @@
 <div class="row">
 	<main class="col-12">
-		<div class="show">
-			<span>Show: </span>
-			<label for="journal">
-				<input type='checkbox' name='journal' id='journal' (change)="filterPublications()" [(ngModel)]="journal"> Journal articles
-			</label>
-			<label for="conference">
-				<input type='checkbox' name='conference' id='conference' (change)="filterPublications()" [(ngModel)]="conference"> Conference papers
-			</label>
-			<label for="workshop">
-				<input type='checkbox' name='workshop' id='workshop' (change)="filterPublications()" [(ngModel)]="workshop"> Lightly reviewed papers (workshop papers, posters)
-			</label>
-			<label for="book">
-				<input type='checkbox' name='book' id='book' (change)="filterPublications()" [(ngModel)]="book"> Books and book chapters
+		<div class="show row">
+			<span class="col-12">Show: </span>
+			<label [for]="pubType.type" class="col-12 col-md-6 col-lg-3" *ngFor="let pubType of publicationTypes">
+				<input type='checkbox' [name]='pubType.type' [id]='pubType.type' (change)="filterPublications()" [(ngModel)]="checked[pubType.type]"> {{pubType.name}}
 			</label>
 		</div>
 		<hr class="publications">

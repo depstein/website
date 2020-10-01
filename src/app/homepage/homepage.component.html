@@ -21,10 +21,10 @@
 			<span>depstein</span>
 		</a>
 		<h2>Ph.D. Students</h2>
-		<p><a href="https://eunkyungjo.weebly.com/">Eunkyung Jo</a></p>
-		<p><a href="https://www.lu-xi.net/">Xi Lu</a></p>
-		<p><a href="https://lsilva.net/">Lucas de Melo Silva</a></p>
-		<p>Dennis Wang</p>
+		<p *ngFor="let student of phdStudents">
+			<a *ngIf="student.link" [href]="student.link">{{student.name}}</a>
+			<span *ngIf="!student.link">{{student.name}}</span>
+		</p>
 		<h2>Teaching</h2>
 		<p><a href="https://www.informatics.uci.edu/explore/department-seminars/">IN4MATX 209S</a> (Fall 2020)</p>
 		<h2>Office Hours</h2>
@@ -54,7 +54,7 @@
 		</p>
 	</aside>
 	<main class="col-md-10 col-sm-12">
-		<p>I am an Assistant Professor in <a href="//informatics.uci.edu/">Informatics</a> at the University of California, Irvine.</p>
+		<p>I am an Assistant Professor in <a href="//informatics.uci.edu/">Informatics</a> at the University of California, Irvine, where I run the <a href="/pielab">Personal Informatics Everyday (PIE) Lab</a>.</p>
 		<p>I study how personal <a href="//www.personalinformatics.org/">tracking</a> technology can acknowledge and account for the realities of everyday life. More people are tracking today than ever before, and as a result they bring more varied expertise and goals than many apps and devices are designed to accommodate. I examine how the design of tracking technology can be improved, often prototyping and evaluating new design ideas.</p>
 		<p>My research is generously supported by the National Science Foundation and internal UCI programs.</p>
 		<p>I completed my Ph.D. in <a href="//cs.washington.edu">Computer Science &amp; Engineering</a> from the University of Washington and my B.S. in <a href="//cs.virginia.edu/">Computer Science</a> from the University of Virginia.</p>

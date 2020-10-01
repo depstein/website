@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Eunkyoung Jo",
+    "type": "phd",
+    "profile": "assets/images/labmembers/ejo.jpg",
+    "link": "//eunkyungjo.weebly.com/"
+  },
+  {
+    "name": "Xi Lu",
+    "type": "phd",
+    "profile": "assets/images/labmembers/xlu.jpg",
+    "link": "//lu-xi.net/"
+  },
+  {
+    "name": "Lucas de Melo Silva",
+    "type": "phd",
+    "profile": "assets/images/labmembers/lsilva.jpg",
+    "link": "//lsilva.net/"
+  },
+  {
+    "name": "Dennis Wang",
+    "type": "phd",
+    "profile": "assets/images/labmembers/dwang.jpg",
+    "link": "//scholar.google.com/citations?user=IjfEduAAAAAJ"
+  },
+  {
+    "name": "Jong Ho Lee",
+    "type": "ms",
+    "profile": "assets/images/labmembers/jlee.jpg",
+    "link": "//www.linkedin.com/in/leejongho92"
+  },
+  {
+    "name": "David Nguyen",
+    "type": "bs"
+  },
+  {
+    "name": "Sruthi Ramabadran",
+    "type": "bs",
+    "link": "//www.sruthiramabadran.com/"
+  },
+  {
+    "name": "Marawin Chheang",
+    "type": "bs",
+    "link": "https://marsc.dev/"
+  },
+  {
+    "name": "Ryan Mohta",
+    "type": "bs",
+    "link": "//ryanmohta.com/"
+  },
+  {
+    "name": "Siyun Ji",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Simran Ahuja",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Sazeda Sultana",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Payam Dowlat Yari",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Ryan Kato",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Yuqi Huai",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Griffin D’Haenens",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Zhaomin Li",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Tan Zhou",
+    "type": "ms",
+    "alum": true
+  },
+  {
+    "name": "Julie Tran",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Dakyung Go",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Craig Hilby",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Danny Beltran",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Kimberly Flores",
+    "type": "bs",
+    "alum": true
+  },
+  {
+    "name": "Liangze Yu",
+    "type": "bs",
+    "alum": true
+  }
+]
