@@ -1,9 +1,9 @@
 <div class="row">
-	<div class="col-sm-12 col-md-9">
+	<div class="col-12 col-md-9">
 		<p>The Personal Informatics Everyday (PIE) Lab examines how personal <a href="//www.personalinformatics.org/">informatics</a> systems can be improved to account for the realities of everyday life. For more information about recent PIE Lab projects, please see Daniel Epstein's <a href="/projects">project page</a> or the websites of other lab members.</p>
 		<p>We frequently collaborate and communicate with other labs, students, and faculty including the <a href="//hai.ics.uci.edu/">Health and Information (HAI) Lab</a>, the <a href="//connectedlearning.uci.edu/">Connected Learning Lab</a>, the <a href="//futurehealth.ics.uci.edu/">Institute for Future Health</a>, <a href="//faculty.sites.uci.edu/schueller/">Stephen Schueller</a>, and <a href="//cs.pomona.edu/~apapoutsaki/">Alexandra Papoutsaki</a>.</p>
 	</div>
-	<div class="image d-none d-sm-block col-md-3">
+	<div class="image d-none d-md-block col-md-3">
 		<img class="logo" src='assets/images/pielab.png' alt='PIE Lab logo, a pie with wedges showing data represented as graphs and numbers'>
 	</div>
 </div>
@@ -14,25 +14,25 @@
 	<div class="col-12">
 		<h3>Ph.D. Students</h3>
 	</div>
-	<div class="col-12 col-md-3" *ngFor="let phd of phdStudents">
+	<div class="col-12 col-sm-6 col-lg-3" *ngFor="let phd of phdStudents">
 		<app-profile [student]="phd"></app-profile>
 	</div>
 	<div class="col-12">
 		<h3>M.S. Students</h3>
 	</div>
-	<div class="col-12 col-md-3" *ngFor="let ms of msStudents">
+	<div class="col-12 col-sm-6 col-lg-3" *ngFor="let ms of msStudents">
 		<app-profile [student]="ms"></app-profile>
 	</div>
 	<div class="col-12">
 		<h3>B.S. Students</h3>
 	</div>
-	<div class="col-6 col-md-2" *ngFor="let bs of bsStudents">
+	<div class="col-6 col-sm-4 col-md-3 col-lg-2" *ngFor="let bs of bsStudents">
 		<app-profile [student]="bs" [showPicture]="false"></app-profile>
 	</div>
 	<div class="col-12">
 		<h3>Alumni</h3>
 	</div>
-	<div class="col-6 col-md-2" *ngFor="let alum of alumni">
+	<div class="col-6 col-sm-4 col-md-3 col-lg-2" *ngFor="let alum of alumni">
 		<app-profile [student]="alum" [showPicture]="false"></app-profile>
 	</div>
 </div>
