@@ -18,7 +18,7 @@
 		"date": "October 2020",
 		"type": "paper",
 		"local":"pubs/qli_pervasivehealth20.pdf",
-		"supplemental": [{"label":"slides", "link":"assets/docs/pervasivehealth20_slides.pdf"}, {"label":"talk recording", "link":"assets/docs/pervasivehealth20_video.mp4"}]
+		"supplemental": [{"label":"slides", "link":"assets/docs/pervasivehealth20_slides.pdf"}, {"label":"talk recording", "link":"https://www.youtube.com/watch?v=WGbLKappOqE"}]
 	},
 	{
 		"key":"critmenstruation20",
