@@ -11,6 +11,7 @@ export class ProjectsComponent implements OnInit {
 	practicesPublications:any[];
 	designPublications:any[];
 	socialPublications:any[];
+  reflectingPublications:any[];
 
   constructor(private pubs:ParsePublicationsService) {
   	this.pubs.getPublications().subscribe(allPubs => {
@@ -34,5 +35,9 @@ export class ProjectsComponent implements OnInit {
   	this.socialPublications = this.allPublications.filter((pub:{}) => {
   		return ['cscw20a', 'gi20', 'cscw17_online', 'chi16b', 'cscw15', 'ubi13'].includes(pub['key']);
   	});
+
+    this.reflectingPublications = this.allPublications.filter((pub:{}) => {
+      return ['imwut20', 'health20', 'pervasive17'].includes(pub['key']);
+    });
   }
 }
