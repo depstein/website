@@ -57,13 +57,14 @@ export class HomepageComponent implements OnInit {
   		return newT;
   	});
   	//Display up to 5 past travel items in ascending order
+    //Subtract a day so that today's events still show up as future
   	this.priorTravel = tvl.filter(t => {
-  		return moment(t['endDate'], "MMM DD YYYY") < moment();
+  		return moment(t['endDate'], "MMM DD YYYY") < moment().subtract(1, "days");
   	});
   	this.priorTravel = this.priorTravel.slice(0, 5).reverse();
   	//Display all future travel in ascending order
   	this.futureTravel = tvl.filter(t => {
-  		return moment(t['endDate'], "MMM DD YYYY") >= moment();
+  		return moment(t['endDate'], "MMM DD YYYY") >= moment().subtract(1, "days");
   	});
   	this.futureTravel = this.futureTravel.reverse();
   }

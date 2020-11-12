@@ -2,7 +2,9 @@
 	{
 		"key": "imwut20",
 		"date": "November 2020",
-		"type": "journal"
+		"type": "journal",
+		"local": "pubs/depstein_imwut20.pdf",
+		"supplemental": [{"label": "codebook", "link":"assets/docs/imwut20_supplemental.zip"}, {"label": "paper browser", "link":"http://personal-informatics.depstein.net/"}]
 	},
 	{
 		"key": "cscw20a",
