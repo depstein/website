@@ -25,7 +25,7 @@ export class ProjectsComponent implements OnInit {
 
   filterPublications() {
   	this.practicesPublications = this.allPublications.filter((pub:{}) => {
-  		return ['cscw20b', 'dis18', 'chi17a', 'chi16c', 'ubi15', 'chi15'].includes(pub['key']);
+  		return ['chi21a', 'chi21b', 'cscw20b', 'dis18', 'chi17a', 'chi16c', 'ubi15', 'chi15'].includes(pub['key']);
   	});
 
   	this.designPublications = this.allPublications.filter((pub:{}) => {

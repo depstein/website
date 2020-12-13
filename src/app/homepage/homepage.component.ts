@@ -77,6 +77,5 @@ export class HomepageComponent implements OnInit {
       let bNames = b['name'].split(' ');
       return aNames[aNames.length - 1].toLowerCase() < bNames[bNames.length - 1].toLowerCase()? -1 : 1;
     });
-    console.log(this.phdStudents);
   }
 }
