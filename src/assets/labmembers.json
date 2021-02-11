@@ -30,6 +30,12 @@
     "link": "//www.linkedin.com/in/leejongho92"
   },
   {
+    "name": "Neeraj Dharmadhikari",
+    "type": "ms",
+    "profile": "assets/images/labmembers/ndharmahikari.jpg",
+    "link": "//www.neerajd.xyz/"
+  },
+  {
     "name": "David Nguyen",
     "type": "bs"
   },
@@ -39,14 +45,19 @@
     "link": "//www.sruthiramabadran.com/"
   },
   {
-    "name": "Marawin Chheang",
-    "type": "bs",
-    "link": "https://marsc.dev/"
-  },
-  {
     "name": "Ryan Mohta",
     "type": "bs",
     "link": "//ryanmohta.com/"
+  },
+  {
+    "name": "Edward Wu",
+    "type": "bs"
+  },
+  {
+    "name": "Marawin Chheang",
+    "type": "bs",
+    "link": "https://marsc.dev/",
+    "alum": true
   },
   {
     "name": "Siyun Ji",
