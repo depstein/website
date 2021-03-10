@@ -10,9 +10,21 @@
 		"type": "paper"
 	},
 	{
+		"key":"chi21_wsb",
+		"date": "May 2020",
+		"type":"workshop"
+	},
+	{
+		"key":"chi21_wsa",
+		"date": "May 2020",
+		"type":"workshop",
+		"local":"pubs/dwang_chi21_work.pdf"
+	},
+	{
 		"key": "jamiaopen20",
-		"date": "March 2021",
-		"type": "journal"
+		"date": "January 2021",
+		"type": "journal",
+		"local": "pubs/figueiredo_jamiaopen21.pdf"
 	},
 	{
 		"key": "imwut20",
