@@ -26,9 +26,7 @@
 			<span *ngIf="!student.link">{{student.name}}</span>
 		</p>
 		<h2>Teaching</h2>
-		<p><a href="https://inf133-wi21.depstein.net/">IN4MATX 133</a> (Winter 2020)</p>
-		<p><a href="https://inf241-wi21.depstein.net/">IN4MATX 241</a> (Winter 2020)</p>
-		<p><a href="https://www.informatics.uci.edu/explore/department-seminars/">IN4MATX 209S</a> (Winter 2020)</p>
+		<p><a href="https://www.informatics.uci.edu/explore/department-seminars/">IN4MATX 209S</a> (Spring 2021)</p>
 		<h2>News</h2>
 		<p class="spacing" *ngFor="let newsItem of news">
 			<strong>{{newsItem.date | amParse:'MMM DD YYYY' | amDateFormat:'MMMM DD'}}</strong>
@@ -59,7 +57,7 @@
 		<p>My research is generously supported by the National Science Foundation and internal UCI programs.</p>
 		<p>I completed my Ph.D. in <a href="//cs.washington.edu">Computer Science &amp; Engineering</a> from the University of Washington and my B.S. in <a href="//cs.virginia.edu/">Computer Science</a> from the University of Virginia.</p>
 		<p>When I'm not working, I try to spend time outside by hiking or running. I also collect turtle figurines, plushies, and pictures.</p>
-		<h2>Selected Publications <a href="/publications/all">(all)</a></h2>
+		<h2>Select Recent Publications <a href="/publications/all">(all)</a></h2>
 		<app-citations [publications]="publications" [animate]=false [displayYears]=false></app-citations>
 	</main>
 </div>

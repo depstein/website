@@ -22,14 +22,19 @@ export class HomepageComponent implements OnInit {
 		this.setNews((news as any).default);
     this.setTravel((travel as any).default);
     this.setStudents((labmembers as any).default);
-  	this.pubs.getPublications().subscribe(allPubs => {
-  		this.publications = allPubs.filter((p) => {
-  			return ParsePublicationsService.ARCHIVAL.includes(p.type);
-  		});
-  	});
+  	this.setPublications();
   }
 
   ngOnInit() {
+  }
+
+  setPublications() {
+    this.pubs.getPublications().subscribe(allPubs => {
+      //Display the 12 most recent archival publications
+      this.publications = allPubs.filter((p) => {
+        return ParsePublicationsService.ARCHIVAL.includes(p.type);
+      }).slice(0, 12);
+    });
   }
 
   setNews(news:[]) {

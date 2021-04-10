@@ -33,10 +33,6 @@ export class ParsePublicationsService {
 					bib['author'] = bib['author'].split(" and ").map(function(n) {return n.split(",").reverse().join(' ').replace(/ /g, "\xa0").trim()}); //reverse hack will work in all trivial cases, e.g. Epstein, Daniel A.
 					if('booktitle' in bib) { //Most of my publications have a book title field (e.g., conference publications).
 						bib['booktitle'] = bib['booktitle'].replace(/\\/g, "").replace(/#38;/g, "");
-						//Put organizer roles in parantheses, because the series often includes "adjunct" or "extended abstracts"
-						if(bib['booktitle'].includes('Organizer')) {
-							bib['booktitle'] = '(' + bib['booktitle'] + ')';
-						}
 					}
 					if('journal' in bib) { //A few have journals instead.
 						bib['journal'] = bib['journal'].replace(/\\/g, "").replace(/#38;/g, "");
