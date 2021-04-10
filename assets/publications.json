@@ -1,8 +1,20 @@
 [
 	{
+		"key": "dis21a",
+		"date": "June 2021",
+		"type": "paper"
+	},
+	{
+		"key": "dis21b",
+		"date": "June 2021",
+		"type": "paper"
+	},
+	{
 		"key": "chi21a",
 		"date": "May 2021",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/xlu_chi21.pdf",
+		"supplemental": [{"label":"study materials", "link":"assets/docs/chi21a_supplemental.pdf"}]
 	},
 	{
 		"key": "chi21b",
@@ -12,12 +24,14 @@
 	{
 		"key":"chi21_wsc",
 		"date": "May 2020",
-		"type":"workshop"
+		"type":"workshop",
+		"local": "pubs/depstein_chi21_work.pdf"
 	},
 	{
 		"key":"chi21_wsb",
 		"date": "May 2020",
-		"type":"workshop"
+		"type":"workshop",
+		"local": "pubs/xlu_chi21_work.pdf"
 	},
 	{
 		"key":"chi21_wsa",
@@ -26,10 +40,10 @@
 		"local":"pubs/dwang_chi21_work.pdf"
 	},
 	{
-		"key": "jamiaopen20",
+		"key": "jamiaopen21",
 		"date": "January 2021",
 		"type": "journal",
-		"local": "pubs/figueiredo_jamiaopen21.pdf"
+		"local": "pubs/mfigueiredo_jamiaopen21.pdf"
 	},
 	{
 		"key": "imwut20",

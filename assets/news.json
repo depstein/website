@@ -1,5 +1,9 @@
 [
   {
+    "date":"April 10 2021",
+    "description":"Two CHI papers on <a href='assets/pubs/xlu_chi21.pdf'>contact tracing</a> and <a href='assets/pubs/ioygur_chi21.pdf'>child-owned wearables</a>."
+  },
+  {
     "date":"November 12 2020",
     "description":"New IMWUT paper on tacking stock of the <a href='assets/pubs/depstein_imwut20.pdf'>personal informatics literature</a>, with related <a href='http://personal-informatics.depstein.net/'>paper browser</a>. A real team effort!"
   },
