@@ -19,7 +19,8 @@
 	{
 		"key": "chi21b",
 		"date": "May 2021",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/ioygur_chi21.pdf"
 	},
 	{
 		"key":"chi21_wsc",
