@@ -2,25 +2,30 @@
 	{
 		"key": "dis21a",
 		"date": "June 2021",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/lsilva_dis21.pdf",
+		"supplemental":[{"label":"study materials", "link":"assets/docs/dis21a_supplemental.pdf"}]
 	},
 	{
 		"key": "dis21b",
 		"date": "June 2021",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/xlu_dis21.pdf",
+		"supplemental": [{"label":"app analysis", "link":"assets/docs/dis21b_supplemental.zip"}]
 	},
 	{
 		"key": "chi21a",
 		"date": "May 2021",
 		"type": "paper",
 		"local": "pubs/xlu_chi21.pdf",
-		"supplemental": [{"label":"study materials", "link":"assets/docs/chi21a_supplemental.pdf"}]
+		"supplemental": [{"label":"study materials", "link":"assets/docs/chi21a_supplemental.pdf"}, {"label":"talk recording", "link":"https://www.youtube.com/watch?v=d0iNE8Di-1E"}]
 	},
 	{
 		"key": "chi21b",
 		"date": "May 2021",
 		"type": "paper",
-		"local": "pubs/ioygur_chi21.pdf"
+		"local": "pubs/ioygur_chi21.pdf",
+		"supplemental": [{"label":"talk recording", "link":"https://www.youtube.com/watch?v=3yb8roAteY0"}]
 	},
 	{
 		"key":"chi21_wsc",
