@@ -208,7 +208,7 @@
 	{
 		"key":"ubi16_ws",
 		"date": "September 2016",
-		"local" : "assets/pubs/arapp_ubi16_work.pdf",
+		"local" : "pubs/arapp_ubi16_work.pdf",
 		"type": "organizer"
 	},
 	{
@@ -269,7 +269,7 @@
 	{
 		"key":"ubi14_ws",
 		"date": "September 2014",
-		"local" : "assets/pubs/depstein_ubi14_work.pdf",
+		"local" : "pubs/depstein_ubi14_work.pdf",
 		"type": "workshop"
 	},
 	{

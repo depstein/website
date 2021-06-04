@@ -27,13 +27,23 @@
     "name": "Jong Ho Lee",
     "type": "ms",
     "profile": "assets/images/labmembers/jlee.jpg",
-    "link": "//www.linkedin.com/in/leejongho92"
+    "link": "//www.linkedin.com/in/leejongho92",
+    "alum": true
   },
   {
     "name": "Neeraj Dharmadhikari",
     "type": "ms",
     "profile": "assets/images/labmembers/ndharmahikari.jpg",
-    "link": "//www.neerajd.xyz/"
+    "link": "//www.neerajd.xyz/",
+    "alum": true
+  },
+  {
+    "name": "Jocelyn Eng",
+    "type": "bs"
+  },
+  {
+    "name": "Nick Turpitka",
+    "type": "bs"
   },
   {
     "name": "David Nguyen",
@@ -42,7 +52,8 @@
   {
     "name": "Sruthi Ramabadran",
     "type": "bs",
-    "link": "//www.sruthiramabadran.com/"
+    "link": "//www.sruthiramabadran.com/",
+    "alum": true
   },
   {
     "name": "Ryan Mohta",

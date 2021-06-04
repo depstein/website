@@ -11,25 +11,25 @@
 	<div class="col-12">
 		<h2>People</h2>
 	</div>
-	<div class="col-12">
+	<div class="col-12" *ngIf="phdStudents.length > 0">
 		<h3>Ph.D. Students</h3>
 	</div>
 	<div class="col-12 col-sm-6 col-lg-3" *ngFor="let phd of phdStudents">
 		<app-profile [student]="phd"></app-profile>
 	</div>
-	<div class="col-12">
+	<div class="col-12" *ngIf="msStudents.length > 0">
 		<h3>M.S. Students</h3>
 	</div>
 	<div class="col-12 col-sm-6 col-lg-3" *ngFor="let ms of msStudents">
 		<app-profile [student]="ms"></app-profile>
 	</div>
-	<div class="col-12">
+	<div class="col-12" *ngIf="bsStudents.length > 0">
 		<h3>B.S. Students</h3>
 	</div>
 	<div class="col-6 col-sm-4 col-md-3 col-lg-2" *ngFor="let bs of bsStudents">
 		<app-profile [student]="bs" [showPicture]="false"></app-profile>
 	</div>
-	<div class="col-12">
+	<div class="col-12" *ngIf="alumni.length > 0">
 		<h3>Alumni</h3>
 	</div>
 	<div class="col-6 col-sm-4 col-md-3 col-lg-2" *ngFor="let alum of alumni">
