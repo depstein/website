@@ -30,9 +30,9 @@ export class HomepageComponent implements OnInit {
 
   setPublications() {
     this.pubs.getPublications().subscribe(allPubs => {
-      //Display the 12 most recent archival publications
+      //Display the 12 most recent archival publications with PDFs available
       this.publications = allPubs.filter((p) => {
-        return ParsePublicationsService.ARCHIVAL.includes(p.type);
+        return ParsePublicationsService.ARCHIVAL.includes(p.type) && (p.local || p.url);
       }).slice(0, 12);
     });
   }

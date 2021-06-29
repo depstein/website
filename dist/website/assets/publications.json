@@ -1,17 +1,37 @@
 [
 	{
+		"key": "cscw21c",
+		"date": "August 2021",
+		"type": "journal"
+	},
+	{
+		"key": "cscw21b",
+		"date": "August 2021",
+		"type": "journal"
+	},
+	{
+		"key": "cscw21a",
+		"date": "August 2021",
+		"type": "journal"
+	},
+	{
+		"key": "jmh21",
+		"date": "July 2021",
+		"type": "journal"
+	},
+	{
 		"key": "dis21a",
 		"date": "June 2021",
 		"type": "paper",
 		"local": "pubs/lsilva_dis21.pdf",
-		"supplemental":[{"label":"study materials", "link":"assets/docs/dis21a_supplemental.pdf"}]
+		"supplemental":[{"label":"study materials", "link":"assets/docs/dis21a_supplemental.pdf"}, {"label":"talk recording", "link":"https://www.youtube.com/watch?v=JYDQhGER6Qs"}]
 	},
 	{
 		"key": "dis21b",
 		"date": "June 2021",
 		"type": "paper",
 		"local": "pubs/xlu_dis21.pdf",
-		"supplemental": [{"label":"app analysis", "link":"assets/docs/dis21b_supplemental.zip"}]
+		"supplemental": [{"label":"app analysis", "link":"assets/docs/dis21b_supplemental.zip"}, {"label":"talk recording", "link":"https://www.youtube.com/watch?v=KbzbopMZwSo"}]
 	},
 	{
 		"key": "chi21a",
@@ -31,7 +51,7 @@
 		"key":"chi21_wsc",
 		"date": "May 2020",
 		"type":"workshop",
-		"local": "pubs/depstein_chi21_work.pdf"
+		"local": "pubs/lsilva_chi21_work.pdf"
 	},
 	{
 		"key":"chi21_wsb",

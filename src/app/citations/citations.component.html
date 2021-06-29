@@ -4,8 +4,7 @@
   	<div class="title">{{pub.title}}</div>
   	<div class="authors">
   		<span *ngFor="let a of pub.author; index as j">
-	  		<em *ngIf="a == 'Daniel A. Epstein'">{{a}}</em>
-	  		<span *ngIf="a != 'Daniel A. Epstein'">{{a}}</span>
+	  		<span>{{a}}</span>
 	  		<span *ngIf="j < pub.author.length - 1">, </span>
 	  	</span>
   	</div>
