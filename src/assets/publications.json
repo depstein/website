@@ -1,5 +1,10 @@
 [
 	{
+		"key": "cscw21_ws",
+		"date": "October 2021",
+		"type": "organizer"
+	},
+	{
 		"key": "cscw21c",
 		"date": "August 2021",
 		"type": "journal"
