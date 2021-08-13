@@ -47,7 +47,8 @@
   },
   {
     "name": "David Nguyen",
-    "type": "bs"
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Sruthi Ramabadran",
@@ -58,11 +59,13 @@
   {
     "name": "Ryan Mohta",
     "type": "bs",
-    "link": "//ryanmohta.com/"
+    "link": "//ryanmohta.com/",
+    "alum": true
   },
   {
     "name": "Edward Wu",
-    "type": "bs"
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Marawin Chheang",
