@@ -25,6 +25,12 @@
 		"type": "journal"
 	},
 	{
+		"key": "longtermhci21",
+		"date": "August 2021",
+		"type": "bookchapter",
+		"local": "pubs/depstein_longtermhci21.pdf"
+	},
+	{
 		"key": "jmh21",
 		"date": "August 2021",
 		"type": "journal",
