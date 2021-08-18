@@ -34,7 +34,8 @@
 		"key": "jmh21",
 		"date": "August 2021",
 		"type": "journal",
-		"local": "pubs/sschueller_jmh21.pdf"
+		"local": "pubs/sschueller_jmh21.pdf",
+		"supplemental": [{"label":"study materials", "link":"assets/docs/jmh21_supplemental.zip"}]
 	},
 	{
 		"key": "dis21a",
