@@ -5,24 +5,28 @@
 		"type": "organizer"
 	},
 	{
-		"key": "pervasive21",
-		"date": "September 2021",
-		"type": "journal"
-	},
-	{
 		"key": "cscw21c",
-		"date": "August 2021",
-		"type": "journal"
+		"date": "September 2021",
+		"type": "journal",
+		"local": "pubs/xlu_cscw21.pdf"
 	},
 	{
 		"key": "cscw21b",
-		"date": "August 2021",
-		"type": "journal"
+		"date": "September 2021",
+		"type": "journal",
+		"local": "pubs/apapoutsaki_cscw21.pdf"
 	},
 	{
 		"key": "cscw21a",
-		"date": "August 2021",
-		"type": "journal"
+		"date": "September 2021",
+		"type": "journal",
+		"local": "pubs/jjamieson_cscw21.pdf"
+	},
+	{
+		"key": "pervasive21",
+		"date": "September 2021",
+		"type": "journal",
+		"local": "pubs/lsilva_pervasive21.pdf"
 	},
 	{
 		"key": "longtermhci21",

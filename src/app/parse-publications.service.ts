@@ -40,6 +40,9 @@ export class ParsePublicationsService {
 					if('series' in bib) {
 						bib['series'] = bib['series'].replace(/'/g, 20); // '15 -> 2015
 					}
+					if('doi' in bib && !('url' in bib)) {
+						bib['url'] = 'http://doi.org/' + bib['doi'];
+					}
 					Object.keys(bib).forEach(b => { //shallow copy into the entry and notify the observable
 						entry[b] = bib[b];
 					});
