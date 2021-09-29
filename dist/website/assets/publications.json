@@ -98,7 +98,7 @@
 		"date": "November 2020",
 		"type": "journal",
 		"local": "pubs/depstein_imwut20.pdf",
-		"supplemental": [{"label": "codebook", "link":"assets/docs/imwut20_supplemental.zip"}, {"label": "paper browser", "link":"http://personal-informatics.depstein.net/"}]
+		"supplemental": [{"label": "codebook", "link":"assets/docs/imwut20_supplemental.zip"}, {"label": "paper browser", "link":"http://personal-informatics.depstein.net/"}, {"label": "slides", "link": "assets/docs/imwut20_slides.pdf"}, {"label": "talk recording", "link": "assets/docs/imwut20_talk.pdf"}]
 	},
 	{
 		"key": "cscw20a",
