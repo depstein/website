@@ -1,24 +1,35 @@
 [
 	{
+		"key": "cscw21d",
+		"date": "December 2021",
+		"type": "journal"
+	},
+	{
 		"key": "cscw21_ws",
 		"date": "October 2021",
 		"type": "organizer"
 	},
 	{
+		"key":"cscw21_wsa",
+		"date": "October 2021",
+		"type":"workshop",
+		"local":"pubs/dwang_cscw21_work.pdf"
+	},
+	{
 		"key": "cscw21c",
-		"date": "September 2021",
+		"date": "October 2021",
 		"type": "journal",
 		"local": "pubs/xlu_cscw21.pdf"
 	},
 	{
 		"key": "cscw21b",
-		"date": "September 2021",
+		"date": "October 2021",
 		"type": "journal",
 		"local": "pubs/apapoutsaki_cscw21.pdf"
 	},
 	{
 		"key": "cscw21a",
-		"date": "September 2021",
+		"date": "October 2021",
 		"type": "journal",
 		"local": "pubs/jjamieson_cscw21.pdf"
 	},
