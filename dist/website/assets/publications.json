@@ -29,19 +29,22 @@
 		"key": "cscw21c",
 		"date": "October 2021",
 		"type": "journal",
-		"local": "pubs/xlu_cscw21.pdf"
+		"local": "pubs/xlu_cscw21.pdf",
+		"supplemental": [{"label":"talk recording", "link":"https://youtu.be/drJ9JIyee8U"}]
 	},
 	{
 		"key": "cscw21b",
 		"date": "October 2021",
 		"type": "journal",
-		"local": "pubs/apapoutsaki_cscw21.pdf"
+		"local": "pubs/apapoutsaki_cscw21.pdf",
+		"supplemental": [{"label":"codebook", "link":"assets/docs/cscw21b_supplemental.xlsx"}, {"label":"talk recording", "link":"https://youtu.be/e-nOYW7felM"}]
 	},
 	{
 		"key": "cscw21a",
 		"date": "October 2021",
 		"type": "journal",
-		"local": "pubs/jjamieson_cscw21.pdf"
+		"local": "pubs/jjamieson_cscw21.pdf",
+		"supplemental": [{"label":"study materials", "link":"assets/docs/cscw21a_supplemental.pdf"}, {"label":"talk recording", "link":"https://youtu.be/uRkMUJtCJDg"}]
 	},
 	{
 		"key": "pervasive21",
