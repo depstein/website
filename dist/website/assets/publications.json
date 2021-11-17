@@ -1,5 +1,15 @@
 [
 	{
+		"key": "chi22b",
+		"date": "May 2022",
+		"type": "paper"
+	},
+	{
+		"key": "chi22a",
+		"date": "May 2022",
+		"type": "paper"
+	},
+	{
 		"key": "mobilevis21",
 		"date": "December 2021",
 		"type": "bookchapter"
@@ -7,7 +17,8 @@
 	{
 		"key": "imwut21",
 		"date": "December 2021",
-		"type": "journal"
+		"type": "journal",
+		"local": "pubs/jlee_imwut21.pdf"
 	},
 	{
 		"key": "cscw21d",
