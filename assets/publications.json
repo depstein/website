@@ -12,7 +12,8 @@
 	{
 		"key": "mobilevis21",
 		"date": "December 2021",
-		"type": "bookchapter"
+		"type": "bookchapter",
+		"local": "pubs/depstein_mobilevis21.pdf"
 	},
 	{
 		"key": "imwut21",
