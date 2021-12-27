@@ -1,5 +1,10 @@
 [
 	{
+		"key": "chi22_ws",
+		"date": "May 2022",
+		"type": "organizer"
+	},
+	{
 		"key": "chi22b",
 		"date": "May 2022",
 		"type": "paper"
