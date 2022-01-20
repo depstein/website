@@ -15,6 +15,11 @@
 		"type": "paper"
 	},
 	{
+		"key": "cscw22a",
+		"date": "February 2022",
+		"type": "journal"
+	},
+	{
 		"key": "mobilevis21",
 		"date": "December 2021",
 		"type": "bookchapter",
@@ -25,11 +30,6 @@
 		"date": "December 2021",
 		"type": "journal",
 		"local": "pubs/jlee_imwut21.pdf"
-	},
-	{
-		"key": "cscw21d",
-		"date": "December 2021",
-		"type": "journal"
 	},
 	{
 		"key": "cscw21_ws",
