@@ -1,23 +1,27 @@
 [
 	{
-		"key": "chi22_ws",
-		"date": "May 2022",
-		"type": "organizer"
-	},
-	{
 		"key": "chi22b",
 		"date": "May 2022",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/ejo_chi22.pdf"
 	},
 	{
 		"key": "chi22a",
 		"date": "May 2022",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/jjamieson_chi22.pdf"
+	},
+	{
+		"key": "chi22_ws",
+		"date": "May 2022",
+		"type": "organizer",
+		"local": "pubs/lmamykina_chi22_work.pdf"
 	},
 	{
 		"key": "cscw22a",
-		"date": "February 2022",
-		"type": "journal"
+		"date": "April 2022",
+		"type": "journal",
+		"local": "pubs/ejo_cscw22.pdf"
 	},
 	{
 		"key": "mobilevis21",
