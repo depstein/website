@@ -24,6 +24,12 @@
 		"local": "pubs/ejo_cscw22.pdf"
 	},
 	{
+		"key": "pervasive22",
+		"date": "January 2022",
+		"type": "journal",
+		"local": "pubs/lsilva_pervasive22.pdf"
+	},
+	{
 		"key": "mobilevis21",
 		"date": "December 2021",
 		"type": "bookchapter",
@@ -67,12 +73,6 @@
 		"type": "journal",
 		"local": "pubs/jjamieson_cscw21.pdf",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/cscw21a_supplemental.pdf"}, {"label":"talk recording", "link":"https://youtu.be/uRkMUJtCJDg"}]
-	},
-	{
-		"key": "pervasive21",
-		"date": "September 2021",
-		"type": "journal",
-		"local": "pubs/lsilva_pervasive21.pdf"
 	},
 	{
 		"key": "longtermhci21",
