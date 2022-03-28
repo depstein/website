@@ -46,8 +46,13 @@
     "type": "bs"
   },
   {
-    "name": "Allison Liu",
+    "name": "Qiran Wang",
     "type": "bs"
+  },
+  {
+    "name": "Allison Liu",
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Nick Turpitka",

@@ -1,5 +1,17 @@
 [
 	{
+		"key": "chi22_wsb",
+		"date": "May 2022",
+		"type": "workshop",
+		"local": "pubs/ejo_chi22_work.pdf"
+	},
+	{
+		"key": "chi22_wsa",
+		"date": "May 2022",
+		"type": "workshop",
+		"local": "pubs/xlu_chi22_work.pdf"
+	},
+	{
 		"key": "chi22b",
 		"date": "May 2022",
 		"type": "paper",
@@ -9,7 +21,8 @@
 		"key": "chi22a",
 		"date": "May 2022",
 		"type": "paper",
-		"local": "pubs/jjaimeson_chi22.pdf"
+		"local": "pubs/jjaimeson_chi22.pdf",
+		"notes": "Honorable Mention (Top 5%)"
 	},
 	{
 		"key": "chi22_ws",
