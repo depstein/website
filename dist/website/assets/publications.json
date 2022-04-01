@@ -1,5 +1,15 @@
 [
 	{
+		"key": "cscw22c",
+		"date": "July 2022",
+		"type": "journal"
+	},
+	{
+		"key": "cscw22b",
+		"date": "July 2022",
+		"type": "journal"
+	},
+	{
 		"key": "chi22_wsb",
 		"date": "May 2022",
 		"type": "workshop",
@@ -15,14 +25,16 @@
 		"key": "chi22b",
 		"date": "May 2022",
 		"type": "paper",
-		"local": "pubs/ejo_chi22.pdf"
+		"local": "pubs/ejo_chi22.pdf",
+		"supplemental": [{"label":"study materials", "link":"assets/docs/chi22b_supplemental.zip"}]
 	},
 	{
 		"key": "chi22a",
 		"date": "May 2022",
 		"type": "paper",
 		"local": "pubs/jjaimeson_chi22.pdf",
-		"notes": "Honorable Mention (Top 5%)"
+		"notes": "Honorable Mention (Top 5%)",
+		"supplemental": [{"label":"study materials", "link":"assets/docs/chi22a_supplemental.zip"}]
 	},
 	{
 		"key": "chi22_ws",
