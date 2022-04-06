@@ -26,7 +26,7 @@
 		"date": "May 2022",
 		"type": "paper",
 		"local": "pubs/ejo_chi22.pdf",
-		"supplemental": [{"label":"study materials", "link":"assets/docs/chi22b_supplemental.zip"}]
+		"supplemental": [{"label":"study materials", "link":"assets/docs/chi22b_supplemental.zip"}, {"label":"talk recording", "link":"https://youtu.be/7f-lY0l8J28"}]
 	},
 	{
 		"key": "chi22a",
@@ -34,7 +34,7 @@
 		"type": "paper",
 		"local": "pubs/jjaimeson_chi22.pdf",
 		"notes": "Honorable Mention (Top 5%)",
-		"supplemental": [{"label":"study materials", "link":"assets/docs/chi22a_supplemental.zip"}]
+		"supplemental": [{"label":"study materials", "link":"assets/docs/chi22a_supplemental.zip"}, {"label":"talk recording", "link":"https://youtu.be/UA5tmt5Qkk4"}]
 	},
 	{
 		"key": "chi22_ws",
