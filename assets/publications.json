@@ -64,7 +64,8 @@
 		"key": "imwut21",
 		"date": "December 2021",
 		"type": "journal",
-		"local": "pubs/jlee_imwut21.pdf"
+		"local": "pubs/jlee_imwut21.pdf",
+		"supplemental": [{"label": "study materials", "link": "assets/docs/imwut21_supplemental.pdf"}]
 	},
 	{
 		"key": "cscw21_ws",
