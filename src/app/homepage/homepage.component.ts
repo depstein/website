@@ -47,7 +47,7 @@ export class HomepageComponent implements OnInit {
   		let newT = t as Object;
   		let startDate = moment(t['startDate'], "MMM DD YYYY");
   		let endDate = moment(t['endDate'], "MMM DD YYYY");
-  		if(startDate.day() == endDate.day() && startDate.month() == endDate.month()) {
+  		if(startDate.date() == endDate.date() && startDate.month() == endDate.month()) {
   			//Display "Month Date"
   			newT['formattedDate'] = startDate.format("MMMM D");
   		}
