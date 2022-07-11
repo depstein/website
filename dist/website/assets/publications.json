@@ -1,17 +1,27 @@
 [
 	{
 		"key": "cscw22d",
-		"date": "August 2022",
+		"date": "November 2022",
 		"type": "journal"
 	},
 	{
 		"key": "cscw22c",
-		"date": "August 2022",
+		"date": "November 2022",
 		"type": "journal"
 	},
 	{
 		"key": "cscw22b",
-		"date": "August 2022",
+		"date": "November 2022",
+		"type": "journal"
+	},
+	{
+		"key": "cscw22_demo",
+		"date": "November 2022",
+		"type": "workshop"
+	},
+	{
+		"key": "imwut22",
+		"date": "September 2022",
 		"type": "journal"
 	},
 	{
