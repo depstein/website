@@ -26,15 +26,15 @@ export class ProjectsComponent implements OnInit {
 
   filterPublications() {
   	this.practicesPublications = this.allPublications.filter((pub:{}) => {
-  		return ['chi22a', 'cscw21a','jmh21','dis21b','chi21a', 'chi21b', 'cscw20b', 'chi17a', 'chi16c', 'ubi15', 'chi15'].includes(pub['key']);
+  		return ['chi22a', 'cscw21a','jmh21','dis21b','chi21a', 'chi21b', 'cscw20b', 'chi17a', 'chi16c', 'ubi15', 'chi15', 'cscw22b'].includes(pub['key']);
   	});
 
   	this.designPublications = this.allPublications.filter((pub:{}) => {
-  		return ['imwut21','dis21a', 'ubi16', 'chi16a', 'dis14', 'pervasivehealth20'].includes(pub['key']);
+  		return ['imwut21','dis21a', 'ubi16', 'chi16a', 'dis14', 'pervasivehealth20', 'imwut22'].includes(pub['key']);
   	});
 
   	this.socialPublications = this.allPublications.filter((pub:{}) => {
-  		return ['cscw21c', 'cscw20a', 'gi20', 'cscw17_online', 'chi16b', 'cscw15', 'ubi13'].includes(pub['key']);
+  		return ['cscw21c', 'cscw20a', 'gi20', 'cscw17_online', 'chi16b', 'cscw15', 'ubi13', 'cscw22d'].includes(pub['key']);
   	});
 
     this.clinicalPublications = this.allPublications.filter((pub:{}) => {
@@ -42,7 +42,7 @@ export class ProjectsComponent implements OnInit {
     });
 
     this.reflectingPublications = this.allPublications.filter((pub:{}) => {
-      return ['pervasive21','imwut20', 'health20', 'pervasive17'].includes(pub['key']);
+      return ['pervasive21','imwut20', 'health20', 'pervasive17', 'cscw22c'].includes(pub['key']);
     });
   }
 }

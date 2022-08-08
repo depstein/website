@@ -1,5 +1,9 @@
 [
   {
+    "date": "August 3 2022",
+    "description": "Welcome to <a href='//matthewdressa.github.io/Personal-Portfolio/'>Matthew Dressa</a>, and new IMWUT paper on <a href='assets/pubs/xlu_imwut22.pdf'>semi-automated food journaling</a>!"
+  },
+  {
     "date": "March 28 2022",
     "description": "New CSCW paper on <a href='assets/pubs/ejo_cscw22.pdf'>caregiver tracking</a> & new CHI papers on supporting <a href='assets/pubs/ejo_chi22.pdf'>longitudinal regimens</a> and <a href='assets/pubs/jjaimeson_chi22.pdf'>contact tracing</a>."
   },

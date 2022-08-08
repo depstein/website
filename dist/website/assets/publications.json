@@ -17,12 +17,15 @@
 	{
 		"key": "cscw22_demo",
 		"date": "November 2022",
-		"type": "workshop"
+		"type": "demo",
+		"local": "pubs/lliu_cscw22_demo.pdf"
 	},
 	{
 		"key": "imwut22",
 		"date": "September 2022",
-		"type": "journal"
+		"type": "journal",
+		"local": "pubs/xlu_imwut22.pdf",
+		"supplemental": [{"label":"study materials", "link":"assets/docs/imwut22_supplemental.zip"}]
 	},
 	{
 		"key": "chi22_wsb",

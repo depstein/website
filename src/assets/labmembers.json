@@ -24,6 +24,12 @@
     "link": "//denniswang.info/"
   },
   {
+    "name": "Matthew Dressa",
+    "type": "phd",
+    "profile": "assets/images/labmembers/mdressa.jpg",
+    "link": "//matthewdressa.github.io/Personal-Portfolio/"
+  },
+  {
     "name": "Jong Ho Lee",
     "type": "ms",
     "profile": "assets/images/labmembers/jlee.jpg",
@@ -38,16 +44,23 @@
     "alum": true
   },
   {
-    "name": "Jocelyn Eng",
+    "name": "Jax Powell",
     "type": "bs"
+  },
+  {
+    "name": "Jocelyn Eng",
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Ileen Fan",
-    "type": "bs"
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Qiran Wang",
-    "type": "bs"
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Allison Liu",
@@ -56,7 +69,8 @@
   },
   {
     "name": "Nick Turpitka",
-    "type": "bs"
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "David Nguyen",
