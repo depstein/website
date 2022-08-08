@@ -1,2 +1,3 @@
 ng build --configuration production
-npx ngh --dir=dist/website --cname=depstein.net
+#might need npx
+ngh --dir=dist/website --cname=depstein.net
