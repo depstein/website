@@ -2,7 +2,9 @@
 	{
 		"key": "cscw22d",
 		"date": "November 2022",
-		"type": "journal"
+		"type": "journal",
+		"local": "pubs/dwang_cscw22.pdf",
+		"supplemental": [{"label":"demo video", "link":"assets/docs/cscw22d_video.mp4"}, {"label":"study materials", "link":"assets/docs/cscw22d_supplemental.zip"}]
 	},
 	{
 		"key": "cscw22c",
@@ -13,13 +15,16 @@
 	{
 		"key": "cscw22b",
 		"date": "November 2022",
-		"type": "journal"
+		"type": "journal",
+		"local": "pubs/xlu_cscw22.pdf",
+		"supplemental": [{"label":"study materials", "link":"assets/docs/cscw22b_supplemental.zip"}]
 	},
 	{
 		"key": "cscw22_demo",
 		"date": "November 2022",
 		"type": "demo",
-		"local": "pubs/lliu_cscw22_demo.pdf"
+		"local": "pubs/lliu_cscw22_demo.pdf",
+		"supplemental": [{"label": "demo video", "link":"assets/docs/cscw22_demo_video.mp4"}]
 	},
 	{
 		"key": "imwut22",
