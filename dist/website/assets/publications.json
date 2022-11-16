@@ -4,20 +4,21 @@
 		"date": "November 2022",
 		"type": "journal",
 		"local": "pubs/dwang_cscw22.pdf",
-		"supplemental": [{"label":"demo video", "link":"assets/docs/cscw22d_video.mp4"}, {"label":"study materials", "link":"assets/docs/cscw22d_supplemental.zip"}]
+		"supplemental": [{"label":"demo video", "link":"assets/docs/cscw22d_video.mp4"}, {"label":"study materials", "link":"assets/docs/cscw22d_supplemental.zip"}, {"label":"talk recording", "link":"https://youtu.be/TsXZXvxQjQY"}]
 	},
 	{
 		"key": "cscw22c",
 		"date": "November 2022",
 		"type": "journal",
-		"local": "pubs/depstein_cscw22.pdf"
+		"local": "pubs/depstein_cscw22.pdf",
+		"supplemental": [{"label":"talk recording", "link":"https://youtu.be/w3PmufkgB94"}]
 	},
 	{
 		"key": "cscw22b",
 		"date": "November 2022",
 		"type": "journal",
 		"local": "pubs/xlu_cscw22.pdf",
-		"supplemental": [{"label":"study materials", "link":"assets/docs/cscw22b_supplemental.zip"}]
+		"supplemental": [{"label":"study materials", "link":"assets/docs/cscw22b_supplemental.zip"}, {"label":"talk recording", "link": "https://youtu.be/Hkqbk5vfPu8"}]
 	},
 	{
 		"key": "cscw22_demo",
@@ -70,7 +71,8 @@
 		"key": "cscw22a",
 		"date": "April 2022",
 		"type": "journal",
-		"local": "pubs/ejo_cscw22.pdf"
+		"local": "pubs/ejo_cscw22.pdf",
+		"supplemental": [{"label":"talk recording", "link":"https://youtu.be/bO0gLutDV9M"}]
 	},
 	{
 		"key": "pervasive22",
