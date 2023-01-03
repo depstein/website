@@ -1,5 +1,9 @@
 [
   {
+    "date": "January 1 2023",
+    "description": "I'm on parental leave this Winter, so I might be slow to get to your email."
+  },
+  {
     "date": "August 29 2022",
     "description": "Three new CSCW papers on <a href='assets/pubs/dwang_cscw22.pdf'>SnapPI</a>, <a href='assets/pubs/xlu_cscw22.pdf'>contact tracing</a> and <a href='assets/pubs/depstein_cscw22.pdf'>piggyback prototyping</a>."
   },

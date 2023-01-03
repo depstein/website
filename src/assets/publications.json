@@ -1,5 +1,11 @@
 [
 	{
+		"key": "chi23_ws",
+		"date": "April 2023",
+		"type": "organizer",
+		"local": "pubs/depstein_chi23_work.pdf"
+	},
+	{
 		"key": "cscw22d",
 		"date": "November 2022",
 		"type": "journal",
