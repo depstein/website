@@ -2,17 +2,20 @@
 	{
 		"key": "chi23c",
 		"date": "May 2023",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/lsilva_chi23.pdf"
 	},
 	{
 		"key": "chi23b",
 		"date": "May 2023",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/ejo_chi23.pdf"
 	},
 	{
 		"key": "chi23a",
 		"date": "May 2023",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/rgouveia_chi23.pdf"
 	},
 	{
 		"key": "chi23_ws",
