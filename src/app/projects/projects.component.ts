@@ -30,7 +30,7 @@ export class ProjectsComponent implements OnInit {
   	});
 
   	this.designPublications = this.allPublications.filter((pub:{}) => {
-  		return ['imwut22', 'imwut21','dis21a', 'ubi16', 'chi16a', 'dis14', 'pervasivehealth20'].includes(pub['key']);
+  		return ['mobilehci23', 'imwut22', 'imwut21','dis21a', 'ubi16', 'chi16a', 'dis14', 'pervasivehealth20'].includes(pub['key']);
   	});
 
   	this.socialPublications = this.allPublications.filter((pub:{}) => {
