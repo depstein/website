@@ -35,7 +35,7 @@
 			<span *ngIf="!student.link">{{student.name}}</span>
 		</p>
 		<h2>Teaching</h2>
-		<p>None (Winter 2023)</p>
+		<p><a href="http://inf232-sp23.depstein.net/">IN4MATX 232 (Spring 2023)</a></p>
 		<h2>News</h2>
 		<p class="spacing" *ngFor="let newsItem of news">
 			<strong>{{newsItem.date | amParse:'MMM DD YYYY' | amDateFormat:'MMMM D'}}</strong>
@@ -66,7 +66,6 @@
 		<p>My research is generously supported by the National Science Foundation, Snap Inc., and internal UCI programs.</p>
 		<p>I completed my Ph.D. in <a href="//cs.washington.edu">Computer Science &amp; Engineering</a> from the University of Washington and my B.S. in <a href="//cs.virginia.edu/">Computer Science</a> from the University of Virginia.</p>
 		<p>When I'm not working, I try to spend time outside by hiking or running. I also collect turtle figurines, plushies, and pictures.</p>
-		<p>I'm on parental leave in Winter 2023 (January-March).</p>
 		<h2>Select Recent Publications <a href="/publications/all">(all)</a></h2>
 		<app-citations [publications]="publications" [animate]=false [displayYears]=false></app-citations>
 	</main>

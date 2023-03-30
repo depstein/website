@@ -25,12 +25,14 @@
 	{
 		"key": "chi23_wishb",
 		"date": "May 2023",
-		"type": "workshop"
+		"type": "workshop",
+		"local": "pubs/ejo_wish23.pdf"
 	},
 	{
 		"key": "chi23_wisha",
 		"date": "May 2023",
-		"type": "workshop"
+		"type": "workshop",
+		"local": "pubs/wkouaho_wish23.pdf"
 	},
 	{
 		"key": "chi23_ws",
