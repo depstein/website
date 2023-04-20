@@ -8,20 +8,23 @@
 		"key": "chi23c",
 		"date": "May 2023",
 		"type": "paper",
-		"local": "pubs/lsilva_chi23.pdf"
+		"local": "pubs/lsilva_chi23.pdf",
+		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/pWzWhfHMiVQ"}, {"label": "study materials", "link":"assets/docs/chi23c_supplemental.zip"}]
 	},
 	{
 		"key": "chi23b",
 		"date": "May 2023",
 		"type": "paper",
 		"local": "pubs/ejo_chi23.pdf",
-		"notes": "Best Paper (Top 1%)"
+		"notes": "Best Paper (Top 1%)",
+		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/_vP3FaAmHLc"}]
 	},
 	{
 		"key": "chi23a",
 		"date": "May 2023",
 		"type": "paper",
-		"local": "pubs/rgouveia_chi23.pdf"
+		"local": "pubs/rgouveia_chi23.pdf",
+		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/wpayst8P2wE"}]
 	},
 	{
 		"key": "chi23_wishb",
