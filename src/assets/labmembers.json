@@ -34,6 +34,11 @@
     "type": "phd"
   },
   {
+    "name": "Jun Zhu",
+    "type": "ms",
+    "link": "//issac0723.github.io/"
+  },
+  {
     "name": "Jong Ho Lee",
     "type": "ms",
     "profile": "assets/images/labmembers/jlee.jpg",
@@ -48,12 +53,21 @@
     "alum": true
   },
   {
+    "name": "Di-Yun Cheng",
+    "type": "bs"
+  },
+  {
+    "name": "Kyle Hu",
+    "type": "bs"
+  },
+  {
     "name": "Jax Powell",
     "type": "bs"
   },
   {
     "name": "Tim Chen",
-    "type": "bs"
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Jocelyn Eng",
