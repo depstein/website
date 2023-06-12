@@ -11,6 +11,11 @@
 		"local": "pubs/dnguyen_las23_wip.pdf"
 	},
 	{
+		"key": "idc23_wip",
+		"date": "June 2023",
+		"type": "wip"
+	},
+	{
 		"key": "chi23c",
 		"date": "May 2023",
 		"type": "paper",
