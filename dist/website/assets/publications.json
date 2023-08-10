@@ -6,6 +6,11 @@
 		"local": "pubs/lsilva_mobilehci23.pdf"
 	},
 	{
+		"key": "jmh23",
+		"date": "August 2023",
+		"type": "journal"
+	},
+	{
 		"key": "las23_wip",
 		"date": "July 2023",
 		"type": "wip",
