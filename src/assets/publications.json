@@ -1,5 +1,10 @@
 [
 	{
+		"key": "cscw23",
+		"date": "December 2023",
+		"type": "journal"
+	},
+	{
 		"key": "mobilehci23",
 		"date": "September 2023",
 		"type": "journal",
@@ -8,7 +13,8 @@
 	{
 		"key": "jmh23",
 		"date": "August 2023",
-		"type": "journal"
+		"type": "journal",
+		"local": "pubs/ejo_jmh23.pdf"
 	},
 	{
 		"key": "las23_wip",

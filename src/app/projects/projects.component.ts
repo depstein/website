@@ -34,11 +34,11 @@ export class ProjectsComponent implements OnInit {
   	});
 
   	this.socialPublications = this.allPublications.filter((pub:{}) => {
-  		return ['chi23c', 'cscw22d', 'cscw21c', 'cscw20a', 'gi20', 'cscw17_online', 'chi16b', 'cscw15', 'ubi13'].includes(pub['key']);
+  		return ['cscw23', 'chi23c', 'cscw22d', 'cscw21c', 'cscw20a', 'gi20', 'cscw17_online', 'chi16b', 'cscw15', 'ubi13'].includes(pub['key']);
   	});
 
     this.clinicalPublications = this.allPublications.filter((pub:{}) => {
-      return ['chi23b','chi22b', 'cscw22a', 'cscw21b', 'dis18', 'chi17b'].includes(pub['key']);
+      return ['jmh23', 'chi23b','chi22b', 'cscw22a', 'cscw21b', 'dis18', 'chi17b'].includes(pub['key']);
     });
 
     this.reflectingPublications = this.allPublications.filter((pub:{}) => {
