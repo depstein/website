@@ -11,6 +11,12 @@
 		"local": "pubs/lsilva_mobilehci23.pdf"
 	},
 	{
+		"key": "mobilehci23_ws",
+		"date": "September 2023",
+		"type": "workshop",
+		"local": "pubs/lsilva_mobilehci23_work.pdf"
+	},
+	{
 		"key": "jmh23",
 		"date": "August 2023",
 		"type": "journal",
