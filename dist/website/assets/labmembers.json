@@ -61,8 +61,17 @@
     "type": "bs"
   },
   {
-    "name": "Jax Powell",
+    "name": "Angel Martens",
     "type": "bs"
+  },
+  {
+    "name": "Van Pham",
+    "type": "bs"
+  },
+  {
+    "name": "Jax Powell",
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Tim Chen",
