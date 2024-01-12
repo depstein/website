@@ -1,13 +1,15 @@
 [
 	{
-		"key": "imwut23",
-		"date": "December 2023",
+		"key": "cscw24",
+		"date": "February 2024",
 		"type": "journal"
 	},
 	{
-		"key": "cscw23",
-		"date": "December 2023",
-		"type": "journal"
+		"key": "imwut24",
+		"date": "January 2024",
+		"type": "journal",
+		"local": "pubs/mfigueiredo_imwut24.pdf",
+		"supplemental": [{"label": "study materials", "link":"assets/docs/imwut24_supplemental.pdf"}]
 	},
 	{
 		"key": "mobilehci23",
