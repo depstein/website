@@ -1,28 +1,38 @@
 [
 	{
+		"key": "drs24",
+		"date": "June 2024",
+		"type": "wip"
+	},
+	{
 		"key": "chi24d",
 		"date": "May 2024",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/xlu_chi24.pdf"
 	},
 	{
 		"key": "chi24c",
 		"date": "May 2024",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/ejo_chi24.pdf"
 	},
 	{
 		"key": "chi24b",
 		"date": "May 2024",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/wkouaho_chi24.pdf"
 	},
 	{
 		"key": "chi24a",
 		"date": "May 2024",
-		"type": "paper"
+		"type": "paper",
+		"local": "pubs/lsilva_chi24.pdf"
 	},
 	{
 		"key": "cscw24",
 		"date": "February 2024",
-		"type": "journal"
+		"type": "journal",
+		"local": "pubs/xlu_cscw24.pdf"
 	},
 	{
 		"key": "imwut24",
