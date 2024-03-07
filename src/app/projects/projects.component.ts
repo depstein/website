@@ -26,11 +26,11 @@ export class ProjectsComponent implements OnInit {
 
   filterPublications() {
   	this.practicesPublications = this.allPublications.filter((pub:{}) => {
-  		return ['chi23a', 'cscw22b', 'chi22a', 'cscw21a','jmh21','dis21b','chi21a', 'chi21b', 'cscw20b', 'chi17a', 'chi16c', 'ubi15', 'chi15'].includes(pub['key']);
+  		return ['chi24d', 'chi23a', 'cscw22b', 'chi22a', 'cscw21a','jmh21','dis21b','chi21a', 'chi21b', 'cscw20b', 'chi17a', 'chi16c', 'ubi15', 'chi15'].includes(pub['key']);
   	});
 
   	this.designPublications = this.allPublications.filter((pub:{}) => {
-  		return ['imwut23', 'mobilehci23', 'imwut22', 'imwut21','dis21a', 'ubi16', 'chi16a', 'dis14', 'pervasivehealth20'].includes(pub['key']);
+  		return ['chi24a', 'imwut24', 'mobilehci23', 'imwut22', 'imwut21','dis21a', 'ubi16', 'chi16a', 'dis14', 'pervasivehealth20'].includes(pub['key']);
   	});
 
   	this.socialPublications = this.allPublications.filter((pub:{}) => {
@@ -38,11 +38,11 @@ export class ProjectsComponent implements OnInit {
   	});
 
     this.clinicalPublications = this.allPublications.filter((pub:{}) => {
-      return ['jmh23', 'chi23b','chi22b', 'cscw22a', 'cscw21b', 'dis18', 'chi17b'].includes(pub['key']);
+      return ['chi24c', 'jmh23', 'chi23b','chi22b', 'cscw22a', 'cscw21b', 'dis18', 'chi17b'].includes(pub['key']);
     });
 
     this.reflectingPublications = this.allPublications.filter((pub:{}) => {
-      return ['cscw22c', 'pervasive21','imwut20', 'health20', 'pervasive17'].includes(pub['key']);
+      return ['chi24b', 'cscw22c', 'pervasive21','imwut20', 'health20', 'pervasive17'].includes(pub['key']);
     });
   }
 }

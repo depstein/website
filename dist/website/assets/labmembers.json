@@ -31,12 +31,13 @@
   },
   {
     "name": "Whitney-Jocelyn Kouaho",
-    "type": "phd"
+    "type": "phd",
+    "link": "//sites.uci.edu/kouaho/"
   },
   {
     "name": "Jun Zhu",
     "type": "ms",
-    "link": "//issac0723.github.io/"
+    "link": "https://jz-jun.github.io/"
   },
   {
     "name": "Jong Ho Lee",
@@ -53,10 +54,6 @@
     "alum": true
   },
   {
-    "name": "Di-Yun Cheng",
-    "type": "bs"
-  },
-  {
     "name": "Kyle Hu",
     "type": "bs"
   },
@@ -67,6 +64,11 @@
   {
     "name": "Van Pham",
     "type": "bs"
+  },
+  {
+    "name": "Di-Yun Cheng",
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Jax Powell",
