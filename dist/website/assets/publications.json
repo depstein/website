@@ -1,8 +1,23 @@
 [
 	{
+		"key": "cscw24b",
+		"date": "July 2024",
+		"type": "journal"
+	},
+	{
 		"key": "drs24",
 		"date": "June 2024",
 		"type": "wip"
+	},
+	{
+		"key": "chi24_wsb",
+		"date": "May 2024",
+		"type": "workshop"
+	},
+	{
+		"key": "chi24_wsa",
+		"date": "May 2024",
+		"type": "workshop"
 	},
 	{
 		"key": "chi24d",
@@ -29,7 +44,7 @@
 		"local": "pubs/lsilva_chi24.pdf"
 	},
 	{
-		"key": "cscw24",
+		"key": "cscw24a",
 		"date": "February 2024",
 		"type": "journal",
 		"local": "pubs/xlu_cscw24.pdf"
