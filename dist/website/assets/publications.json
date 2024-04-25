@@ -7,7 +7,8 @@
 	{
 		"key": "drs24",
 		"date": "June 2024",
-		"type": "wip"
+		"type": "paper",
+		"local": "pubs/ioygur_drs24.pdf"
 	},
 	{
 		"key": "chi24_wsb",
@@ -35,6 +36,7 @@
 		"key": "chi24b",
 		"date": "May 2024",
 		"type": "paper",
+		"notes": "Honorable Mention (Top 5%)",
 		"local": "pubs/wkouaho_chi24.pdf"
 	},
 	{
