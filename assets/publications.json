@@ -13,12 +13,14 @@
 	{
 		"key": "chi24_wsb",
 		"date": "May 2024",
-		"type": "workshop"
+		"type": "workshop",
+		"local": "pubs/depstein_chi24_work.pdf"
 	},
 	{
 		"key": "chi24_wsa",
 		"date": "May 2024",
-		"type": "workshop"
+		"type": "workshop",
+		"local": "pubs/ejo_chi24_work.pdf"
 	},
 	{
 		"key": "chi24d",
