@@ -8,17 +8,26 @@
 		"key": "drs24",
 		"date": "June 2024",
 		"type": "paper",
-		"local": "pubs/ioygur_drs24.pdf"
+		"local": "pubs/ioygur_drs24.pdf",
+		"exclude": true
+	},
+	{
+		"key": "ucjc24",
+		"date": "June 2024",
+		"type": "journal",
+		"exclude": true
 	},
 	{
 		"key": "chi24_wsb",
 		"date": "May 2024",
-		"type": "workshop"
+		"type": "workshop",
+		"local": "pubs/depstein_chi24_work.pdf"
 	},
 	{
 		"key": "chi24_wsa",
 		"date": "May 2024",
-		"type": "workshop"
+		"type": "workshop",
+		"local": "pubs/ejo_chi24_work.pdf"
 	},
 	{
 		"key": "chi24d",
