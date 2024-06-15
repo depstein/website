@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ProfileComponent implements OnInit {
 	@Input() student:any;
 	@Input() showPicture:boolean = true;
+  phdAlum:boolean = false
 
   constructor() { }
 

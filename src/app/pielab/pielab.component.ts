@@ -11,6 +11,7 @@ export class PielabComponent implements OnInit {
 	public msStudents: any[] = [];
 	public bsStudents: any[] = [];
 	public alumni: any[] = [];
+	public phdAlumni: any[] = [];
 
   constructor() { }
 
@@ -18,7 +19,11 @@ export class PielabComponent implements OnInit {
   	(labmembers as any).default.forEach(member => {
   		if('alum' in member && member.alum) {
   			//For now, no classification for alumni
-  			this.alumni.push(member);
+			if(member.type == "phd") {
+				this.phdAlumni.push(member);
+			} else {
+				this.alumni.push(member);
+			}
   		} else {
   			if(member.type == "phd") {
 	  			this.phdStudents.push(member);
@@ -34,6 +39,7 @@ export class PielabComponent implements OnInit {
   	this.msStudents.sort(this.sortLabMembers);
   	this.bsStudents.sort(this.sortLabMembers);
   	this.alumni.sort(this.sortLabMembers);
+	this.phdAlumni.sort(this.sortLabMembers);
   }
 
   sortLabMembers(a:any, b:any):number {

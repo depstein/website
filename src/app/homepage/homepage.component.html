@@ -34,9 +34,14 @@
 			<a *ngIf="student.link" [href]="student.link">{{student.name}}</a>
 			<span *ngIf="!student.link">{{student.name}}</span>
 		</p>
+		<h2>Ph.D. Alumni</h2>
+		<p *ngFor="let student of phdAlumni">
+			<a *ngIf="student.link" [href]="student.link">{{student.name}}</a>
+			<span *ngIf="!student.link">{{student.name}}</span>
+			<span *ngIf="student.position">→{{student.position}}</span>
+		</p>
 		<h2>Teaching</h2>
-		<p><a href="http://inf153-sp24.depstein.net">IN4MATX 153 (Spring 2024)</a></p>
-		<p><a href="http://inf251-sp24.depstein.net">IN4MATX 251 (Spring 2024)</a></p>
+		<p>None (Summer & Fall 2024)</p>
 		<h2>News</h2>
 		<p class="spacing" *ngFor="let newsItem of news">
 			<strong>{{newsItem.date | amParse:'MMM DD YYYY' | amDateFormat:'MMMM D'}}</strong>

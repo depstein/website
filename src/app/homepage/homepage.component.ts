@@ -16,7 +16,8 @@ export class HomepageComponent implements OnInit {
 	priorTravel;
 	futureTravel;
 	publications;
-  phdStudents;
+  	phdStudents;
+	phdAlumni;
 
   constructor(private http:HttpClient, private pubs:ParsePublicationsService) {
 		this.setNews((news as any).default);
@@ -75,12 +76,19 @@ export class HomepageComponent implements OnInit {
   }
 
   setStudents(students:[]) {
-    this.phdStudents = students.filter((s) => {return s['type'] == "phd"});
+    this.phdStudents = students.filter((s) => {return s['type'] == "phd" && !s['alum']});
+	this.phdAlumni = students.filter((s) => {return s['type'] == "phd" && s['alum']});
     this.phdStudents.sort((a, b) => {
       //Sort by last name
       let aNames = a['name'].split(' ');
       let bNames = b['name'].split(' ');
       return aNames[aNames.length - 1].toLowerCase() < bNames[bNames.length - 1].toLowerCase()? -1 : 1;
     });
+	this.phdAlumni.sort((a, b) => {
+		//Sort by last name
+		let aNames = a['name'].split(' ');
+		let bNames = b['name'].split(' ');
+		return aNames[aNames.length - 1].toLowerCase() < bNames[bNames.length - 1].toLowerCase()? -1 : 1;
+	  });
   }
 }

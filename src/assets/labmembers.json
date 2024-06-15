@@ -6,16 +6,10 @@
     "link": "//eunkyungjo.weebly.com/"
   },
   {
-    "name": "Xi Lu",
+    "name": "Weijun Li",
     "type": "phd",
-    "profile": "assets/images/labmembers/xlu.jpg",
-    "link": "//lu-xi.net/"
-  },
-  {
-    "name": "Lucas de Melo Silva",
-    "type": "phd",
-    "profile": "assets/images/labmembers/lsilva.jpg",
-    "link": "//lsilva.net/"
+    "profile": "assets/images/labmembers/wli.svg",
+    "link": "//blog.mvsovo.fun/"
   },
   {
     "name": "Dennis Wang",
@@ -32,12 +26,30 @@
   {
     "name": "Whitney-Jocelyn Kouaho",
     "type": "phd",
+    "profile": "assets/images/labmembers/wkouaho.jpg",
     "link": "//sites.uci.edu/kouaho/"
+  },
+  {
+    "name": "Xi Lu, PhD",
+    "type": "phd",
+    "profile": "assets/images/labmembers/xlu.jpg",
+    "link": "//lu-xi.net/",
+    "position": "Assistant Professor, University of Buffalo",
+    "alum": true
+  },
+  {
+    "name": "Lucas de Melo Silva, PhD",
+    "type": "phd",
+    "profile": "assets/images/labmembers/lsilva.jpg",
+    "link": "//lsilva.net/",
+    "position": "Assistant Professor, University of Iowa",
+    "alum": true
   },
   {
     "name": "Jun Zhu",
     "type": "ms",
-    "link": "https://jz-jun.github.io/"
+    "link": "https://jz-jun.github.io/",
+    "alum": true
   },
   {
     "name": "Jong Ho Lee",
@@ -54,16 +66,23 @@
     "alum": true
   },
   {
-    "name": "Kyle Hu",
+    "name": "Emily Liang",
     "type": "bs"
+  },
+  {
+    "name": "Kyle Hu",
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Angel Martens",
-    "type": "bs"
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Van Pham",
-    "type": "bs"
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Di-Yun Cheng",
