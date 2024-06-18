@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'; 
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'; 
 import { MomentModule } from 'ngx-moment';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,28 +16,21 @@ import { CitationsComponent } from './citations/citations.component';
 import { PielabComponent } from './pielab/pielab.component';
 import { ProfileComponent } from './profile/profile.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    HomepageComponent,
-    PublicationsComponent,
-    ProjectsComponent,
-    TeachingComponent,
-    CitationsComponent,
-    PielabComponent,
-    ProfileComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    HttpClientModule,
-    MomentModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        HomepageComponent,
+        PublicationsComponent,
+        ProjectsComponent,
+        TeachingComponent,
+        CitationsComponent,
+        PielabComponent,
+        ProfileComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        MomentModule,
+        FormsModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
