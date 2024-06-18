@@ -15,7 +15,8 @@
           "options": {
             "aot": true,
             "outputPath": {
-              "base": "dist/website"
+              "base": "dist/website",
+              "browser":""
             },
             "index": "src/index.html",
             "polyfills": [
