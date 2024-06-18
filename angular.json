@@ -17,7 +17,7 @@
             "outputPath": "dist/website",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "polyfills": "zone.js",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "website:build"
+            "buildTarget": "website:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "website:build:production"
+              "buildTarget": "website:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "website:build"
+            "buildTarget": "website:build"
           }
         },
         "test": {
