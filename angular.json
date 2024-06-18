@@ -32,6 +32,7 @@
             ],
             "scripts": [],
             "browser": "src/main.ts",
+            "allowedCommonJsDependencies": ["moment", "bibtex-parse-js"]
           },
           "configurations": {
             "production": {
