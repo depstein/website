@@ -118,6 +118,10 @@ aside > a > span {
 	line-height: 16px;
 }
 
+.profile {
+	width: 80%;
+}
+
 .project > .image > img {
 	max-width: 200px;
 	margin-bottom: 20px;
@@ -135,7 +139,6 @@ aside > a > span {
 svg.icon {
 	width: 16px;
 	height: 16px;
-	padding: 1px 2px;
 }
 
 img.instagram {
