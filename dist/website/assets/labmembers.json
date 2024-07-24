@@ -8,7 +8,7 @@
   {
     "name": "Weijun Li",
     "type": "phd",
-    "profile": "assets/images/labmembers/wli.svg",
+    "profile": "assets/images/labmembers/wli.png",
     "link": "//blog.mvsovo.fun/"
   },
   {
@@ -92,6 +92,7 @@
   {
     "name": "Jax Powell",
     "type": "bs",
+    "link": "//www.jaxpowell.org/",
     "alum": true
   },
   {
@@ -149,7 +150,7 @@
   {
     "name": "Marawin Chheang",
     "type": "bs",
-    "link": "https://marsc.dev/",
+    "link": "//marsc.dev/",
     "alum": true
   },
   {
