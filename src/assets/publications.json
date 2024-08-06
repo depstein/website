@@ -39,26 +39,30 @@
 		"key": "chi24d",
 		"date": "May 2024",
 		"type": "paper",
-		"local": "pubs/xlu_chi24.pdf"
+		"local": "pubs/xlu_chi24.pdf",
+		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/R_m8KSlfvwk"}]
 	},
 	{
 		"key": "chi24c",
 		"date": "May 2024",
 		"type": "paper",
-		"local": "pubs/ejo_chi24.pdf"
+		"local": "pubs/ejo_chi24.pdf",
+		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/36ejjHxR7DM"}]
 	},
 	{
 		"key": "chi24b",
 		"date": "May 2024",
 		"type": "paper",
 		"notes": "Honorable Mention (Top 5%)",
-		"local": "pubs/wkouaho_chi24.pdf"
+		"local": "pubs/wkouaho_chi24.pdf",
+		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/Lfd-1rrlhl8"}]
 	},
 	{
 		"key": "chi24a",
 		"date": "May 2024",
 		"type": "paper",
-		"local": "pubs/lsilva_chi24.pdf"
+		"local": "pubs/lsilva_chi24.pdf",
+		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/GYzj2l8GLvk"}]
 	},
 	{
 		"key": "cscw24a",
