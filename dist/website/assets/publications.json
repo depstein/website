@@ -27,7 +27,8 @@
 		"key": "chi24_wsb",
 		"date": "May 2024",
 		"type": "workshop",
-		"local": "pubs/depstein_chi24_work.pdf"
+		"local": "pubs/depstein_chi24_work.pdf",
+		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/6MyHqegkrAY"}]
 	},
 	{
 		"key": "chi24_wsa",
