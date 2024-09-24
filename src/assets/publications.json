@@ -1,13 +1,26 @@
 [
 	{
-		"key": "cscw24c",
-		"date": "October 2024",
+		"key": "imwut24b",
+		"date": "November 2024",
 		"type": "journal"
 	},
 	{
+		"key": "ccjrp24b",
+		"date": "October 2024",
+		"type": "journal",
+		"exclude": true
+	},
+	{
+		"key": "cscw24c",
+		"date": "October 2024",
+		"type": "journal",
+		"local": "pubs/dwang_cscw24.pdf"
+	},
+	{
 		"key": "cscw24b",
-		"date": "July 2024",
-		"type": "journal"
+		"date": "October 2024",
+		"type": "journal",
+		"local": "pubs/ejo_cscw24.pdf"
 	},
 	{
 		"key": "drs24",
@@ -17,7 +30,7 @@
 		"exclude": true
 	},
 	{
-		"key": "ccjrp24",
+		"key": "ccjrp24a",
 		"date": "June 2024",
 		"type": "journal",
 		"local": "pubs/dnguyen_ccjrp.pdf",
@@ -72,7 +85,7 @@
 		"local": "pubs/xlu_cscw24.pdf"
 	},
 	{
-		"key": "imwut24",
+		"key": "imwut24a",
 		"date": "January 2024",
 		"type": "journal",
 		"local": "pubs/mfigueiredo_imwut24.pdf",
