@@ -11,14 +11,20 @@
 		"exclude": true
 	},
 	{
+		"key": "cscw24_ws",
+		"date": "November 2024",
+		"type": "workshop",
+		"local": "pubs/dwang_cscw24_work.pdf"
+	},
+	{
 		"key": "cscw24c",
-		"date": "October 2024",
+		"date": "November 2024",
 		"type": "journal",
 		"local": "pubs/dwang_cscw24.pdf"
 	},
 	{
 		"key": "cscw24b",
-		"date": "October 2024",
+		"date": "November 2024",
 		"type": "journal",
 		"local": "pubs/ejo_cscw24.pdf"
 	},
