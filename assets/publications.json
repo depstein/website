@@ -8,6 +8,7 @@
 		"key": "ccjrp24b",
 		"date": "October 2024",
 		"type": "journal",
+		"local": "pubs/dnguyen_ccjrp24b.pdf",
 		"exclude": true
 	},
 	{
@@ -39,7 +40,7 @@
 		"key": "ccjrp24a",
 		"date": "June 2024",
 		"type": "journal",
-		"local": "pubs/dnguyen_ccjrp.pdf",
+		"local": "pubs/dnguyen_ccjrp24a.pdf",
 		"exclude": true
 	},
 	{
