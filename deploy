@@ -1,3 +1,4 @@
 ng build --configuration production
 #might need npx
-ngh --dir=dist/website --cname=depstein.net
+#ngh --dir=dist/website --cname=depstein.net
+ng deploy --repo https://github.com/depstein/website.git --cname=depstein.net --dir=dist/website
