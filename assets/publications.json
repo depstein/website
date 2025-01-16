@@ -1,5 +1,25 @@
 [
 	{
+		"key": "chi25d",
+		"date": "April 2025",
+		"type": "conference"
+	},
+	{
+		"key": "chi25c",
+		"date": "April 2025",
+		"type": "conference"
+	},
+	{
+		"key": "chi25b",
+		"date": "April 2025",
+		"type": "conference"
+	},
+	{
+		"key": "chi25a",
+		"date": "April 2025",
+		"type": "conference"
+	},
+	{
 		"key": "chi25_ws",
 		"date": "April 2025",
 		"type": "organizer"
@@ -38,7 +58,7 @@
 	{
 		"key": "drs24",
 		"date": "June 2024",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/ioygur_drs24.pdf",
 		"exclude": true
 	},
@@ -65,21 +85,21 @@
 	{
 		"key": "chi24d",
 		"date": "May 2024",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/xlu_chi24.pdf",
 		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/R_m8KSlfvwk"}]
 	},
 	{
 		"key": "chi24c",
 		"date": "May 2024",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/ejo_chi24.pdf",
 		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/36ejjHxR7DM"}]
 	},
 	{
 		"key": "chi24b",
 		"date": "May 2024",
-		"type": "paper",
+		"type": "conference",
 		"notes": "Honorable Mention (Top 5%)",
 		"local": "pubs/wkouaho_chi24.pdf",
 		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/Lfd-1rrlhl8"}]
@@ -87,7 +107,7 @@
 	{
 		"key": "chi24a",
 		"date": "May 2024",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/lsilva_chi24.pdf",
 		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/GYzj2l8GLvk"}]
 	},
@@ -137,22 +157,22 @@
 	{
 		"key": "chi23c",
 		"date": "May 2023",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/lsilva_chi23.pdf",
 		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/pWzWhfHMiVQ"}, {"label": "study materials", "link":"assets/docs/chi23c_supplemental.zip"}]
 	},
 	{
 		"key": "chi23b",
 		"date": "May 2023",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/ejo_chi23.pdf",
-		"notes": "Best Paper (Top 1%)",
+		"notes": "Best conference (Top 1%)",
 		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/_vP3FaAmHLc"}]
 	},
 	{
 		"key": "chi23a",
 		"date": "May 2023",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/rgouveia_chi23.pdf",
 		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/wpayst8P2wE"}]
 	},
@@ -224,14 +244,14 @@
 	{
 		"key": "chi22b",
 		"date": "May 2022",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/ejo_chi22.pdf",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/chi22b_supplemental.zip"}, {"label":"talk recording", "link":"https://youtu.be/7f-lY0l8J28"}]
 	},
 	{
 		"key": "chi22a",
 		"date": "May 2022",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/jjaimeson_chi22.pdf",
 		"notes": "Honorable Mention (Top 5%)",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/chi22a_supplemental.zip"}, {"label":"talk recording", "link":"https://youtu.be/UA5tmt5Qkk4"}]
@@ -317,28 +337,28 @@
 	{
 		"key": "dis21a",
 		"date": "June 2021",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/lsilva_dis21.pdf",
 		"supplemental":[{"label":"study materials", "link":"assets/docs/dis21a_supplemental.pdf"}, {"label":"talk recording", "link":"https://www.youtube.com/watch?v=JYDQhGER6Qs"}]
 	},
 	{
 		"key": "dis21b",
 		"date": "June 2021",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/xlu_dis21.pdf",
 		"supplemental": [{"label":"app analysis", "link":"assets/docs/dis21b_supplemental.zip"}, {"label":"talk recording", "link":"https://www.youtube.com/watch?v=KbzbopMZwSo"}]
 	},
 	{
 		"key": "chi21a",
 		"date": "May 2021",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/xlu_chi21.pdf",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/chi21a_supplemental.pdf"}, {"label":"talk recording", "link":"https://www.youtube.com/watch?v=d0iNE8Di-1E"}]
 	},
 	{
 		"key": "chi21b",
 		"date": "May 2021",
-		"type": "paper",
+		"type": "conference",
 		"local": "pubs/ioygur_chi21.pdf",
 		"supplemental": [{"label":"talk recording", "link":"https://www.youtube.com/watch?v=3yb8roAteY0"}]
 	},
@@ -371,7 +391,7 @@
 		"date": "November 2020",
 		"type": "journal",
 		"local": "pubs/depstein_imwut20.pdf",
-		"supplemental": [{"label": "codebook", "link":"assets/docs/imwut20_supplemental.zip"}, {"label": "paper browser", "link":"http://personal-informatics.depstein.net/"}, {"label": "slides", "link": "assets/docs/imwut20_slides.pdf"}, {"label": "talk recording", "link": "assets/docs/imwut20_talk.pdf"}]
+		"supplemental": [{"label": "codebook", "link":"assets/docs/imwut20_supplemental.zip"}, {"label": "conference browser", "link":"http://personal-informatics.depstein.net/"}, {"label": "slides", "link": "assets/docs/imwut20_slides.pdf"}, {"label": "talk recording", "link": "assets/docs/imwut20_talk.pdf"}]
 	},
 	{
 		"key": "cscw20a",
@@ -390,7 +410,7 @@
 	{
 		"key":"pervasivehealth20",
 		"date": "October 2020",
-		"type": "paper",
+		"type": "conference",
 		"local":"pubs/qli_pervasivehealth20.pdf",
 		"supplemental": [{"label":"slides", "link":"assets/docs/pervasivehealth20_slides.pdf"}, {"label":"talk recording", "link":"https://www.youtube.com/watch?v=WGbLKappOqE"}]
 	},
@@ -404,7 +424,7 @@
 		"key":"gi20",
 		"date": "May 2020",
 		"local":"pubs/depstein_gi20.pdf",
-		"type": "paper",
+		"type": "conference",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/gi20_supplemental.zip"}, {"label":"demo video", "link":"assets/docs/gi20_video.mp4"}, {"label":"slides", "link":"assets/docs/gi20_slides.pdf"}, {"label":"talk recording", "link":"https://youtu.be/nM2NC5T-XNQ"}]
 	},
 	{
@@ -453,7 +473,7 @@
 		"key":"dis18",
 		"date": "June 2018",
 		"local": "pubs/jschroeder_dis18.pdf",
-		"type": "paper",
+		"type": "conference",
 		"notes": "Honorable Mention (Top 5%)"
 	},
 	{
@@ -485,15 +505,15 @@
 		"key":"chi17a",
 		"date": "May 2017",
 		"local": "pubs/depstein_chi17.pdf",
-		"type": "paper",
+		"type": "conference",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/chi17_supplemental.zip"}, {"label":"blog post (part 1)", "link":"//medium.com/hci-design-at-uw/what-can-we-learn-from-period-tracking-23d98e544255"}, {"label":"blog post (part 2)", "link":"https://medium.com/@nkkl/five-things-to-think-about-when-designing-a-period-tracking-app-9a79ac7cf446"}],
-		"notes": "Best Paper (Top 1%)"
+		"notes": "Best conference (Top 1%)"
 	},
 	{
 		"key":"chi17b",
 		"date": "May 2017",
 		"local": "pubs/rkarkar_chi17.pdf",
-		"type": "paper",
+		"type": "conference",
 		"notes": "Honorable Mention (Top 5%)"
 	},
 	{
@@ -518,7 +538,7 @@
 		"key":"ubi16",
 		"date": "September 2016",
 		"local": "pubs/depstein_ubi16.pdf",
-		"type": "paper"
+		"type": "conference"
 	},
 	{
 		"key":"ubi16_ws",
@@ -530,14 +550,14 @@
 		"key":"chi16a",
 		"date": "May 2016",
 		"local": "pubs/depstein_chi16a.pdf",
-		"type": "paper",
+		"type": "conference",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/chi16a_supplemental.zip"}]
 	},
 	{
 		"key":"chi16b",
 		"date": "May 2016",
 		"local": "pubs/depstein_chi16b.pdf",
-		"type": "paper",
+		"type": "conference",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/chi16b_supplemental.zip"}]
 	},
 	{
@@ -551,7 +571,7 @@
 		"key":"ubi15",
 		"date": "September 2015",
 		"local": "pubs/depstein_ubi15.pdf",
-		"type": "paper",
+		"type": "conference",
 		"supplemental": [{"label":"hi-res model & survey materials", "link":"//github.com/depstein/lived-informatics"}]
 	},
 	{
@@ -579,7 +599,7 @@
 		"key":"cscw15",
 		"date": "March 2015",
 		"local": "pubs/depstein_cscw15.pdf",
-		"type": "paper"
+		"type": "conference"
 	},
 	{
 		"key":"ubi14_ws",
@@ -591,7 +611,7 @@
 		"key":"dis14",
 		"date": "June 2014",
 		"local": "pubs/depstein_dis14.pdf",
-		"type": "paper"
+		"type": "conference"
 	},
 	{
 		"key":"chi14_ws",
@@ -603,7 +623,7 @@
 		"key":"ubi13",
 		"date": "September 2013",
 		"local": "pubs/depstein_ubi13.pdf",
-		"type": "paper"
+		"type": "conference"
 	},
 	{
 		"key":"ubi13_ds",
