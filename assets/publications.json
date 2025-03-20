@@ -1,5 +1,10 @@
 [
 	{
+		"key": "cscw25",
+		"date": "May 2025",
+		"type": "journal"
+	},
+	{
 		"key": "chi25d",
 		"date": "April 2025",
 		"type": "conference"
@@ -22,7 +27,8 @@
 	{
 		"key": "chi25_ws",
 		"date": "April 2025",
-		"type": "organizer"
+		"type": "organizer",
+		"local": "pubs/iavellino_chi25_work.pdf"
 	},
 	{
 		"key": "imwut24b",
