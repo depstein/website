@@ -7,22 +7,26 @@
 	{
 		"key": "chi25d",
 		"date": "April 2025",
-		"type": "conference"
+		"type": "conference",
+		"local": "pubs/lliu_chi25.pdf"
 	},
 	{
 		"key": "chi25c",
 		"date": "April 2025",
-		"type": "conference"
+		"type": "conference",
+		"local": "pubs/jlouie_chi25.pdf"
 	},
 	{
 		"key": "chi25b",
 		"date": "April 2025",
-		"type": "conference"
+		"type": "conference",
+		"local": "pubs/ejo_chi25.pdf"
 	},
 	{
 		"key": "chi25a",
 		"date": "April 2025",
-		"type": "conference"
+		"type": "conference",
+		"local": "pubs/lsilva_chi25.pdf"
 	},
 	{
 		"key": "chi25_ws",
