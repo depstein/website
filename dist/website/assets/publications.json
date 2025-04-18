@@ -5,6 +5,18 @@
 		"type": "journal"
 	},
 	{
+		"key": "chi25_wsb",
+		"date": "April 2025",
+		"type": "workshop",
+		"local": "pubs/wli_chi25_work.pdf"
+	},
+	{
+		"key": "chi25_wsa",
+		"date": "April 2025",
+		"type": "workshop",
+		"local": "pubs/depstein_chi25_work.pdf"
+	},
+	{
 		"key": "chi25d",
 		"date": "April 2025",
 		"type": "conference",

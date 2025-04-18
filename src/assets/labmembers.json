@@ -30,6 +30,12 @@
     "link": "//sites.uci.edu/kouaho/"
   },
   {
+    "name": "Ziqi Yang",
+    "type": "phd",
+    "profile": "assets/images/labmembers/zyang.jpg",
+    "link": "//eugeniayang.github.io/"
+  },
+  {
     "name": "Xi Lu, Ph.D.",
     "type": "phd",
     "profile": "assets/images/labmembers/xlu.jpg",
@@ -66,12 +72,13 @@
     "alum": true
   },
   {
-    "name": "Lance Fookes",
+    "name": "Anagha Rao",
     "type": "bs"
   },
   {
-    "name": "Anagha Rao",
-    "type": "bs"
+    "name": "Lance Fookes",
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Emily Liang",
