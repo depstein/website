@@ -189,7 +189,7 @@
 		"date": "May 2023",
 		"type": "conference",
 		"local": "pubs/ejo_chi23.pdf",
-		"notes": "Best conference (Top 1%)",
+		"notes": "Best Paper (Top 1%)",
 		"supplemental": [{"label": "talk recording", "link": "https://youtu.be/_vP3FaAmHLc"}]
 	},
 	{
@@ -530,7 +530,7 @@
 		"local": "pubs/depstein_chi17.pdf",
 		"type": "conference",
 		"supplemental": [{"label":"study materials", "link":"assets/docs/chi17_supplemental.zip"}, {"label":"blog post (part 1)", "link":"//medium.com/hci-design-at-uw/what-can-we-learn-from-period-tracking-23d98e544255"}, {"label":"blog post (part 2)", "link":"https://medium.com/@nkkl/five-things-to-think-about-when-designing-a-period-tracking-app-9a79ac7cf446"}],
-		"notes": "Best conference (Top 1%)"
+		"notes": "Best Paper (Top 1%)"
 	},
 	{
 		"key":"chi17b",
