@@ -1,21 +1,9 @@
 [
   {
-    "name": "Eunkyung Jo",
-    "type": "phd",
-    "profile": "assets/images/labmembers/ejo.jpg",
-    "link": "//www.eunkyungjo.com/"
-  },
-  {
     "name": "Weijun Li",
     "type": "phd",
     "profile": "assets/images/labmembers/wli.png",
     "link": "//blog.mvsovo.fun/"
-  },
-  {
-    "name": "Dennis Wang",
-    "type": "phd",
-    "profile": "assets/images/labmembers/dwang.jpg",
-    "link": "//dwnnis.github.io/"
   },
   {
     "name": "Matthew Dressa",
@@ -36,6 +24,14 @@
     "link": "//eugeniayang.github.io/"
   },
   {
+    "name": "Eunkyung Jo, Ph.D.",
+    "type": "phd",
+    "profile": "assets/images/labmembers/ejo.jpg",
+    "link": "//www.eunkyungjo.com/",
+    "position": "Assistant Professor, POSTECH",
+    "alum": true
+  },
+  {
     "name": "Xi Lu, Ph.D.",
     "type": "phd",
     "profile": "assets/images/labmembers/xlu.jpg",
@@ -49,6 +45,14 @@
     "profile": "assets/images/labmembers/lsilva.jpg",
     "link": "//lsilva.net/",
     "position": "Assistant Professor, University of Iowa",
+    "alum": true
+  },
+  {
+    "name": "Dennis Wang, Ph.D.",
+    "type": "phd",
+    "profile": "assets/images/labmembers/dwang.png",
+    "link": "//dwnnis.github.io/",
+    "position": "Assistant Professor, National Yang Ming Chiao Tung University",
     "alum": true
   },
   {
@@ -73,7 +77,8 @@
   },
   {
     "name": "Anagha Rao",
-    "type": "bs"
+    "type": "bs",
+    "alum": true
   },
   {
     "name": "Lance Fookes",
