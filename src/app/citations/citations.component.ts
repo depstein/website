@@ -15,12 +15,12 @@ import { trigger, state, style, animate, transition} from '@angular/animations';
       // fade in when created. this could also be written as transition('void => *')
       transition(':enter', [
         style({opacity: 0, height:0}),
-        animate(200 )
+        animate('0.2s ease-in' )
       ]),
 
       // fade out when destroyed. this could also be written as transition('void => *')
       transition(':leave',
-        animate(200, style({opacity: 0, height:0})))
+        animate('0.2s ease-out', style({opacity: 0, height:0})))
     ]),
   ]
 })
