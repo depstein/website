@@ -2,7 +2,8 @@
 	{
 		"key": "cscw25",
 		"date": "May 2025",
-		"type": "journal"
+		"type": "journal",
+		"local": "pubs/dwang_cscw25.pdf"
 	},
 	{
 		"key": "chi25_wsb",
