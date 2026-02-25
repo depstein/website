@@ -1,5 +1,13 @@
 [
   {
+    "date": "February 25, 2026",
+    "description": "Incredibly proud that alumna Eunkyung Jo received SIGCHI's <a href='https://medium.com/sigchi/2026-acm-sigchi-awards-and-special-recognitions-d942983d9228'>Oustanding Dissertation Award</a> this year. Congratulate her at CHI!"
+  },
+  {
+    "date": "February 23, 2026",
+    "description": "Five CHI papers from the PIE lab and friends! CASEbot for self-experimentation, <a href='assets/pubs/lsilva_chi26.pdf'>FamilyBloom</a> for family health tracking, sharing <a href='assets/pubs/zyang_chi26.pdf'>genetic factors</a> when tracking, <a href='assets/pubs/apapoutsaki_chi26.pdf'>baby tracking</a> adoption/abandonment, and <a href='assets/pubs/wkouaho_chi26.pdf'>wearables in pole dancing</a>."
+  },
+  {
     "date": "October 15, 2025",
     "description": "Honored to receive the 10-Year Impact Award, Runner-Up from Ubicomp for the <a href='assets/pubs/depstein_ubi15.pdf'>Lived Informatics Model</a>."
   },
