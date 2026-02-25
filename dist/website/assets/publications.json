@@ -2,22 +2,26 @@
 	{
 		"key": "chi26e",
 		"date": "April 2026",
-		"type": "conference"
+		"type": "conference",
+		"local": "pubs/wkouaho_chi26.pdf"
 	},
 	{
 		"key": "chi26d",
 		"date": "April 2026",
-		"type": "conference"
+		"type": "conference",
+		"local": "pubs/apapoutsaki_chi26.pdf"
 	},
 	{
 		"key": "chi26c",
 		"date": "April 2026",
-		"type": "conference"
+		"type": "conference",
+		"local": "pubs/zyang_chi26.pdf"
 	},
 	{
 		"key": "chi26b",
 		"date": "April 2026",
-		"type": "conference"
+		"type": "conference",
+		"local": "pubs/lsilva_chi26.pdf"
 	},
 	{
 		"key": "chi26a",
