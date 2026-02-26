@@ -26,7 +26,8 @@
 	{
 		"key": "chi26a",
 		"date": "April 2026",
-		"type": "conference"
+		"type": "conference",
+		"local": "pubs/sishita_chi26.pdf"
 	},
 	{
 		"key": "cscw25",
