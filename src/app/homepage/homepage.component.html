@@ -63,8 +63,7 @@
 			<span *ngIf="student.position">→{{student.position}}</span>
 		</p>
 		<h2>Teaching</h2>
-		<p><a href="//inf133-wi26.depstein.net/">IN4MATX 133, Winter 2026</a></p>
-		<p><a href="//inf232-wi26.depstein.net/">IN4MATX 232, Winter 2026</a></p>
+		<p><a href="//inf285-sp26.depstein.net/">IN4MATX 285, Spring 2026</a></p>
 		<h2>News</h2>
 		<p class="spacing" *ngFor="let newsItem of news">
 			<strong>{{newsItem.date | amParse:'MMM DD YYYY' | amDateFormat:'MMMM D'}}</strong>
@@ -95,6 +94,7 @@
 		<p>Beyond the Department of Informatics, I am affiliated with the <a href="//cs.ics.uci.edu/">Department of Computer Science</a> (by courtesy), the <a href="//connectedlearning.uci.edu/">Connected Learning Lab</a>, the <a href="//futurehealth.ics.uci.edu/">Institute for Future Health</a>, and the <a href="//accessibility.ics.uci.edu/">Accessibility Research Collective</a>. My research has been generously supported by the National Science Foundation, Snap Inc., and internal UCI programs.</p>
 		<p>I completed my Ph.D. in <a href="//cs.washington.edu">Computer Science &amp; Engineering</a> from the University of Washington and my B.S. in <a href="//engineering.virginia.edu/department/computer-science">Computer Science</a> from the University of Virginia.</p>
 		<p>When I'm not working, I try to spend time outside by hiking or running. I also collect turtle figurines, plushies, and pictures.</p>
+		<p class="emph">Spring 2026: I have a new baby at home! I may be slow to respond to email and am more limited in my ability to take on new service.</p>
 		<h2>Select Recent Publications <a href="/publications/all">(all)</a></h2>
 		<app-citations [publications]="publications" [animate]=false [displayYears]=false></app-citations>
 	</main>
