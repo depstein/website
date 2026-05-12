@@ -1,5 +1,12 @@
 [
 	{
+		"key": "voices26",
+		"date": "May 2026",
+		"type": "journal",
+		"exclude": true,
+		"local": "pubs/depstein_voices26.pdf"
+	},
+	{
 		"key": "chi26e",
 		"date": "April 2026",
 		"type": "conference",
