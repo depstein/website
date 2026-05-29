@@ -12,16 +12,17 @@
     "link": "//matthewdressa.github.io/Personal-Portfolio/"
   },
   {
-    "name": "Whitney-Jocelyn Kouaho",
-    "type": "phd",
-    "profile": "assets/images/labmembers/wkouaho.jpg",
-    "link": "//sites.uci.edu/kouaho/"
-  },
-  {
     "name": "Ziqi Yang",
     "type": "phd",
     "profile": "assets/images/labmembers/zyang.jpg",
     "link": "//ziqi-yang.vercel.app/"
+  },
+  {
+    "name": "Whitney-Jocelyn Kouaho, Ph.D.",
+    "type": "phd",
+    "profile": "assets/images/labmembers/wkouaho.jpg",
+    "link": "//sites.uci.edu/kouaho/",
+    "alum": true
   },
   {
     "name": "Eunkyung Jo, Ph.D.",
