@@ -30,11 +30,11 @@ export class ProjectsComponent implements OnInit {
   	});
 
   	this.designPublications = this.allPublications.filter((pub:{}) => {
-  		return ['chi26a', 'chi25a', 'chi24a', 'imwut24', 'mobilehci23', 'imwut22', 'imwut21','dis21a', 'ubi16', 'chi16a', 'dis14', 'pervasivehealth20'].includes(pub['key']);
+  		return ['uist26', 'chi26a', 'chi25a', 'chi24a', 'imwut24', 'mobilehci23', 'imwut22', 'imwut21','dis21a', 'ubi16', 'chi16a', 'dis14', 'pervasivehealth20'].includes(pub['key']);
   	});
 
   	this.socialPublications = this.allPublications.filter((pub:{}) => {
-  		return ['chi26c', 'chi26b', 'cscw25', 'chi25d', 'cscw24c', 'chi23c', 'cscw22d', 'cscw21c', 'cscw20a', 'gi20', 'cscw17_online', 'chi16b', 'cscw15', 'ubi13'].includes(pub['key']);
+  		return ['amia26', 'imwut26', 'chi26c', 'chi26b', 'cscw25', 'chi25d', 'cscw24c', 'chi23c', 'cscw22d', 'cscw21c', 'cscw20a', 'gi20', 'cscw17_online', 'chi16b', 'cscw15', 'ubi13'].includes(pub['key']);
   	});
 
     this.clinicalPublications = this.allPublications.filter((pub:{}) => {
