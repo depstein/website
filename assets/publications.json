@@ -1,8 +1,19 @@
 [
 	{
-		"key": "amia26",
+		"key": "uist26",
 		"date": "November 2026",
 		"type": "conference"
+	},
+	{
+		"key": "amia26",
+		"date": "November 2026",
+		"type": "conference",
+		"local": "pubs/zyang_amia26.pdf"
+	},
+	{
+		"key": "imwut26",
+		"date": "August 2026",
+		"type": "journal"
 	},
 	{
 		"key": "voices26",
