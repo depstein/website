@@ -1,19 +1,22 @@
 [
 	{
-		"key": "uist26",
-		"date": "November 2026",
-		"type": "conference"
-	},
-	{
 		"key": "amia26",
 		"date": "November 2026",
 		"type": "conference",
 		"local": "pubs/zyang_amia26.pdf"
 	},
 	{
+		"key": "uist26",
+		"date": "November 2026",
+		"type": "conference",
+		"local": "pubs/wli_uist26.pdf",
+		"supplemental": [{"label": "teaser video", "link": "assets/docs/uist26_teaser.mp4"}]
+	},
+	{
 		"key": "imwut26",
-		"date": "August 2026",
-		"type": "journal"
+		"date": "October 2026",
+		"type": "journal",
+		"local": "pubs/lsilva_imwut26.pdf"
 	},
 	{
 		"key": "voices26",
@@ -38,7 +41,8 @@
 		"key": "chi26c",
 		"date": "April 2026",
 		"type": "conference",
-		"local": "pubs/zyang_chi26.pdf"
+		"local": "pubs/zyang_chi26.pdf",
+		"supplemental": [{"label": "study materials", "link":"assets/docs/chi26c_supplemental.pdf"}]
 	},
 	{
 		"key": "chi26b",
@@ -50,7 +54,8 @@
 		"key": "chi26a",
 		"date": "April 2026",
 		"type": "conference",
-		"local": "pubs/sishita_chi26.pdf"
+		"local": "pubs/sishita_chi26.pdf",
+		"supplemental": [{"label": "study materials", "link":"assets/docs/chi26a_supplemental.zip"}]
 	},
 	{
 		"key": "cscw25",
@@ -93,7 +98,8 @@
 		"key": "chi25a",
 		"date": "April 2025",
 		"type": "conference",
-		"local": "pubs/lsilva_chi25.pdf"
+		"local": "pubs/lsilva_chi25.pdf",
+		"supplemental": [{"label": "study materials", "link":"assets/docs/chi25a_supplemental.zip"}]
 	},
 	{
 		"key": "chi25_ws",
