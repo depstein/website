@@ -19,6 +19,18 @@
 		"local": "pubs/lsilva_imwut26.pdf"
 	},
 	{
+		"key": "ijcci26",
+		"date": "September 2026",
+		"type": "journal",
+		"local": "pubs/ioygur_ijcci26.pdf"
+	},
+	{
+		"key": "cscw26_ws",
+		"date": "October 2026",
+		"type": "workshop",
+		"local": "pubs/zyang_cscw26_work.pdf"
+	},
+	{
 		"key": "voices26",
 		"date": "May 2026",
 		"type": "journal",
