@@ -1,5 +1,10 @@
 [
 	{
+		"key": "cscw26",
+		"date": "November 2026",
+		"type": "journal"
+	},
+	{
 		"key": "amia26",
 		"date": "November 2026",
 		"type": "conference",
@@ -659,7 +664,7 @@
 		"key":"chi16c",
 		"date": "May 2016",
 		"local": "pubs/depstein_chi16c.pdf",
-		"type": "note",
+		"type": "conference",
 		"supplemental": [{"label":"survey materials", "link":"assets/docs/chi16c_supplemental.zip"}]
 	},
 	{
@@ -681,7 +686,7 @@
 		"key":"chi15",
 		"date": "April 2015",
 		"local": "pubs/fcordeiro_chi15.pdf",
-		"type": "note",
+		"type": "conference",
 		"notes": "Honorable Mention (Top 5%)"
 	},
 	{
