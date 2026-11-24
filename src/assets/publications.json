@@ -1,5 +1,10 @@
 [
 	{
+		"key": "chi27_ws",
+		"date": "May 2027",
+		"type": "organizer"
+	},
+	{
 		"key": "cscw26",
 		"date": "November 2026",
 		"type": "journal",
